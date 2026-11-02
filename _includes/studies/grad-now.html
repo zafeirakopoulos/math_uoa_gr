@@ -1,6 +1,6 @@
 {%- comment -%}
-  Top of the graduate hub: this semester's MSc courses per specialisation (with instructors and
-  timetable), then the full timetable, the September exams and next semester's courses (folded).
+  Top of the graduate hub: the timetable, then this semester's MSc courses per specialisation (with
+  instructors and timetable slots), the September exams and next semester's courses (folded).
   Data: collections/_msc_courses (semester, instructors) and _data/academic_years/<year>.yml → msc.
 {%- endcomment -%}
 {%- assign cur = site.current_semester -%}
@@ -17,6 +17,14 @@
   <a href="#msc-exams">{{ t.msc_exams_sept }}</a>
   <a href="#eidikeuseis">{{ t.msc_programme_title }}</a>
 </nav>
+
+{%- assign ugtt = year[cur].timetable -%}
+{%- if ugtt.grid %}
+<section class="ug-block" id="msc-orologio">
+  <div class="section-title"><h2>{{ t.msc_tt[cur] }} {{ site.academic_year }}</h2></div>
+  {% include timetable-grid.html grid=ugtt.grid view="pms" %}
+</section>
+{%- endif %}
 
 {%- for pass in (1..2) %}
 {%- if pass == 1 %}{% assign sem = cur %}{% else %}{% assign sem = next_sem %}{% endif -%}
@@ -67,14 +75,6 @@
 </section>
 {%- else %}
 </details>
-{%- endif %}
-
-{%- assign ugtt = year[cur].timetable -%}
-{%- if pass == 1 and ugtt.grid %}
-<section class="ug-block" id="msc-orologio">
-  <div class="section-title"><h2>{{ t.msc_tt[cur] }} {{ site.academic_year }}</h2></div>
-  {% include timetable-grid.html grid=ugtt.grid view="pms" %}
-</section>
 {%- endif %}
 
 {%- if pass == 1 and m.exams_september %}

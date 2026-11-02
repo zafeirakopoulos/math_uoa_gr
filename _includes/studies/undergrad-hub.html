@@ -1,8 +1,8 @@
 {%- comment -%}
   Undergraduate hub. Opens with what a student needs this semester, built from _data/ug
-  (key dates, timetables, teaching assignments) and the courses collection:
-    1. key dates (next ones highlighted), 2. courses offered this semester with instructors and
-    timetable, 3. first-year week, 4. full timetable by day and next semester's assignments (folded).
+  (timetable, key dates, teaching assignments) and the courses collection:
+    1. weekly timetable, 2. key dates, 3. courses offered this semester with instructors and
+    timetable slots, 4. first-year week, 5. next semester's assignments (folded).
   Then every other link grouped by task (one click). Course pages are the second click.
 {%- endcomment -%}
 {%- include lang.html -%}
@@ -21,11 +21,19 @@
 
 <nav class="jump" aria-label="{{ t.on_this_page }}">
   <a href="#orologio">{{ t.tt_semester[cur] }}</a>
+  <a href="#imerominies">{{ t.ug_dates }}</a>
   <a href="#programma">{{ t.offered_now[cur] }}</a>
   {%- if fy and cur == "winter" %}<a href="#proto-etos">{{ t.tt_first_year }}</a>{% endif %}
-  <a href="#imerominies">{{ t.ug_dates }}</a>
   {%- if asg_next %}<a href="#anatheseis-{{ next_sem }}">{{ t.as_semester[next_sem] }}</a>{% endif %}
 </nav>
+
+{%- if tt.grid %}
+<section class="ug-block" id="orologio">
+  <div class="section-title"><h2>{{ t.tt_semester[cur] }} {{ site.academic_year }}</h2></div>
+  {%- if tt.note %}<p class="programme__note">{{ tt.note }}</p>{% endif %}
+  {% include timetable-grid.html grid=tt.grid view="pps" %}
+</section>
+{%- endif %}
 
 {%- if year.dates %}
 <section class="ug-block" id="imerominies">
@@ -108,14 +116,6 @@
     {%- endfor %}
   </div>
   <ul class="legend">{% for g in fy.groups %}<li><strong>{{ g[0] }}</strong>: {{ g[1] }}</li>{% endfor %}</ul>
-</section>
-{%- endif %}
-
-{%- if tt.grid %}
-<section class="ug-block" id="orologio">
-  <div class="section-title"><h2>{{ t.tt_semester[cur] }} {{ site.academic_year }}</h2></div>
-  {%- if tt.note %}<p class="programme__note">{{ tt.note }}</p>{% endif %}
-  {% include timetable-grid.html grid=tt.grid view="pps" %}
 </section>
 {%- endif %}
 
