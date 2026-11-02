@@ -10,7 +10,7 @@ lang: el
 locale: el_GR
 timezone: Europe/Athens
 url: "https://www.math.uoa.gr"
-baseurl: ""
+baseurl: "/math_uoa_gr"
 
 contact:
   address: Πανεπιστημιούπολη, 157 84 Αθήνα
