@@ -11,6 +11,13 @@
 {%- assign days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
 {%- assign prog = site.data.msc_programme -%}
 
+<nav class="jump" aria-label="{{ t.on_this_page }}">
+  <a href="#msc-orologio">{{ t.msc_tt[cur] }}</a>
+  <a href="#msc-now">{{ t.msc_now[cur] }}</a>
+  <a href="#msc-exams">{{ t.msc_exams_sept }}</a>
+  <a href="#eidikeuseis">{{ t.msc_programme_title }}</a>
+</nav>
+
 {%- for pass in (1..2) %}
 {%- if pass == 1 %}{% assign sem = cur %}{% else %}{% assign sem = next_sem %}{% endif -%}
 {%- if pass == 1 %}

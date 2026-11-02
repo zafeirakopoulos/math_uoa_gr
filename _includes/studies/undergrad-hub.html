@@ -19,6 +19,14 @@
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
 {%- assign days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
 
+<nav class="jump" aria-label="{{ t.on_this_page }}">
+  <a href="#orologio">{{ t.tt_semester[cur] }}</a>
+  <a href="#programma">{{ t.offered_now[cur] }}</a>
+  {%- if fy and cur == "winter" %}<a href="#proto-etos">{{ t.tt_first_year }}</a>{% endif %}
+  <a href="#imerominies">{{ t.ug_dates }}</a>
+  {%- if asg_next %}<a href="#anatheseis-{{ next_sem }}">{{ t.as_semester[next_sem] }}</a>{% endif %}
+</nav>
+
 {%- if year.dates %}
 <section class="ug-block" id="imerominies">
   <details class="fold">

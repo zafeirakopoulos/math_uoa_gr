@@ -251,3 +251,8 @@ $ttg-colours: (y1: #2f6fde, y2: #2e9d55, y3: #a0612a, y4: #c8372d, pg: #6b4fa8, 
 }
 .ttg__legend { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 0; margin: 10px 0 0; font-family: var(--font-ui); font-size: 12px;
   li { padding-left: 8px; border-left: 4px solid; background: none !important; } }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px;
+  a { font-family: var(--font-ui); font-size: 12px; font-weight: 500; text-transform: uppercase; padding: 8px 12px; background: var(--blue-tint); color: var(--blue-dark);
+    &:hover { background: var(--blue); color: #fff; text-decoration: none; } }
+  a:first-child { background: var(--blue); color: #fff; }
+}
