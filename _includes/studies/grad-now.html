@@ -62,28 +62,12 @@
 </details>
 {%- endif %}
 
-{%- if pass == 1 and mtt %}
-<details class="fold ug-block" id="msc-orologio">
-  <summary><h2>{{ t.msc_tt[cur] }} {{ site.academic_year }}</h2></summary>
-  <div class="tt-days">
-    {%- for day in days %}
-    {%- assign ds = mtt.slots | where: "day", day | sort: "start" -%}
-    {%- if ds.size > 0 %}
-    <section>
-      <h3 class="tt-day">{{ day }}</h3>
-      <table class="data-table tt">
-        <tbody>
-        {%- for s in ds %}
-          <tr><td class="nowrap">{{ s.start }}–{{ s.end }}</td>
-            <td><span class="course__code">{{ s.code }}{% for a in s.also %}={{ a }}{% endfor %}</span> {{ s.course }}<small>{{ s.room }}{% if s.instructors.size > 0 %} · {{ s.instructors | join: ", " }}{% endif %}</small></td></tr>
-        {%- endfor %}
-        </tbody>
-      </table>
-    </section>
-    {%- endif %}
-    {%- endfor %}
-  </div>
-</details>
+{%- assign ugtt = year[cur].timetable -%}
+{%- if pass == 1 and ugtt.grid %}
+<section class="ug-block" id="msc-orologio">
+  <div class="section-title"><h2>{{ t.msc_tt[cur] }} {{ site.academic_year }}</h2></div>
+  {% include timetable-grid.html grid=ugtt.grid view="pms" %}
+</section>
 {%- endif %}
 
 {%- if pass == 1 and m.exams_september %}

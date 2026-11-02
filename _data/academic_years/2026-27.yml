@@ -166,19 +166,19 @@ first_year:
     course: Θεμέλια Άλγεβρας και Γεωμετρίας
     room: ΑΜΦ22
   - day: Δευτέρα
-    start: 09:00
+    start: '09:00'
     end: '11:00'
     course_code: 122
     course: Γεωμετρία Ι
     room: ΑΜΦ22
   - day: Τετάρτη
-    start: 09:00
+    start: '09:00'
     end: '11:00'
     course_code: 122
     course: Γεωμετρία Ι
     room: ΑΜΦ22
   - day: Παρασκευή
-    start: 09:00
+    start: '09:00'
     end: '11:00'
     course_code: 122
     course: Γεωμετρία Ι
@@ -243,7 +243,7 @@ first_year:
     instructor: Δ. Αντωνόπουλος
     room: Αιθ. Α
   - day: Τρίτη
-    start: 09:00
+    start: '09:00'
     end: '11:00'
     course_code: 141
     course: Πληροφορική Ι
@@ -252,7 +252,7 @@ first_year:
     instructor: Ζ. Ζαφειρακόπουλος
     room: Αιθ. Γ
   - day: Τρίτη
-    start: 09:00
+    start: '09:00'
     end: '11:00'
     course_code: 141
     course: Πληροφορική Ι
@@ -291,7 +291,7 @@ winter:
     note: Το ωρολόγιο πρόγραμμα ενδέχεται να αναθεωρηθεί τις επόμενες ημέρες/εβδομάδες. Παρακαλούμε να το ελέγχετε τακτικά για τυχόν αλλαγές.
     slots:
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '13:00'
       msc_code: ΣΕΠ19
       course: Θεωρία Παιγνίων
@@ -300,7 +300,7 @@ winter:
       - Μερτικόπουλος
       level: postgraduate
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ21
       course: Αλγεβρική Γεωμετρία
@@ -309,7 +309,7 @@ winter:
       - Τερεζάκης
       level: postgraduate
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ13=Ε20
       course: Θεωρία Τελεστών
@@ -318,7 +318,7 @@ winter:
       - Κακαριάδης
       level: postgraduate
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 634
       course: Γεωμετρία ΙΙ
@@ -327,7 +327,7 @@ winter:
       - Γιαννιώτης
       level: undergraduate
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 122
       course: Γεωμετρία Ι
@@ -337,7 +337,7 @@ winter:
       level: undergraduate
       year: 1
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 301
       course: Απειροστικός Λογισμός ΙΙΙ
@@ -347,7 +347,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 421
       course: Βασική Άλγεβρα
@@ -356,7 +356,7 @@ winter:
       - Κοντογεώργης
       level: undergraduate
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 559
       course: Θεωρία Παιγνίων
@@ -366,7 +366,7 @@ winter:
       level: undergraduate
       year: 3
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 615
       course: Γεωμετρική Ανάλυση
@@ -376,7 +376,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Δευτέρα
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 555
       course: Μπεϋζιανή Στατιστική
@@ -618,7 +618,7 @@ winter:
       level: undergraduate
       year: 1
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: ΕΜ3α
       course: ΕΜ3α
@@ -628,7 +628,7 @@ winter:
       - Μπάρδης
       level: postgraduate
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ9=Ε19
       course: Μιγαδική Ανάλυση Μιας Μεταβλητής
@@ -637,7 +637,7 @@ winter:
       - Χατζηαφράτης
       level: postgraduate
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 252
       course: Διακριτά Μαθηματικά
@@ -647,7 +647,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 714
       course: Τοπολογία
@@ -657,7 +657,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 651
       course: Στοχαστικές Ανελίξεις
@@ -667,7 +667,7 @@ winter:
       level: undergraduate
       year: 3
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 859
       course: Ουρές Αναμονής
@@ -677,7 +677,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 141
       course: Πληροφορική Ι
@@ -688,7 +688,7 @@ winter:
       level: undergraduate
       year: 1
     - day: Τρίτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 141
       course: Πληροφορική Ι
@@ -965,7 +965,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ21
       course: Αλγεβρική Γεωμετρία
@@ -974,7 +974,7 @@ winter:
       - Τερεζάκης
       level: postgraduate
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ13=Ε20
       course: Θεωρία Τελεστών
@@ -983,7 +983,7 @@ winter:
       - Κακαριάδης
       level: postgraduate
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 634
       course: Γεωμετρία ΙΙ
@@ -992,7 +992,7 @@ winter:
       - Γιαννιώτης
       level: undergraduate
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 122
       course: Γεωμετρία Ι
@@ -1002,7 +1002,7 @@ winter:
       level: undergraduate
       year: 1
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 301
       course: Απειροστικός Λογισμός ΙΙΙ
@@ -1012,7 +1012,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 421
       course: Βασική Άλγεβρα
@@ -1021,7 +1021,7 @@ winter:
       - Κοντογεώργης
       level: undergraduate
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 559
       course: Θεωρία Παιγνίων
@@ -1031,7 +1031,7 @@ winter:
       level: undergraduate
       year: 3
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 615
       course: Γεωμετρική Ανάλυση
@@ -1041,7 +1041,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '13:00'
       msc_code: ΣΕΠ6
       course: Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα
@@ -1050,7 +1050,7 @@ winter:
       - Οικονόμου
       level: postgraduate
     - day: Τετάρτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 555
       course: Μπεϋζιανή Στατιστική
@@ -1296,7 +1296,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Ε3
       course: Υπολογιστικά Μαθηματικά Ι
@@ -1305,7 +1305,7 @@ winter:
       - Νοτάρης
       level: postgraduate
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       msc_code: Θ9=Ε19
       course: Μιγαδική Ανάλυση Μιας Μεταβλητής
@@ -1314,7 +1314,7 @@ winter:
       - Χατζηαφράτης
       level: postgraduate
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 252
       course: Διακριτά Μαθηματικά
@@ -1324,7 +1324,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 714
       course: Τοπολογία
@@ -1334,7 +1334,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 651
       course: Στοχαστικές Ανελίξεις
@@ -1344,7 +1344,7 @@ winter:
       level: undergraduate
       year: 3
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 859
       course: Ουρές Αναμονής
@@ -1354,7 +1354,7 @@ winter:
       level: undergraduate
       year: 4
     - day: Πέμπτη
-      start: 09:00
+      start: '09:00'
       end: '13:00'
       msc_code: ΣΕΠ16
       course: Μπεϋζιανή Στατιστική
@@ -1619,7 +1619,7 @@ winter:
       level: undergraduate
       year: 3
     - day: Παρασκευή
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 634
       course: Γεωμετρία ΙΙ
@@ -1628,7 +1628,7 @@ winter:
       - Γιαννιώτης
       level: undergraduate
     - day: Παρασκευή
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 122
       course: Γεωμετρία Ι
@@ -1638,7 +1638,7 @@ winter:
       level: undergraduate
       year: 1
     - day: Παρασκευή
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 301
       course: Απειροστικός Λογισμός ΙΙΙ
@@ -1648,7 +1648,7 @@ winter:
       level: undergraduate
       year: 2
     - day: Παρασκευή
-      start: 09:00
+      start: '09:00'
       end: '11:00'
       course_code: 421
       course: Βασική Άλγεβρα

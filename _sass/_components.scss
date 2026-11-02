@@ -225,3 +225,29 @@
 .tt-days { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 0 24px;
   .tt-day { margin-top: 10px; } .data-table { font-size: 13px; td { padding: 5px 6px; } } }
 .spec-now { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: 20px; }
+
+// ---------- Weekly timetable grid (hours x rooms per day, as on di.uoa.gr) ----------
+.ttg__bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.ttg__views, .ttg__days { display: flex; flex-wrap: wrap; gap: 6px;
+  button { font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; padding: 7px 12px; border: 1px solid var(--blue); background: #fff; color: var(--blue); cursor: pointer;
+    &[aria-pressed="true"] { background: var(--blue); color: #fff; } &:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: #fff; } }
+}
+.ttg__days { display: none; }
+.ttg--js .ttg__days { display: flex; }
+.ttg--js .ttg__dayname { display: none; }
+.ttg__dayname { font-family: var(--font-ui); font-size: 14px; text-transform: uppercase; margin: 18px 0 6px; }
+.ttg__scroll { overflow-x: auto; border: 1px solid var(--line-2); }
+.ttg table { border-collapse: collapse; font-size: 12px; line-height: 1.3; min-width: 100%; }
+.ttg th, .ttg td { border: 1px solid var(--line-2); padding: 5px 6px; vertical-align: top; }
+.ttg thead th { position: sticky; top: 0; background: var(--paper-2); font-family: var(--font-ui); font-size: 11px; text-transform: uppercase; white-space: nowrap; }
+.ttg tbody th { background: var(--paper-2); font-family: var(--font-ui); font-weight: 500; white-space: nowrap; font-size: 11px; }
+.ttg td { min-width: 9rem; height: 2.6rem; }
+.ttg__class { border-left: 4px solid var(--blue) !important;
+  strong { display: block; font-weight: 700; a { color: var(--black); &:hover { color: var(--blue); } } }
+  .ttg__meta, .ttg__who { display: block; color: var(--text-2); } .ttg__who { color: var(--text-3); } }
+$ttg-colours: (y1: #2f6fde, y2: #2e9d55, y3: #a0612a, y4: #c8372d, pg: #6b4fa8, other: #7f7f7f);
+@each $k, $c in $ttg-colours {
+  .ttg__class--#{$k} { border-left-color: $c !important; background: color-mix(in srgb, #{$c} 9%, #fff); }
+}
+.ttg__legend { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 0; margin: 10px 0 0; font-family: var(--font-ui); font-size: 12px;
+  li { padding-left: 8px; border-left: 4px solid; background: none !important; } }

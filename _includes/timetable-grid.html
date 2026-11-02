@@ -1,0 +1,52 @@
+{%- comment -%}
+  Weekly timetable as on di.uoa.gr: one table per day, hours x rooms.
+  include.grid: <semester>.timetable.grid (built by _plugins/timetable_grid.rb); include.view: pps | pms | full.
+{%- endcomment -%}
+{%- assign tg_view = include.view | default: "full" -%}
+{%- assign tg_days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
+<div class="ttg" data-ttg data-view="{{ tg_view }}">
+  <div class="ttg__bar">
+    <div class="ttg__views" role="group" aria-label="{{ t.ttg_programme }}">
+      {%- assign tg_vs = "pps,pms,full" | split: "," -%}
+      {%- for v in tg_vs %}<button type="button" data-ttg-view="{{ v }}" aria-pressed="{% if v == tg_view %}true{% else %}false{% endif %}">{{ t.ttg_views[v] }}</button>{% endfor %}
+    </div>
+    <div class="ttg__days" role="group" aria-label="{{ t.ttg_day }}">
+      {%- for d in tg_days %}<button type="button" data-ttg-day="{{ d }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ d }}</button>{% endfor %}
+    </div>
+  </div>
+  {%- for v in tg_vs %}
+  {%- for day in include.grid.views[v] %}
+  <div class="ttg__table" data-ttg-for="{{ v }}|{{ day.day }}"{% unless v == tg_view %} hidden{% endunless %}>
+    <h3 class="ttg__dayname">{{ day.day }}</h3>
+    <div class="ttg__scroll">
+      <table>
+        <thead><tr><th scope="col">{{ t.ttg_hour_room }}</th>{% for r in day.rooms %}<th scope="col">{{ r }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {%- for row in day.rows %}
+          <tr><th scope="row">{{ row.hour }}</th>
+            {%- for c in row.cells %}
+            {%- if c == "skip" %}{% continue %}{% endif -%}
+            {%- if c %}{% assign s = c.slot %}
+            {%- if s.level contains "postgraduate" and s.year == nil %}{% assign yc = "pg" %}{% elsif s.year %}{% assign yc = s.year | prepend: "y" %}{% else %}{% assign yc = "other" %}{% endif -%}
+            <td rowspan="{{ c.span }}" class="ttg__class ttg__class--{{ yc }}">
+              {%- assign ck = s.course_code | append: "" %}{% assign cd = site.data.course_by_code[ck] -%}
+              <strong>{% if cd %}{% assign ct = cd.i18n[lang] | default: cd %}<a href="{{ ct.url | relative_url }}">{{ s.course }}</a>{% else %}{{ s.course }}{% endif %}</strong>
+              <span class="ttg__meta">{% if s.year %}{{ s.year }}{% if lang == "el" %}ο έτος{% else %} yr{% endif %}{% endif %}{% if s.msc_code %}{% if s.year %} · {% endif %}{{ s.msc_code }}{% endif %}{% if s.group %} · {{ s.group }}{% endif %}</span>
+              {%- if s.instructors.size > 0 %}<span class="ttg__who">{{ s.instructors | join: ", " }}</span>{% endif %}
+              {%- if s.notes %}<span class="ttg__meta">{{ s.notes }}</span>{% endif %}
+            </td>
+            {%- else %}<td></td>{% endif -%}
+            {%- endfor %}
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {%- endfor %}
+  {%- endfor %}
+  <ul class="ttg__legend">
+    {%- for y in (1..4) %}<li class="ttg__class--y{{ y }}">{{ y }}{% if lang == "el" %}ο έτος{% else %} year{% endif %}</li>{% endfor %}
+    <li class="ttg__class--pg">{{ t.tt_msc }}</li>
+  </ul>
+</div>

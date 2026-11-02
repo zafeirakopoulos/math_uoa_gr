@@ -159,6 +159,13 @@ t:
   msc_exams_sept: MSc exams, September 2026
   msc_core_short: C
   msc_elective_short: E
+  ttg_programme: Programme
+  ttg_day: Day
+  ttg_hour_room: Time / Room
+  ttg_views:
+    pps: Undergraduate
+    pms: Graduate
+    full: Full
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

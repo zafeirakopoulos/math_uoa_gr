@@ -42,6 +42,27 @@
     });
   }
 
+  // Weekly timetable grids (hours x rooms per day): programme view + day tabs
+  document.querySelectorAll("[data-ttg]").forEach((g) => {
+    const days = ["Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή"];
+    const wd = new Date().getDay();                       // 0 = Sunday
+    let day = days[wd >= 1 && wd <= 5 ? wd - 1 : 0];
+    let view = g.dataset.view;
+    const show = () => {
+      g.querySelectorAll("[data-ttg-for]").forEach((t) => { t.hidden = t.dataset.ttgFor !== `${view}|${day}`; });
+      g.querySelectorAll("[data-ttg-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.ttgView === view)));
+      g.querySelectorAll("[data-ttg-day]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.ttgDay === day)));
+    };
+    g.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.dataset.ttgView) view = b.dataset.ttgView;
+      if (b.dataset.ttgDay) day = b.dataset.ttgDay;
+      show();
+    });
+    g.classList.add("ttg--js");
+    show();
+  });
+
   // Obfuscated e-mail addresses
   document.querySelectorAll(".js-email").forEach((a) => {
     const addr = `${a.dataset.u}@${a.dataset.d}`;

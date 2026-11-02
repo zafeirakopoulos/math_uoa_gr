@@ -159,6 +159,13 @@ t:
   msc_exams_sept: Εξετάσεις ΠΜΣ Σεπτεμβρίου 2026
   msc_core_short: Κ
   msc_elective_short: Ε
+  ttg_programme: Πρόγραμμα
+  ttg_day: Ημέρα
+  ttg_hour_room: Ώρα / Αίθουσα
+  ttg_views:
+    pps: Προπτυχιακό
+    pms: Μεταπτυχιακό
+    full: Πλήρες
   phd_count: διδακτορικές διατριβές
   phd_note: Οι σύνδεσμοι οδηγούν στο Εθνικό Αρχείο Διδακτορικών Διατριβών.
   term: Θητεία

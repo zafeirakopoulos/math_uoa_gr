@@ -103,34 +103,12 @@
 </section>
 {%- endif %}
 
-{%- if tt %}
-<details class="fold ug-block" id="orologio">
-  <summary><h2>{{ t.tt_semester[cur] }} {{ site.academic_year }}</h2></summary>
-  {%- if tt.note %}<p class="muted">{{ tt.note }}</p>{% endif %}
-  <div class="programme__filter" data-tt-filter role="group" aria-label="{{ t.tt_year }}">
-    <button type="button" aria-pressed="true" data-year="">{{ t.tt_all_years }}</button>
-    {%- for y in (1..4) %}<button type="button" aria-pressed="false" data-year="{{ y }}">{% if lang == "el" %}{{ y }}ο έτος{% else %}Year {{ y }}{% endif %}</button>{% endfor %}
-    <button type="button" aria-pressed="false" data-year="msc">{{ t.tt_msc }}</button>
-  </div>
-  <div class="tt-days">
-    {%- for day in days %}
-    {%- assign ds = tt.slots | where: "day", day | sort: "start" -%}
-    <section>
-      <h3 class="tt-day">{{ day }}</h3>
-      <table class="data-table tt">
-        <tbody>
-        {%- for s in ds %}
-          <tr data-year="{% if s.level == 'postgraduate' %}msc{% else %}{{ s.year }}{% endif %}">
-            <td class="nowrap">{{ s.start }}–{{ s.end }}</td>
-            <td>{% include ug/course-link.html code=s.course_code title=s.course %}{% if s.msc_code %} <span class="badge badge--muted">{{ s.msc_code }}</span>{% endif %}<small>{{ s.room }}{% if s.instructors.size > 0 %} · {{ s.instructors | join: ", " }}{% endif %}{% if s.group %} · {{ s.group }}{% endif %}{% if s.notes %} · {{ s.notes }}{% endif %}</small></td>
-          </tr>
-        {%- endfor %}
-        </tbody>
-      </table>
-    </section>
-    {%- endfor %}
-  </div>
-</details>
+{%- if tt.grid %}
+<section class="ug-block" id="orologio">
+  <div class="section-title"><h2>{{ t.tt_semester[cur] }} {{ site.academic_year }}</h2></div>
+  {%- if tt.note %}<p class="programme__note">{{ tt.note }}</p>{% endif %}
+  {% include timetable-grid.html grid=tt.grid view="pps" %}
+</section>
 {%- endif %}
 
 {%- if asg_next %}
