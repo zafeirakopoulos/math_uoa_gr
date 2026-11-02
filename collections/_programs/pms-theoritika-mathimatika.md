@@ -1,6 +1,6 @@
 ---
 key: pms-theoritika-mathimatika
-section: spoudes
+section: metaptychiakes
 parent_program: pms-mathimatika
 el:
   title: ΠΜΣ Μαθηματικά — Θεωρητικά Μαθηματικά

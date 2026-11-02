@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Μαθήματα άλλων τμημάτων 2018-19
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/mathimata_allon_tmimaton_2018_19

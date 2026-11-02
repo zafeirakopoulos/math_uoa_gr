@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: metaptychiakes
 el:
   title: Ανακοινώσεις μεταπτυχιακών (εκτός Τμήματος)
   legacy_url: /metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos

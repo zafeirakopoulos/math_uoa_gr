@@ -1,0 +1,56 @@
+{%- comment -%}
+  Undergraduate hub: key facts, every link grouped by task (one click), and the suggested
+  programme per semester built from the courses collection (course pages are the second click).
+{%- endcomment -%}
+{%- include lang.html -%}
+{%- if page.facts %}
+<ul class="facts-row">
+  {%- for f in page.facts %}<li><strong>{{ f.value }}</strong> {{ f.label }}</li>{% endfor %}
+</ul>
+{%- endif %}
+
+<div class="link-groups">
+  {%- for g in page.groups %}
+  <section class="link-group">
+    <h2>{{ g.title }}</h2>
+    <ul>
+      {%- for l in g.links %}<li><a href="{{ l.url | relative_url }}">{{ l.title }}</a>{% if l.pdf %} <span class="ext">pdf</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+</div>
+
+{%- assign courses = site.courses | where_exp: "c", "c.semester" -%}
+{%- if courses.size > 0 %}
+<section class="programme" id="programma">
+  <div class="section-title"><h2>{{ t.suggested_programme }}</h2></div>
+  <p class="programme__note">{{ t.suggested_programme_note }}</p>
+  {%- assign tags = site.data.course_tags -%}
+  <div class="programme__filter" data-programme-filter role="group" aria-label="{{ t.concentration }}">
+    <button type="button" aria-pressed="true" data-tag="">{{ t.all_courses }}</button>
+    {%- for k in "kthm,kem,ksee,kme" | split: "," %}{% if tags[k] %}<button type="button" aria-pressed="false" data-tag="{{ k }}">{{ tags[k][lang].long | default: tags[k].el.long }}</button>{% endif %}{% endfor %}
+  </div>
+  <div class="semesters">
+    {%- for n in (1..8) %}
+    {%- assign sem = courses | where: "semester", n | sort: "order" -%}
+    {%- if sem.size > 0 %}
+    <section class="semester">
+      <h3>{% if lang == "el" %}{{ n }}ο εξάμηνο{% else %}Semester {{ n }}{% endif %}</h3>
+      <ul>
+        {%- for c in sem %}{% include tr.html doc=c %}
+        <li class="course{% if c.required %} course--required{% endif %}" data-tags="{{ c.tags | join: ' ' }}{% if c.required %} required{% endif %}">
+          <span class="course__code">{{ c.code }}</span>
+          <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
+          <span class="course__tags">
+            {%- if c.required %}<abbr title="{{ tags.required[lang].long }}">{{ tags.required[lang].short }}</abbr>{% endif -%}
+            {%- for k in c.tags %}{% if tags[k] %}<abbr title="{{ tags[k][lang].long }}">{{ tags[k][lang].short }}</abbr>{% endif %}{% endfor -%}
+          </span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}

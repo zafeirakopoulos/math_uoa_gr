@@ -1,0 +1,15 @@
+{%- include lang.html -%}
+{%- assign tags = site.data.course_tags -%}
+{%- assign cats = "compulsory,theoretical,applied,statistics,education,physics,informatics,economics,pedagogy,professional" | split: "," -%}
+{%- for cat in cats %}
+{%- assign in_cat = site.courses | where: "category", cat | sort: "code" -%}
+{%- if in_cat.size > 0 %}
+<h2>{{ t.course_categories[cat] | default: cat }}</h2>
+<ul class="course-list">
+  {%- for c in in_cat %}{% include tr.html doc=c %}
+  <li><span class="course__code">{{ c.code }}</span> <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
+    {%- if c.semester %} <span class="muted">· {% if lang == "el" %}{{ c.semester }}ο εξάμ.{% else %}sem. {{ c.semester }}{% endif %}</span>{% endif %}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- endfor %}

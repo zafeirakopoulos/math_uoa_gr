@@ -1,17 +1,32 @@
 (() => {
-  // MENU button → mega menu panel (uoa.gr pattern)
+  // Primary navigation: always visible on wide screens, toggled by the menu button on small ones
   const toggle = document.querySelector("[data-menu-toggle]");
-  const panel = document.getElementById("megamenu");
-  if (toggle && panel) {
+  const nav = document.getElementById("primary-nav");
+  if (toggle && nav) {
     const label = toggle.querySelector("[data-menu-label]");
     const setOpen = (open) => {
-      panel.hidden = !open;
+      nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
       if (label) label.textContent = open ? label.dataset.close : label.dataset.open;
     };
-    toggle.addEventListener("click", () => setOpen(panel.hidden));
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) { setOpen(false); toggle.focus(); } });
-    document.addEventListener("click", (e) => { if (!panel.hidden && !panel.contains(e.target) && !toggle.contains(e.target)) setOpen(false); });
+    toggle.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && nav.classList.contains("is-open")) { setOpen(false); toggle.focus(); } });
+  }
+
+  // Suggested programme: highlight the courses of one concentration
+  const pf = document.querySelector("[data-programme-filter]");
+  if (pf) {
+    const buttons = [...pf.querySelectorAll("button")];
+    const items = [...document.querySelectorAll(".semesters .course")];
+    pf.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      buttons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      const tag = b.dataset.tag;
+      items.forEach((li) => {
+        const t = li.dataset.tags.split(" ");
+        li.classList.toggle("is-dim", !!tag && !t.includes(tag) && !t.includes("required"));
+      });
+    });
   }
 
   // Obfuscated e-mail addresses

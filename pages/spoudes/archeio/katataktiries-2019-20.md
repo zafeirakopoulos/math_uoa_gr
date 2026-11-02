@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Κατατακτήριες Εξετάσεις 2019 - 2020
   legacy_url: /katataktiries_exetaseis

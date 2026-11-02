@@ -1,0 +1,30 @@
+{%- comment -%}
+  Left-hand news box. Shows the latest news for the audience of the current section
+  (news front matter `audience: [research|undergrad|grad]`); general pages show all news.
+{%- endcomment -%}
+{%- case page.section -%}
+  {%- when "ereuna" -%}{%- assign nb_aud = "research" -%}
+  {%- when "proptychiakes" -%}{%- assign nb_aud = "undergrad" -%}
+  {%- when "metaptychiakes" -%}{%- assign nb_aud = "grad" -%}
+  {%- else -%}{%- assign nb_aud = nil -%}
+{%- endcase -%}
+{%- if lang == "el" %}{% assign nb_news = site.news | where: "lang", "el" %}{% else %}{% assign nb_news = site.news %}{% endif -%}
+{%- if nb_aud %}{% assign nb_news = nb_news | where_exp: "n", "n.audience contains nb_aud" %}{% endif -%}
+{%- assign nb_news = nb_news | sort: "date" | reverse -%}
+{%- assign nb_limit = include.limit | default: 6 -%}
+<aside class="newsbox" aria-labelledby="newsbox-title">
+  <h2 id="newsbox-title">{% if nb_aud %}{{ t.news_for[nb_aud] }}{% else %}{{ t.news }}{% endif %}</h2>
+  {%- if nb_news.size > 0 %}
+  <ul>
+    {%- for n0 in nb_news limit: nb_limit %}{% include tr.html doc=n0 %}
+    <li>
+      <time datetime="{{ n0.date | date: '%Y-%m-%d' }}">{{ n0.date | date: "%d/%m/%Y" }}</time>
+      <a href="{{ tr.url | relative_url }}"{% unless n0.langs contains lang %} lang="{{ n0.lang }}"{% endunless %}>{{ tr.title | truncate: 110 }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p>{{ t.no_news }}</p>
+  {%- endif %}
+  <a class="more-link" href="{{ L.news_url | relative_url }}{% if nb_aud %}#{{ nb_aud }}{% endif %}">{{ t.all_news }}</a>
+</aside>

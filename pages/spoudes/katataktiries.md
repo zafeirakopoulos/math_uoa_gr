@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 5
+section: proptychiakes
+nav_order: 3
 el:
   title: Κατατακτήριες Εξετάσεις 2026-27
   nav_title: Κατατακτήριες εξετάσεις

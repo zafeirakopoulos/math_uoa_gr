@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Κατατακτήριες Εξετάσεις 2020 - 2021
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2020_21/katataktiries_exetaseis_2020_2021

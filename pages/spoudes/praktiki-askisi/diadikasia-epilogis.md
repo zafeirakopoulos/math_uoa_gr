@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: 'Πρακτική άσκηση: διαδικασία επιλογής'
   legacy_url: /praktiki_askisi_foititon/diadikasia_epilogis

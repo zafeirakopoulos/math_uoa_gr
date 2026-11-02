@@ -2,6 +2,8 @@
 date: '2026-08-24'
 categories:
 - genikes
+audience:
+- undergrad
 el:
   title: Πρόσκληση συμμετοχής στον Διεθνή Μαθηματικό Διαγωνισμό Simon Marais (SMMC 2026)
   summary: Το Σάββατο 10 Οκτωβρίου θα πραγματοποιηθεί δια ζώσης στο Τμήμα Μαθηματικών ο Διεθνής Μαθηματικός Διαγωνισμός Simon Marais (Simon Marais Mathematics Competition – SMMC), ο οποίος απευθύνεται σε προπτυχιακούς φοιτητές. Ο δ

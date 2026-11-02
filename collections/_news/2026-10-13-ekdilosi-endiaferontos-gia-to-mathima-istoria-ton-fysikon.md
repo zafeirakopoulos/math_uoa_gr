@@ -2,6 +2,8 @@
 date: '2026-10-13'
 categories:
 - genikes
+audience:
+- undergrad
 el:
   title: Εκδήλωση ενδιαφέροντος για το μάθημα Ιστορία των Φυσικών Επιστημών του Τμήματος Ι.Φ.Ε. ΕΚΠΑ
   summary: 'Εκδήλωση ενδιαφέροντος για το μάθημα Ιστορία των Φυσικών Επιστημών του Τμήματος Ι.Φ.Ε. ΕΚΠΑ έως 28 Οκτωβρίου 2026 https :// docs . google . com / forms / d / e /1 FAIpQLSdyiLLI -7 hETKExLX 1 aVJjlikwdRW _ anFHs _ zCZ 15 '

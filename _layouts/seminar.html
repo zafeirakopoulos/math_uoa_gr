@@ -8,6 +8,7 @@ layout: default
 {% include page-head.html parent_url=seminars_page.url parent_title=t.seminars kicker=t.seminar %}
 <div class="container">
   <div class="layout">
+    {%- unless page.newsbox == false %}{% include news-box.html %}{% endunless %}
     <div class="main">
       {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
       <div class="prose">{{ content }}</div>

@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Κατατακτήριες Εξετάσεις 2021 - 2022
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2021_22/katataktiries_exetaseis_2021_2022

@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Πανεπιστημιακό Έτος 2019-20
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2019_20

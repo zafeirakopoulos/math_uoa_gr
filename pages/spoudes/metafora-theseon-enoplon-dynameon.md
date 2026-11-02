@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Μεταφορά θέσεων φοίτησης στελεχών Ενόπλων Δυνάμεων και Σωμάτων Ασφαλείας
   legacy_url: /proptychiakes_spoydes/metafora_theseon_foitisis_stelechon_enoplon_dynameon_kai_somaton_asfaleias

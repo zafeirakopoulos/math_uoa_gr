@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 4
+section: proptychiakes
+nav_order: 2
 el:
   title: Εγγραφές πρωτοετών φοιτητών
   nav_title: Εγγραφές πρωτοετών

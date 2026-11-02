@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 8
+section: proptychiakes
+nav_order: 6
 el:
   title: Πρακτική άσκηση φοιτητών
   nav_title: Πρακτική άσκηση

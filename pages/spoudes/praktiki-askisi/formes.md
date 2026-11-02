@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: 'Πρακτική άσκηση: φόρμες'
   legacy_url: /praktiki_askisi_foititon/formes_praktikis_askisis

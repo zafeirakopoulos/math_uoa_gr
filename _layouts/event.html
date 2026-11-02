@@ -10,6 +10,7 @@ layout: default
 {% include page-head.html parent_url=parent parent_title=parent_t kicker=kicker %}
 <div class="container">
   <div class="layout">
+    {%- unless page.newsbox == false %}{% include news-box.html %}{% endunless %}
     <div class="main">
       {%- if base.speaker %}<p class="lede">{{ base.speaker }}{% if base.affiliation %}, <span class="muted">{{ base.affiliation }}</span>{% endif %}</p>{% endif %}
       <article class="prose">

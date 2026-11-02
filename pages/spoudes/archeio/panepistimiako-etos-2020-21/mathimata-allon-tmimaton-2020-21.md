@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Μαθήματα άλλων τμημάτων 2020-21
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2020_21/mathimata_allon_tmimaton_2020_21

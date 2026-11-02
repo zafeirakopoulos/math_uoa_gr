@@ -2,6 +2,8 @@
 date: '2026-01-01'
 categories:
 - ekdiloseis
+audience:
+- research
 en:
   title: Caratheodory Workshop - First Announcement
   summary: Scientific Workshop "Constantin Carathéodory's scientific work and its impact on Mathematics and Physics" The Department of Mathematics of the National and Kapodistrian University of Athens is organizing a workshop dedic

@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 6
+section: proptychiakes
+nav_order: 4
 el:
   title: Μερική φοίτηση
   legacy_url: /proptychiakes_spoydes/meriki_foitisi

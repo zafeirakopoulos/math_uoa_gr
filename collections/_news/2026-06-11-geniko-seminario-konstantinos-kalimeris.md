@@ -2,6 +2,8 @@
 date: '2026-06-11'
 categories:
 - ekdiloseis
+audience:
+- research
 el:
   title: ΓΕΝΙΚΟ ΣΕΜΙΝΑΡΙΟ - Κωνσταντίνος Καλημέρης
   summary: 'ΓΕΝΙΚΟ ΣΕΜΙΝΑΡΙΟ Ημερομηνία: Πέμπτη 11/06/2026 Ώρα: 13:00 - 14:00 Αίθουσα: Γ31 Ομιλητής: Κωνσταντίνος Καλημέρης (Ακαδημία Αθηνών) ( ) Title: Evolution Equations: A new perspective on direct and inverse problems Abstract:'

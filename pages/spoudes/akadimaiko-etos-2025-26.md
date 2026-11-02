@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Πανεπιστημιακό Έτος 2025-26
   legacy_url: /proptychiakes_spoydes_2

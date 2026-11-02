@@ -1,6 +1,7 @@
 ---
+nav_order: 1
 key: pms-mathimatika
-section: spoudes
+section: metaptychiakes
 parent_program: metaptychiakes
 el:
   title: ΠΜΣ «Μαθηματικά»

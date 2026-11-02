@@ -5,6 +5,7 @@ layout: default
 {% include page-head.html parent_url=page.parent_url parent_title=page.parent_title %}
 <div class="container">
   <div class="layout{% if page.sidebar == false %} layout--full{% endif %}">
+    {%- unless page.newsbox == false %}{% include news-box.html %}{% endunless %}
     <div class="main">
       {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
       <div class="{% if page.wide %}wide{% else %}prose{% endif %}">

@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Κατατακτήριες Εξετάσεις 2025-26
   legacy_url: /proptychiakes_spoydes/katataktiries_exetaseis_2024_25_2

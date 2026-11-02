@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 el:
   title: Μαθήματα Άλλων Τμημάτων 2023-24
   legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2023_24/mathimata_allon_tmimaton_2023_24

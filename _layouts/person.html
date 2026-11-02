@@ -10,6 +10,7 @@ layout: default
 {% include page-head.html parent_url=group.url parent_title=group.title kicker=rank_label %}
 <div class="container">
   <div class="layout">
+    {%- unless page.newsbox == false %}{% include news-box.html %}{% endunless %}
     <div class="main">
       {%- assign interests = page.interests -%}
       {%- assign duties = page.duties -%}

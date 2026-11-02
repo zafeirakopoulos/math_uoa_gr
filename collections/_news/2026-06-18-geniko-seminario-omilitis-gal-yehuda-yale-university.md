@@ -2,6 +2,8 @@
 date: '2026-06-18'
 categories:
 - genikes
+audience:
+- research
 el:
   title: 'ΓΕΝΙΚΟ ΣΕΜΙΝΑΡΙΟ Ομιλητής: Gal Yehuda (Yale University)'
   summary: 'ΓΕΝΙΚΟ ΣΕΜΙΝΑΡΙΟ Ημερομηνία: Πέμπτη 25/06/2026 Ώρα: 13:00 - 14:00 Αίθουσα: Γ31 Ομιλητής: Gal Yehuda (Yale University) ( ) Title: Expansion in hyperbolic groups Abstract: In this talk I''ll discuss recent results about gro'

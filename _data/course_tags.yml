@@ -1,0 +1,70 @@
+kthm:
+  el:
+    short: ΚΘΜ
+    long: Κατεύθυνση Θεωρητικών Μαθηματικών
+  en:
+    short: TM
+    long: Theoretical Mathematics concentration
+kem:
+  el:
+    short: ΚΕΥΜ
+    long: Κατεύθυνση Εφαρμοσμένων και Υπολογιστικών Μαθηματικών
+  en:
+    short: ACM
+    long: Applied and Computational Mathematics concentration
+ksee:
+  el:
+    short: ΚΣΕΕ
+    long: Κατεύθυνση Στατιστικής και Επιχειρησιακής Έρευνας
+  en:
+    short: SOR
+    long: Statistics and Operations Research concentration
+kme:
+  el:
+    short: ΚΜΕ
+    long: Κατεύθυνση Μαθηματικής Εκπαίδευσης
+  en:
+    short: ME
+    long: Mathematics Education concentration
+df:
+  el:
+    short: ΔΦ
+    long: Δέσμη Φυσικής
+  en:
+    short: PHY
+    long: Physics bundle
+dpt:
+  el:
+    short: ΔΠΤ
+    long: Δέσμη Πληροφορικής και Τηλεπικοινωνιών
+  en:
+    short: IT
+    long: Informatics and Telecommunications bundle
+doe:
+  el:
+    short: ΔΟΕ
+    long: Δέσμη Οικονομικών Επιστημών
+  en:
+    short: ECO
+    long: Economics bundle
+dpps:
+  el:
+    short: ΔΠΨ
+    long: Δέσμη Παιδαγωγικών και Ψυχολογίας
+  en:
+    short: PP
+    long: Pedagogy and Psychology bundle
+epe:
+  el:
+    short: ΕΠΕ
+    long: Μαθήματα για απόκτηση επαγγελματικής εμπειρίας
+  en:
+    short: PE
+    long: Professional experience
+required:
+  el:
+    short: Υ
+    long: Υποχρεωτικό
+  en:
+    short: C
+    long: Compulsory

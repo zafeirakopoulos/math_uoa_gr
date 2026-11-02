@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 12
+section: proptychiakes
+nav_order: 10
 el:
   title: Αρχείο προηγούμενων ετών
   nav_title: Αρχείο ετών

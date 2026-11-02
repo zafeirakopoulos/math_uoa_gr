@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign tags = site.data.course_tags -%}
+{%- assign courses_page = navable | where: "nav_key", "courses" | first -%}
+{% include page-head.html parent_url=courses_page.url parent_title=courses_page.title kicker=base.code %}
+<div class="container">
+  <div class="layout">
+    {%- include news-box.html %}
+    <div class="main">
+      <dl class="course-facts">
+        {%- if base.semester %}<dt>{{ t.suggested_programme }}</dt><dd>{% if lang == "el" %}{{ base.semester }}ο εξάμηνο{% else %}Semester {{ base.semester }}{% endif %}</dd>{% endif %}
+        <dt>{{ t.concentration }}</dt>
+        <dd>
+          {%- if base.required %}{{ tags.required[lang].long }}{% if base.tags.size > 0 %}; {% endif %}{% endif -%}
+          {%- for k in base.tags %}{{ tags[k][lang].long | default: k }}{% unless forloop.last %}; {% endunless %}{% endfor -%}
+        </dd>
+        {%- if base.offered %}<dt>{{ t.offered }}</dt><dd>{% for s in base.offered %}{{ t[s] }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>{% endif %}
+        {%- if page.prerequisites %}<dt>{{ t.prerequisites }}</dt><dd lang="el">{{ page.prerequisites }}</dd>{% endif %}
+      </dl>
+      <div class="prose"{% unless page.langs contains lang %} lang="el"{% endunless %}>{{ content }}</div>
+    </div>
+    {% include sidebar.html parent_url=courses_page.url %}
+  </div>
+</div>

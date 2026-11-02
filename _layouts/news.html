@@ -6,6 +6,7 @@ layout: default
 {% include page-head.html parent_url=L.news_url parent_title=t.news kicker=when %}
 <div class="container">
   <div class="layout">
+    {%- unless page.newsbox == false %}{% include news-box.html %}{% endunless %}
     <div class="main">
       {%- if page.categories.size > 0 %}
       <p class="meta">{% for key in page.categories %}{% assign cat0 = site.news_categories | where: "key", key | first %}{% include tr.html doc=cat0 %}{% assign cat = tr %}{% if cat %}<a class="tag" href="{{ cat.url | relative_url }}">{{ cat.title }}</a> {% endif %}{% endfor %}</p>

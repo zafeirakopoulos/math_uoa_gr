@@ -2,6 +2,8 @@
 date: '2022-10-04'
 categories:
 - genikes
+audience:
+- research
 en:
   title: Functional Analysis and Operator Algebras - Seminar 2022-23
   summary: Functional Analysis and Operator Algebras in Athens, 2022-23 The seminar is open to all interested persons. It is addressed mainly to postgraduate and advanced undergraduate students and researchers. Anybody interested i

@@ -1,7 +1,7 @@
 ---
 key: all
 section_root: true
-nav_order: 5
+nav_order: 6
 permalink: /anakoinoseis/
 el:
   title: Ανακοινώσεις

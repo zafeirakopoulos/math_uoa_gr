@@ -42,6 +42,10 @@ t:
   access_link: How to get to the Department
   rss: News RSS feed
   news: News
+  news_for:
+    research: Research news
+    undergrad: Undergraduate news
+    grad: Graduate news
   all_news: All news
   events: Events
   all_events: All events
@@ -81,6 +85,33 @@ t:
   supervisor_m: Supervisor
   supervisor_f: Supervisor
   supervisors: Supervisors
+  suggested_programme: Suggested programme of study
+  suggested_programme_note: The recommended order of courses by semester. Compulsory courses are in bold; choose a concentration to highlight the courses in its catalogue. Course titles and descriptions are in Greek.
+  concentration: Concentration
+  all_courses: All courses
+  courses: Courses
+  course_code: Code
+  offered: Offered in 2026-27
+  winter: Winter
+  spring: Spring
+  prerequisites: Prerequisites
+  course_categories:
+    compulsory: Compulsory courses
+    theoretical: Theoretical Mathematics concentration
+    applied: Applied and Computational Mathematics concentration
+    statistics: Statistics and Operations Research concentration
+    education: Mathematics Education concentration
+    physics: Physics bundle
+    informatics: Informatics and Telecommunications bundle
+    economics: Economics bundle
+    pedagogy: Pedagogy and Psychology bundle
+    professional: Courses for professional experience
+  home_research: Research in the Department
+  home_studies: Studies
+  home_stat_sectors: sectors
+  home_stat_seminars: research seminars
+  home_stat_phds: PhD theses
+  all_seminars: All seminars
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

@@ -33,24 +33,26 @@
       <span class="brand__divider" aria-hidden="true"></span>
       <span class="brand__dept">{{ L.site_title }}<small>{{ L.school }}</small></span>
     </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="megamenu" data-menu-toggle>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
       <span class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
       <span data-menu-label data-open="{{ t.menu }}" data-close="{{ t.close }}">{{ t.menu }}</span>
     </button>
   </div>
-  <nav class="megamenu" id="megamenu" aria-label="{{ t.menu }}" hidden>
+  <nav class="primary-nav" id="primary-nav" aria-label="{{ t.menu }}">
     <div class="container">
-      {%- for root in roots %}
-      {%- assign children = navable | where: "section", root.section | where_exp: "p", "p.section_root != true" | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
-      <div>
-        <h2><a href="{{ root.url | relative_url }}">{{ root.nav_title | default: root.title }}</a></h2>
-        {%- if children.size > 0 %}
-        <ul>
-          {%- for c in children %}<li><a href="{{ c.url | relative_url }}">{{ c.nav_title | default: c.title }}</a></li>{% endfor %}
-        </ul>
-        {%- endif %}
-      </div>
-      {%- endfor %}
+      <ul class="primary-nav__list">
+        {%- for root in roots %}
+        {%- assign children = navable | where: "section", root.section | where_exp: "p", "p.section_root != true" | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+        <li{% if children.size > 0 %} class="has-sub"{% endif %}>
+          <a href="{{ root.url | relative_url }}"{% if page.section == root.section %} aria-current="true"{% endif %}>{{ root.nav_title | default: root.title }}</a>
+          {%- if children.size > 0 %}
+          <ul class="primary-nav__sub">
+            {%- for c in children %}<li><a href="{{ c.url | relative_url }}">{{ c.nav_title | default: c.title }}</a></li>{% endfor %}
+          </ul>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
     </div>
   </nav>
 </header>

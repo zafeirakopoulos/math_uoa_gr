@@ -1,7 +1,8 @@
 ---
+section_root: true
 key: metaptychiakes
-section: spoudes
-nav_order: 2
+section: metaptychiakes
+nav_order: 3
 el:
   title: Μεταπτυχιακές σπουδές
   legacy_url: /metaptychiakes_spoydes

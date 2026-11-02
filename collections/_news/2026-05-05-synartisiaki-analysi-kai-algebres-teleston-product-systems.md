@@ -2,6 +2,8 @@
 date: '2026-05-05'
 categories:
 - ekdiloseis
+audience:
+- research
 el:
   title: Συναρτησιακή Ανάλυση και Άλγεβρες Τελεστών - Product Systems and their Operator Algebras V
   summary: 'Πρόγραμμα: Κάθε Τρίτη, 15:00-17:00 στην Αίθουσα Γ31 4η συνάντηση: Τρίτη 5 Μαΐου 2026 Oμιλητής: Ευγένιος Κακαριάδης (ΕΚΠΑ) Τίτλος: Product Systems and their Operator Algebras VI Περίληψη: Product systems provide a common '

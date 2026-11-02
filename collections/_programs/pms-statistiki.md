@@ -1,6 +1,6 @@
 ---
 key: pms-statistiki
-section: spoudes
+section: metaptychiakes
 parent_program: pms-mathimatika
 el:
   title: ΠΜΣ Μαθηματικά — Στατιστική και Επιχειρησιακή Έρευνα

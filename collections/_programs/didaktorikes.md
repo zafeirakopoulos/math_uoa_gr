@@ -1,7 +1,7 @@
 ---
 key: didaktorikes
-section: spoudes
-nav_order: 3
+section: metaptychiakes
+nav_order: 2
 el:
   title: Διδακτορικές σπουδές
   legacy_url: /didaktorikes_spoydes

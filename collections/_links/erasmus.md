@@ -1,5 +1,5 @@
 ---
-url_external: http://www.interel.uoa.gr/erasmus.html
+url_external: https://www.interel.uoa.gr/
 placement:
 - home
 - footer

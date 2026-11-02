@@ -70,6 +70,11 @@ collections:
     permalink_en: /en/studies/:name/
   theses:
     output: false
+  courses:            # one file per undergraduate course (from the study guide)
+    output: true
+    always_en: true
+    permalink: /spoudes/proptychiakes/mathimata/:name/
+    permalink_en: /en/studies/undergraduate/courses/:name/
   msc_theses:         # one file per master's thesis; listed on /spoudes/metaptychiakes/diplomatikes/<program>/
     output: false
   chairs:
@@ -104,11 +109,13 @@ defaults:
   - scope: { type: seminars }
     values: { layout: seminar, section: ereuna }
   - scope: { type: labs }
-    values: { layout: page, section: to-tmima, parent_url: /ergastiria/, parent_title: Εργαστήρια }
+    values: { layout: page, section: ereuna, parent_url: /ergastiria/, parent_title: Εργαστήρια }
   - scope: { type: awards }
     values: { layout: page, section: to-tmima, parent_url: /diakriseis/, parent_title: Διακρίσεις }
   - scope: { type: programs }
-    values: { layout: page, section: spoudes }
+    values: { layout: page, section: proptychiakes }
+  - scope: { type: courses }
+    values: { layout: course, section: proptychiakes, parent_url: /spoudes/proptychiakes/mathimata/ }
   - scope: { type: news_categories }
     values: { layout: news-category, section: nea }
   - scope: { type: staff_groups }

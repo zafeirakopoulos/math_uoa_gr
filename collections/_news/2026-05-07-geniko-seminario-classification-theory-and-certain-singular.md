@@ -2,6 +2,8 @@
 date: '2026-05-07'
 categories:
 - ekdiloseis
+audience:
+- research
 el:
   title: ΓΕΝΙΚΟ ΣΕΜΙΝΑΡΙΟ - Classification theory and certain singular Calabi-Yau varieties
   summary: 'Ημερομηνία: Πέμπτη 7/4/2026 Ώρα: 13:00 - 14:00 Αίθουσα: Γ31 Ομιλητής: Nikolaos Tsakanikas (EPFL) Title: Classification theory and certain singular Calabi-Yau varieties Abstract: The Minimal Model Program (MMP) plays a fu'

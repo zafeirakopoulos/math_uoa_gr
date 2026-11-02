@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: metaptychiakes
 el:
   title: Προκήρυξη ΠΜΣ 2022-23
   legacy_url: /metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos/pms_mathimatika/prokiryxi_pms_2022_23

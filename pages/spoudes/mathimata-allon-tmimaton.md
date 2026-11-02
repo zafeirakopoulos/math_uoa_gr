@@ -1,6 +1,6 @@
 ---
-section: spoudes
-nav_order: 7
+section: proptychiakes
+nav_order: 5
 el:
   title: Μαθήματα Άλλων Τμημάτων 2025-26
   nav_title: Μαθήματα άλλων Τμημάτων
