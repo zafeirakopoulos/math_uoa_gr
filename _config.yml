@@ -75,6 +75,11 @@ collections:
     always_en: true
     permalink: /spoudes/proptychiakes/mathimata/:name/
     permalink_en: /en/studies/undergraduate/courses/:name/
+  msc_courses:        # one file per course of the MSc «Μαθηματικά» (from the course catalogues)
+    output: true
+    always_en: true
+    permalink: /spoudes/metaptychiakes/mathimata/:name/
+    permalink_en: /en/studies/graduate/courses/:name/
   msc_theses:         # one file per master's thesis; listed on /spoudes/metaptychiakes/diplomatikes/<program>/
     output: false
   chairs:
@@ -116,6 +121,8 @@ defaults:
     values: { layout: page, section: proptychiakes }
   - scope: { type: courses }
     values: { layout: course, section: proptychiakes, parent_url: /spoudes/proptychiakes/mathimata/ }
+  - scope: { type: msc_courses }
+    values: { layout: msc-course, section: metaptychiakes, parent_url: /spoudes/metaptychiakes/ }
   - scope: { type: news_categories }
     values: { layout: news-category, section: nea }
   - scope: { type: staff_groups }

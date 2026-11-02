@@ -112,6 +112,16 @@ t:
   home_stat_seminars: research seminars
   home_stat_phds: PhD theses
   all_seminars: All seminars
+  msc_programme_title: Specialisations of the MSc in Mathematics
+  msc_programme_note: Each specialisation requires 9 courses (10 ECTS each) and a thesis (30 ECTS), 120 ECTS over 4 semesters. Courses taught in 2026-27 are marked with their semester. Course titles and descriptions are in Greek.
+  msc_specialisation: Specialisation
+  msc_required_core: Required
+  msc_semester: Semester
+  msc_thesis: Master's thesis
+  msc_theses_of: Completed master's theses
+  msc_group:
+    core: Core courses
+    elective: Elective courses
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

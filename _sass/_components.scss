@@ -166,3 +166,16 @@
 }
 .plain-list { list-style: none; margin: 0; padding: 0; li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; } }
 .tiles--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); @media (max-width: 48rem) { grid-template-columns: 1fr; } }
+
+// ---------- Graduate hub ----------
+.specialisations { display: grid; gap: 26px; }
+.specialisation { border: 1px solid var(--line); border-top: 4px solid var(--blue); padding: 16px 18px 10px; background: #fff;
+  h3 { margin: 0 0 8px; font-family: var(--font-title); font-weight: 400; font-size: 21px; }
+  h4 { margin: 18px 0 6px; font-family: var(--font-ui); font-size: 13px; text-transform: uppercase; color: var(--black); }
+  .specialisation__req { font-size: 14px; color: var(--text-2); }
+}
+.plan { border-collapse: collapse; font-size: 13px; font-family: var(--font-ui); margin: 6px 0 4px;
+  th, td { border: 1px solid var(--line-2); padding: 4px 10px; text-align: center; } th { background: var(--paper-2); font-weight: 700; text-transform: uppercase; font-size: 11px; } }
+.msc-courses { list-style: none; margin: 0; padding: 0; columns: 2 20rem; column-gap: 28px;
+  li { break-inside: avoid; display: grid; grid-template-columns: 3.4rem minmax(0, 1fr) auto; gap: 6px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; line-height: 1.35; } }
+.badge { font-family: var(--font-ui); font-size: 10px; font-weight: 700; text-transform: uppercase; color: #fff; background: var(--blue); padding: 1px 5px; }

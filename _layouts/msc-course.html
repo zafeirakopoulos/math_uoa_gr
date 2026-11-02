@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign prog = site.data.msc_programme -%}
+{%- assign hub = navable | where: "section_root", true | where: "section", "metaptychiakes" | first -%}
+{% include page-head.html parent_url=hub.url parent_title=hub.title kicker=base.code %}
+<div class="container">
+  <div class="layout">
+    {%- include news-box.html %}
+    <div class="main">
+      <dl class="course-facts">
+        <dt>{{ t.msc_specialisation }}</dt>
+        <dd>
+          {%- for k in base.programs %}{% assign sp = prog.specialisations | where: "key", k | first %}
+          {{ sp[lang] | default: sp.el }} ({% if base.codes %}{{ base.codes[k] }}{% else %}{{ base.code }}{% endif %}, {% assign g = base.group %}{% if base.groups %}{% assign g = base.groups[k] %}{% endif %}{{ t.msc_group[g] }}){% unless forloop.last %}<br>{% endunless %}
+          {%- endfor %}
+        </dd>
+        <dt>ECTS</dt><dd>{{ prog.course_ects }}</dd>
+        {%- if base.semester %}<dt>{{ t.offered }}</dt><dd>{{ t[base.semester] }}{% if base.instructors %} — {{ base.instructors | join: ", " }}{% endif %}</dd>{% endif %}
+      </dl>
+      <div class="prose"{% unless page.langs contains lang %} lang="el"{% endunless %}>{{ content }}</div>
+    </div>
+    {% include sidebar.html parent_url=hub.url %}
+  </div>
+</div>

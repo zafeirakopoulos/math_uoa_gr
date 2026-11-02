@@ -1,0 +1,162 @@
+# Δομή του Π.Μ.Σ. «Μαθηματικά» (MSc in Mathematics).
+# Generated from the programme regulation (source.regulation). Only facts stated in the PDFs are included;
+# `source.facts` gives the article for each field. Course pages: collections/_msc_courses/.
+generated: true
+title:
+  el: Μαθηματικά
+  en: MSc in Mathematics
+degree: Δίπλωμα Μεταπτυχιακών Σπουδών (Δ.Μ.Σ.)
+regulation_in_force_from: 2024-2025
+tuition: Δωρεάν
+duration_semesters: 4
+max_ects_per_semester: 30
+extension:
+  semesters: 2
+  condition: Επιτυχής εξέταση σε τουλάχιστον έξι (6) μεταπτυχιακά μαθήματα, με απόφαση της Συνέλευσης.
+suspension_max_semesters: 2
+part_time:
+  max_semesters: 8
+  eligible: Εργαζόμενοι/ες τουλάχιστον 20 ώρες την εβδομάδα, φοιτητές/τριες με αναπηρία και ειδικές εκπαιδευτικές ανάγκες, αθλητές/τριες υπό τις προϋποθέσεις του κανονισμού.
+ects_total: 120
+course_ects: 10
+courses_required: 9
+min_courses_in_own_group: 7
+courses:
+  hours_per_week: 4
+  min_weeks: 13
+  teaching: Διά ζώσης
+  min_enrolment_for_elective: 3
+  grading: Ακέραιος βαθμός 0–10, βάση το 5.
+  exam_periods: Στο τέλος του εξαμήνου διδασκαλίας (χειμερινό ή εαρινό) και επαναληπτική εξέταση πριν από την έναρξη του επόμενου ακαδημαϊκού έτους.
+  special_topics_coding: Στους κωδικούς Ειδικών Θεμάτων (Θχψ.α, Εχψ.α) το χψ δηλώνει το ακαδημαϊκό έτος πρώτης προσφοράς και το α (α έως ω) το συγκεκριμένο μάθημα· π.χ. Θ22.β είναι το δεύτερο τέτοιο μάθημα που προσφέρθηκε πρώτη φορά το 2022-2023.
+  recognition_max: 2
+  from_other_programmes_max: 2
+  from_other_programmes_condition: Επιτυχής εξέταση σε τουλάχιστον πέντε (5) μαθήματα του Π.Μ.Σ. και προηγούμενη άδεια της Επιτροπής Παρακολούθησης της ειδίκευσης.
+thesis:
+  required: true
+  ects: 30
+  semester: 4
+  supervisor_chosen: Μετά το τέλος του δεύτερου εξαμήνου σπουδών.
+  committee: Τριμελής εξεταστική επιτροπή (τουλάχιστον ένα μέλος Δ.Ε.Π. του Τμήματος Μαθηματικών).
+  language: Ελληνικά (με εκτενή περίληψη στα Αγγλικά) ή Αγγλικά (με εκτενή περίληψη στα Ελληνικά).
+  presentation: Δημόσια παρουσίαση ενώπιον της τριμελούς επιτροπής, μετά την επιτυχή εξέταση σε όλα τα απαιτούμενα μαθήματα.
+  grade_scale: 5–10
+  repository: Πέργαμος
+degree_grade: Σταθμισμένος μέσος όρος των βαθμών των μαθημάτων και της διπλωματικής εργασίας με βάρη τις πιστωτικές μονάδες.
+admission:
+  max_students: 55
+  call: Κάθε Μάιο, με προκήρυξη στην ιστοσελίδα του Τμήματος και του ΕΚΠΑ.
+  eligibility: Πτυχιούχοι Α.Ε.Ι. της ημεδαπής ή ομοταγών ιδρυμάτων της αλλοδαπής με επαρκές μαθηματικό υπόβαθρο, καθώς και τελειόφοιτοι που ολοκληρώνουν το πτυχίο έως και την εξεταστική του Σεπτεμβρίου.
+  stages: Δύο στάδια· το πρώτο (Δέσμη Α) ολοκληρώνεται έως το τέλος Ιουλίου, το δεύτερο (Δέσμη Β και εκκρεμείς περιπτώσεις) τον Σεπτέμβριο.
+  criteria_a: Βαθμολογία σε 11 προπτυχιακά μαθήματα, βαθμός πτυχίου (×2), υποχρεωτική συνέντευξη (0–40 μονάδες), γνώση Αγγλικών, συστατικές επιστολές.
+  criteria_b: Γραπτές εξετάσεις σε δύο ενότητες (η μία της ειδίκευσης), βαθμός πτυχίου (×2), συνέντευξη, γνώση Αγγλικών, συστατικές επιστολές.
+  exam_units:
+    - Άλγεβρα και Γεωμετρία
+    - Ανάλυση
+    - Πιθανότητες και Στατιστική
+    - Διαφορικές Εξισώσεις και Αριθμητική Ανάλυση
+  english: Απαιτείται επαρκής γνώση Αγγλικών· γραπτή εξέταση (μετάφραση μαθηματικού κειμένου), με δυνατότητα εξαίρεσης για κατόχους διπλώματος επιπέδου Β2 και άνω.
+  documents:
+    - Αίτηση συμμετοχής
+    - Αντίγραφα τίτλων σπουδών
+    - Αναγνώριση από τον ΔΟΑΤΑΠ (για τίτλους της αλλοδαπής)
+    - Πιστοποιητικό αναλυτικής βαθμολογίας
+    - Βιογραφικό σημείωμα
+    - Αντίγραφο ταυτότητας ή διαβατηρίου
+    - Στοιχεία δύο συντακτών συστατικών επιστολών (οι επιστολές αποστέλλονται από τους ίδιους στο secr@math.uoa.gr)
+    - Πιστοποιητικό γνώσης Αγγλικών επιπέδου Β2
+    - Μία πρόσφατη φωτογραφία τύπου διαβατηρίου
+    - Υπεύθυνη δήλωση μέσω gov.gr για τη γνησιότητα των στοιχείων
+specialisations:
+  - key: theoritika
+    code_prefix: Θ
+    el: Θεωρητικά Μαθηματικά
+    en: Theoretical Mathematics
+    max_students: 25
+    courses_required: 9
+    min_courses_in_group: 7
+    required_core: Ένα από Θ1 (Ανάλυση Ι), Θ2 (Ανάλυση ΙΙ)· ένα από Θ3 (Άλγεβρα Ι), Θ4 (Άλγεβρα ΙΙ)· ένα από Θ5 (Διαφορική Γεωμετρία Ι), Θ6 (Διαφορική Γεωμετρία ΙΙ).
+    semester_plan:
+      - {semester: 1, core: 1, elective: 2, ects: 30}
+      - {semester: 2, core: 1, elective: 2, ects: 30}
+      - {semester: 3, core: 1, elective: 2, ects: 30}
+      - {semester: 4, thesis: true, ects: 30}
+    admission_courses: [Απειροστικός Λογισμός Ι, Απειροστικός Λογισμός ΙΙ, Απειροστικός Λογισμός ΙΙΙ, Συνήθεις Διαφορικές Εξισώσεις, Πραγματική Ανάλυση, Μιγαδική Ανάλυση Ι, Γραμμική Άλγεβρα Ι, Γραμμική Άλγεβρα ΙΙ, Γεωμετρία ΙΙ, Πιθανότητες Ι, Βασική Άλγεβρα]
+    exam_units: [Άλγεβρα και Γεωμετρία, Ανάλυση]
+  - key: efarmosmena
+    code_prefix: Ε
+    el: Εφαρμοσμένα Μαθηματικά
+    en: Applied Mathematics
+    max_students: 15
+    courses_required: 9
+    min_courses_in_group: 7
+    required_core: Τέσσερα (4) από τα μαθήματα κορμού Ε1–Ε7.
+    semester_plan:
+      - {semester: 1, core: 2, elective: 1, ects: 30}
+      - {semester: 2, core: 2, elective: 1, ects: 30}
+      - {semester: 3, core: 1, elective: 2, ects: 30}
+      - {semester: 4, thesis: true, ects: 30}
+    admission_courses: [Απειροστικός Λογισμός Ι, Απειροστικός Λογισμός ΙΙ, Απειροστικός Λογισμός ΙΙΙ, Συνήθεις Διαφορικές Εξισώσεις, Πραγματική Ανάλυση, Πιθανότητες Ι, Γραμμική Άλγεβρα Ι, Γραμμική Άλγεβρα ΙΙ, Μερικές Διαφορικές Εξισώσεις Ι, Πληροφορική Ι, Αριθμητική Ανάλυση ή Μέθοδοι Εφαρμοσμένων Μαθηματικών]
+    exam_units: [Διαφορικές Εξισώσεις και Αριθμητική Ανάλυση]
+  - key: statistiki
+    code_prefix: ΣΕΠ
+    el: Στατιστική και Επιχειρησιακή Έρευνα
+    en: Statistics and Operations Research
+    max_students: 15
+    courses_required: 9
+    min_courses_in_group: 7
+    required_core: Τουλάχιστον τέσσερα (4) από τα μαθήματα κορμού ΣΕΠ1–ΣΕΠ7, μεταξύ των οποίων ένα από ΣΕΠ1 (Μαθηματική Στατιστική), ΣΕΠ2 (Γραμμικά και μη Γραμμικά Μοντέλα)· ένα από ΣΕΠ3 (Θεωρία Πιθανοτήτων), ΣΕΠ4 (Στοχαστικές Ανελίξεις)· ένα από ΣΕΠ5 (Ντετερμινιστικά Μοντέλα στην Επιχειρησιακή Έρευνα), ΣΕΠ6 (Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα).
+    semester_plan:
+      - {semester: 1, core: 2, elective: 1, ects: 30}
+      - {semester: 2, core: 2, elective: 1, ects: 30}
+      - {semester: 3, core: 1, elective: 2, ects: 30}
+      - {semester: 4, thesis: true, ects: 30}
+    admission_courses_note: Έντεκα (11) μαθήματα, με τουλάχιστον ένα από κάθε περιοχή.
+    admission_course_areas: [Απειροστικός Λογισμός, Γραμμική Άλγεβρα, Πληροφορική ή Αριθμητική Ανάλυση, Πιθανότητες, Στατιστική, Επιχειρησιακή Έρευνα]
+    exam_units: [Πιθανότητες και Στατιστική]
+calendar_2026_27:
+  winter:
+    classes: [2026-09-28, 2027-01-15]
+    exams: [2027-01-18, 2027-02-12]
+  spring:
+    classes: [2027-02-15, 2027-06-04]
+    exams: [2027-06-07, 2027-07-02]
+source:
+  regulation: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/KANONISMPS_PMS_MATHIMATIKA_2024.pdf
+  assignments_2026_27: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf
+  facts:
+    title: Άρθρο 1
+    degree: Άρθρο 1
+    specialisations: Άρθρο 1 (ονόματα, αγγλικοί τίτλοι, κωδικοί ομάδων [Θ], [Ε], [ΣΕΠ]); Άρθρο 4.1 (max_students); Άρθρο 6 (courses_required, min_courses_in_group, required_core, semester_plan); Άρθρο 4.7 Δέσμη Α/Β (admission_courses, exam_units)
+    regulation_in_force_from: Προοίμιο της απόφασης («από το ακαδημαϊκό έτος 2024-2025»)
+    tuition: Άρθρο 10.1
+    duration_semesters: Άρθρο 5.1
+    max_ects_per_semester: Άρθρο 5.1
+    extension: Άρθρο 5.2
+    suspension_max_semesters: Άρθρο 5.3
+    part_time: Άρθρο 5.5
+    ects_total: Άρθρο 6
+    course_ects: Άρθρο 6 (πίνακες μαθημάτων)
+    courses_required: Άρθρο 6
+    min_courses_in_own_group: Άρθρο 6
+    courses.hours_per_week: Άρθρο 6
+    courses.min_weeks: Άρθρο 6
+    courses.teaching: Άρθρο 6
+    courses.min_enrolment_for_elective: Άρθρο 6
+    courses.grading: Άρθρο 7.2
+    courses.exam_periods: Άρθρο 7.3
+    courses.special_topics_coding: Άρθρο 6
+    courses.recognition_max: Άρθρο 10.6
+    courses.from_other_programmes_max: Άρθρο 10.7
+    thesis: Άρθρο 6 (30 ECTS, 4ο εξάμηνο) και Άρθρο 8
+    degree_grade: Άρθρο 9.2
+    admission.max_students: Άρθρο 4.1
+    admission.call: Άρθρο 4.2
+    admission.stages: Άρθρο 4.2
+    admission.documents: Άρθρο 4.3
+    admission.eligibility: Άρθρο 4.4
+    admission.criteria_a: Άρθρο 4.7 (Δέσμη Α)
+    admission.criteria_b: Άρθρο 4.7 (Δέσμη Β)
+    admission.exam_units: Άρθρο 4.7 (Δέσμη Β)
+    admission.english: Άρθρο 4.7 (Δέσμη Α, iv)
+    calendar_2026_27: PMS_26-27_v5.pdf (σελίδες χειμερινού και εαρινού εξαμήνου)

@@ -28,7 +28,7 @@
   {%- assign tags = site.data.course_tags -%}
   <div class="programme__filter" data-programme-filter role="group" aria-label="{{ t.concentration }}">
     <button type="button" aria-pressed="true" data-tag="">{{ t.all_courses }}</button>
-    {%- for k in "kthm,kem,ksee,kme" | split: "," %}{% if tags[k] %}<button type="button" aria-pressed="false" data-tag="{{ k }}">{{ tags[k][lang].long | default: tags[k].el.long }}</button>{% endif %}{% endfor %}
+    {%- assign conc = "kthm,kem,ksee,kme" | split: "," -%}{%- for k in conc %}{% if tags[k] %}<button type="button" aria-pressed="false" data-tag="{{ k }}">{{ tags[k][lang].long | default: tags[k].el.long }}</button>{% endif %}{% endfor %}
   </div>
   <div class="semesters">
     {%- for n in (1..8) %}

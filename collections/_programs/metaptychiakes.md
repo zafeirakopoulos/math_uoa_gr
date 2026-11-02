@@ -3,40 +3,151 @@ section_root: true
 key: metaptychiakes
 section: metaptychiakes
 nav_order: 3
+sidebar: false
 el:
   title: Μεταπτυχιακές σπουδές
+  nav_title: Μεταπτυχιακές σπουδές
+  lede: Το ΠΜΣ «Μαθηματικά» με τρεις ειδικεύσεις, τα διιδρυματικά προγράμματα στα οποία συμμετέχει το Τμήμα, και οι διδακτορικές σπουδές.
   legacy_url: /metaptychiakes_spoydes
-  body: |
-    Το **Πρόγραμμα Μεταπτυχιακών Σπουδών** του Τμήματος Μαθηματικών απονέμει:
-
-    [**►Μεταπτυχιακό Δίπλωμα Ειδίκευσης στις Κατευθύνσεις**](/spoudes/pms-mathimatika/)**:**
-
-    [**Θεωρητικά Μαθηματικά**](/spoudes/pms-theoritika-mathimatika/) [**Εφαρμοσμένα Μαθηματικά**](/spoudes/pms-efarmosmena-mathimatika/) [**Στατιστική και Επιχειρησιακή Έρευνα**](/spoudes/pms-statistiki/)
-
-    Συμμετέχει επίσης στα εξής **Διαπανεπιστημιακά Προγράμματα Σπουδών**:
-
-    [**Αλγόριθμοι, Λογική και Διακριτά Μαθηματικά**](http://alma.di.uoa.gr/el)**,** από κοινού με το Τμήμα Πληροφορικής του Παν/μίου Αθηνών, το Τμήμα Ηλεκτρολόγων και Μηχανικών Υπολογιστών και τη Σχολή Εφαρμοσμένων Μαθηματικών και Φυσικών Επιστημών του Ε.Μ.Π.
-
-    [**Βιοστατιστική και Επιστήμη Δεδομένων Υγείας**](http://biostatistics.med.uoa.gr)**,** από κοινού με την Ιατρική Σχολή του Πανεπιστημίου Αθηνών και το Τμήμα Μαθηματικών του Πανεπιστημίου Ιωαννίνων.
-
-    [**Μαθηματικά της Αγοράς και της Παραγωγής**](http://map.aueb.gr)**,** από κοινού με το Τμήμα Οικονομικών Επιστημών του Πανεπιστημίου Αθηνών και το Τμήμα Πληροφορικής του Οικονομικού Πανεπιστημίου Αθηνών.
-
-    [**Διδακτική και Μεθοδολογία των Μαθηματικών,**](http://educ.math.uoa.gr/)  από κοινού με τα Τμήματα: "Φιλοσοφίας – Παιδαγωγικής και Ψυχολογίας" και "Μεθοδολογίας Ιστορίας και Θεωρίας της Επιστήμης" του Ε.Κ.Π.Α. αφ’ ενός και αφ’ ετέρου με τα Τμήματα "Μαθηματικών και Στατιστικής" και "Επιστημών Αγωγής" του Πανεπιστημίου Κύπρου".
+  facts:
+  - value: "4"
+    label: εξάμηνα
+  - value: "120"
+    label: ECTS
+  - value: "9"
+    label: μαθήματα + διπλωματική
+  - value: "3"
+    label: ειδικεύσεις
+  - value: "0 €"
+    label: δίδακτρα
+  groups:
+  - title: ΠΜΣ «Μαθηματικά»
+    links:
+    - title: Οι ειδικεύσεις και τα μαθήματά τους
+      url: "#eidikeuseis"
+    - title: Κανονισμός λειτουργίας (2024)
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/KANONISMPS_PMS_MATHIMATIKA_2024.pdf
+      pdf: true
+    - title: ΦΕΚ 4333/Β/2024 — τροποποίηση κανονισμού
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/FEK_4333_B_2024_TROPOPOIISI_KANONISMOY_PROGRfMMATOS_METAPTYCHIAKON_SPOYDON_PMS_MATHIMATIKA.pdf
+      pdf: true
+    - title: Διοίκηση και επιτροπές του ΠΜΣ
+      url: /spoudes/pms-mathimatika/
+    - title: Δήλωση πολιτικής ποιότητας
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/DILWSI_POLITIKHS_POIOTHTAS.pdf
+      pdf: true
+  - title: Εισαγωγή 2026-27
+    links:
+    - title: Προκήρυξη ΠΜΣ 2026-27
+      url: /anakoinoseis/2026/prokiryxi-toy-programmatos-metaptychiakon-spoydon/
+    - title: Γραπτές εξετάσεις Β΄ δέσμης
+      url: /anakoinoseis/2026/anakoinosi-graptes-exetaseis-b-desmis-ypopsifion-pms-2026/
+    - title: Αποτελέσματα και εγγραφές νέων φοιτητών
+      url: /anakoinoseis/2026/apotelesmata-kai-eggrafes-neon-metaptychiakon-akad-etoys/
+  - title: Ακαδημαϊκό έτος 2026-27
+    links:
+    - title: Αναθέσεις μαθημάτων 2026-27
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf
+      pdf: true
+    - title: Ωρολόγιο χειμερινού εξαμήνου
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Orologio_programma_PMS_2026_27_FINAL_V.pdf
+      pdf: true
+    - title: Πρόγραμμα εξετάσεων Σεπτεμβρίου 2026
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Programma_exetaseon_PMS_-_Septembrios_2026_-_teliko.pdf
+      pdf: true
+  - title: Διπλωματικές εργασίες
+    links:
+    - title: Θεωρητικά Μαθηματικά
+      url: /spoudes/metaptychiakes/diplomatikes/theoritika/
+    - title: Εφαρμοσμένα Μαθηματικά
+      url: /spoudes/metaptychiakes/diplomatikes/efarmosmena/
+    - title: Στατιστική και Επιχειρησιακή Έρευνα
+      url: /spoudes/metaptychiakes/diplomatikes/statistiki/
+  - title: Διδακτορικές σπουδές
+    links:
+    - title: Διδακτορικές σπουδές — κανονισμός και επιτροπή
+      url: /spoudes/didaktorikes/
+    - title: Υποψήφιοι διδάκτορες
+      url: /spoudes/didaktorikes/ypopsifioi/
+    - title: Διδάκτορες του Τμήματος
+      url: /spoudes/didaktorikes/didaktores/
+  - title: Διιδρυματικά προγράμματα
+    links:
+    - title: Αλγόριθμοι, Λογική και Διακριτά Μαθηματικά (ΜΠΛΑ)
+      url: http://alma.di.uoa.gr/el
+    - title: Βιοστατιστική και Επιστήμη Δεδομένων Υγείας
+      url: http://biostatistics.med.uoa.gr
+    - title: Μαθηματικά της Αγοράς και της Παραγωγής
+      url: http://map.aueb.gr
+    - title: Διδακτική και Μεθοδολογία των Μαθηματικών
+      url: http://educ.math.uoa.gr/
+  - title: Επικοινωνία και άλλα
+    links:
+    - title: Γραμματεία μεταπτυχιακών — Πετρούλα Ζαφειροπούλου, 210-7276332
+      url: /epikoinonia/
+    - title: Erasmus+ και CIVIS
+      url: /spoudes/erasmus-civis/
+    - title: Ανακοινώσεις μεταπτυχιακών άλλων φορέων
+      url: /spoudes/metaptychiakes/allon-tmimaton/
 en:
   title: Graduate Studies
+  nav_title: Graduate
+  lede: The MSc in Mathematics with three specialisations, the inter-institutional programmes the Department takes part in, and doctoral studies.
   legacy_url: /graduate_studies
-  body: |
-    The Graduate Program of the Department of Mathematics offers an [MSc degree in Mathematics](https://www.math.uoa.gr/metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos/pms_mathimatika) with the following concentrations:
-
-    **[Pure Mathematics](https://www.math.uoa.gr/metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos/pms_mathimatika/theoritika_mathimatika)[Applied Mathematics](https://www.math.uoa.gr/metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos/pms_mathimatika/theoritika_mathimatika)[Statistics and Operations Research](https://www.math.uoa.gr/metaptychiakes_spoydes/anakoinoseis_metaptychiakon_ektos_tmimatos/pms_mathimatika/statistiki_kai_epicheirisiaki_ereyna)**
-
-    The department also participates in the following interinstitutional graduate programs:**[Algorithms, Logic and Discrete Mathematics](http://alma.di.uoa.gr/el),** co-organized together with the Department of Informatics and Telecommunications of the University of Athens and by the Department of Electrical Engineering and Computer Science, and the School of Applied Mathematics and Natural Sciences of the National Technical University.
-
-    **[Biostatistics & Health Data Science](http://biostatistics.med.uoa.gr),** co-organized together with the Medical School of the University of Athens.
-
-    **[Business Mathematics](http://map.aueb.gr/home?lang=en),** co-organized together with the Department of Economics of the University of Athens and the Department of Informatics of the Athens University of Economics and Business.
-
-    **[Mathematical Education,](http://me.math.uoa.gr)**  co-organized together with the Department of History and Philosopy of Science and the Department of Secondary Education of the University of Athens and the Department of Mathematics and Statistics and the Department of Educational Science of the University of Cyprus.
   permalink: /en/studies/graduate/
+  facts:
+  - value: "4"
+    label: semesters
+  - value: "120"
+    label: ECTS
+  - value: "9"
+    label: courses + thesis
+  - value: "3"
+    label: specialisations
+  - value: "€0"
+    label: tuition
+  groups:
+  - title: MSc in Mathematics
+    links:
+    - title: Specialisations and their courses
+      url: "#eidikeuseis"
+    - title: Programme regulation 2024 (Greek)
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/KANONISMPS_PMS_MATHIMATIKA_2024.pdf
+      pdf: true
+    - title: Course assignments 2026-27 (Greek)
+      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf
+      pdf: true
+  - title: Master's theses
+    links:
+    - title: Theoretical Mathematics
+      url: /spoudes/metaptychiakes/diplomatikes/theoritika/
+    - title: Applied Mathematics
+      url: /spoudes/metaptychiakes/diplomatikes/efarmosmena/
+    - title: Statistics and Operations Research
+      url: /spoudes/metaptychiakes/diplomatikes/statistiki/
+  - title: Doctoral studies
+    links:
+    - title: Doctoral studies
+      url: /en/studies/doctoral/
+    - title: PhD candidates
+      url: /en/studies/doctoral/phd-candidates/
+    - title: PhD holders
+      url: /en/studies/doctoral/phd-holders/
+  - title: Inter-institutional programmes
+    links:
+    - title: Algorithms, Logic and Discrete Mathematics
+      url: http://alma.di.uoa.gr/el
+    - title: Biostatistics & Health Data Science
+      url: http://biostatistics.med.uoa.gr
+    - title: Business Mathematics
+      url: http://map.aueb.gr/home?lang=en
+    - title: Mathematics Education
+      url: http://educ.math.uoa.gr/
+  - title: Other
+    links:
+    - title: Erasmus+ and CIVIS
+      url: /en/studies/erasmus-civis/
 generated: true
 ---
+
+{% include studies/grad-hub.html %}

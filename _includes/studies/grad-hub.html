@@ -1,0 +1,65 @@
+{%- comment -%}
+  Graduate hub: key facts, every link grouped by task (one click), each MSc specialisation with
+  its requirements, semester plan and courses (course pages are the second click), doctoral studies.
+{%- endcomment -%}
+{%- include lang.html -%}
+{%- assign prog = site.data.msc_programme -%}
+{%- if page.facts %}
+<ul class="facts-row">
+  {%- for f in page.facts %}<li><strong>{{ f.value }}</strong> {{ f.label }}</li>{% endfor %}
+</ul>
+{%- endif %}
+
+<div class="link-groups">
+  {%- for g in page.groups %}
+  <section class="link-group">
+    <h2>{{ g.title }}</h2>
+    <ul>
+      {%- for l in g.links %}<li><a href="{{ l.url | relative_url }}">{{ l.title }}</a>{% if l.pdf %} <span class="ext">pdf</span>{% endif %}{% if l.note %} <span class="muted">{{ l.note }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+</div>
+
+<section class="programme" id="eidikeuseis">
+  <div class="section-title"><h2>{{ t.msc_programme_title }}</h2></div>
+  <p class="programme__note">{{ t.msc_programme_note }}</p>
+  <div class="specialisations">
+    {%- for sp in prog.specialisations %}
+    {%- assign key = sp.key -%}
+    {%- assign cs = site.msc_courses | where_exp: "c", "c.programs contains key" -%}
+    <section class="specialisation" id="{{ key }}">
+      <h3>{{ sp[lang] | default: sp.el }}</h3>
+      <p class="specialisation__req"{% if lang != "el" %} lang="el"{% endif %}><strong>{{ t.msc_required_core }}:</strong> {{ sp.required_core }}</p>
+      <table class="plan">
+        <thead><tr><th>{{ t.msc_semester }}</th><th>{{ t.msc_group.core }}</th><th>{{ t.msc_group.elective }}</th><th>ECTS</th></tr></thead>
+        <tbody>
+          {%- for row in sp.semester_plan %}
+          <tr><td>{{ row.semester }}</td>{% if row.thesis %}<td colspan="2">{{ t.msc_thesis }}</td>{% else %}<td>{{ row.core }}</td><td>{{ row.elective }}</td>{% endif %}<td>{{ row.ects }}</td></tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+      {%- assign grps = "core,elective" | split: "," -%}
+      {%- for grp in grps %}
+      <h4>{{ t.msc_group[grp] }}</h4>
+      <ul class="msc-courses">
+        {%- assign listed = 0 -%}
+        {%- for n in (1..60) %}
+        {%- for c in cs %}
+          {%- assign o = c.order %}{% if c.orders %}{% assign o = c.orders[key] %}{% endif -%}
+          {%- assign g = c.group %}{% if c.groups %}{% assign g = c.groups[key] %}{% endif -%}
+          {%- if o == n and g == grp %}{% include tr.html doc=c %}
+          <li><span class="course__code">{% if c.codes %}{{ c.codes[key] }}{% else %}{{ c.code }}{% endif %}</span>
+            <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
+            {%- if c.semester %} <span class="badge" title="{{ t.offered }}">{{ t[c.semester] }}</span>{% endif %}</li>
+          {%- endif -%}
+        {%- endfor %}
+        {%- endfor %}
+      </ul>
+      {%- endfor %}
+      {%- capture theses_url %}/spoudes/metaptychiakes/diplomatikes/{{ key }}/{% endcapture %}
+      <p><a class="more-link" href="{{ theses_url | relative_url }}">{{ t.msc_theses_of }}</a></p>
+    </section>
+    {%- endfor %}
+  </div>
+</section>
