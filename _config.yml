@@ -157,6 +157,7 @@ exclude:
   - bin
   - _migration
   - README.md
+  - todo.md
   - Gemfile
   - Gemfile.lock
   - vendor
