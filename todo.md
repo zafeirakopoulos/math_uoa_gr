@@ -13,6 +13,7 @@ Paths are relative to the repository root. Building and deploying are explained 
   - [ ] Check the `assignments:` against the final version and update `updated:`.
 - [ ] In `collections/_courses/`, check the `offered:` mark of each course. A course appears in the spring list only if it has `spring`.
 - [ ] Graduate studies, MSc: in `collections/_msc_courses/`, update `semester:` and `instructors:` for the spring courses.
+- [ ] Graduate studies, MSc: in `_data/academic_years/<year>.yml`, add `msc.spring.timetable` (the spring MSc timetable), with the same layout as `msc.winter.timetable`.
 
 ### September: winter semester begins (new academic year)
 - [ ] Create `_data/academic_years/<new year>.yml`, e.g. `2027-28.yml`, using the previous year's file as a template:
@@ -25,6 +26,10 @@ Paths are relative to the repository root. Building and deploying are explained 
 - [ ] In `collections/_programs/proptychiakes.md`, update the year-specific links and labels, e.g. "Ακαδημαϊκό έτος …", the study guide, academic advisors and the September exam schedule.
 - [ ] In `collections/_programs/metaptychiakes.md`, update the admission links for the new year and the teaching assignments and timetables.
 - [ ] In `collections/_msc_courses/`, update `semester:` and `instructors:`, and add the year's special-topics courses (see below).
+- [ ] In the year file, under `msc:`, add:
+  - [ ] `winter.timetable`: the MSc weekly timetable.
+  - [ ] `extra_courses`: the year's courses that have no course file, e.g. special topics.
+  - [ ] `exams_september`: the September exams. Also update the heading `msc_exams_sept` in `collections/_languages/`.
 
 ### After each exam period
 - [ ] Add the new master's theses to `collections/_msc_theses/` and the new PhDs to `collections/_theses/`.
@@ -50,6 +55,9 @@ Paths are relative to the repository root. Building and deploying are explained 
 - [ ] The Πληροφορική Ι lab on Thursday 13:00–15:00 has a room in the full timetable ("Αίθ. Α") but none in the first-year timetable.
 
 ### MSc
+- [ ] Course Θ18: the timetable lists only Δ. Θηλυκός, but the assignments also list Α. Γιαννοπούλου.
+- [ ] The September exam for Θ25β=Ε25α (15/9) has no time.
+- [ ] Ε11 is called «Κυματική διάδοση και σκέδαση» in the exams but «Εξισώσεις Κυματικής Διάδοσης» in its course file.
 - [ ] The MSc course catalogues are older than the 2024 regulation, so they disagree:
   - [ ] Θ34 (Απειροδιάστατες Αναπαραστάσεις) and Ε28 = ΣΕΠ33 (Αριθμητική Βελτιστοποίηση) have no course page.
   - [ ] In the catalogue, ΣΕΠ33–35 are "Ειδικά θέματα". In the regulation they are ΣΕΠ34–36, and ΣΕΠ33 is Αριθμητική Βελτιστοποίηση.
