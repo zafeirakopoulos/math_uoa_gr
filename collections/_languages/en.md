@@ -150,6 +150,15 @@ t:
   as_semester:
     winter: Winter semester teaching assignments
     spring: Spring semester teaching assignments
+  msc_now:
+    winter: MSc courses this winter semester
+    spring: MSc courses this spring semester
+  msc_tt:
+    winter: MSc winter timetable
+    spring: MSc spring timetable
+  msc_exams_sept: MSc exams, September 2026
+  msc_core_short: C
+  msc_elective_short: E
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

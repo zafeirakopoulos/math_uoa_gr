@@ -1,0 +1,105 @@
+{%- comment -%}
+  Top of the graduate hub: this semester's MSc courses per specialisation (with instructors and
+  timetable), then the full timetable, the September exams and next semester's courses (folded).
+  Data: collections/_msc_courses (semester, instructors) and _data/academic_years/<year>.yml → msc.
+{%- endcomment -%}
+{%- assign cur = site.current_semester -%}
+{%- if cur == "winter" %}{% assign next_sem = "spring" %}{% else %}{% assign next_sem = "winter" %}{% endif -%}
+{%- assign year = site.data.academic_years[site.academic_year] -%}
+{%- assign m = year.msc -%}
+{%- assign mtt = m[cur].timetable -%}
+{%- assign days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
+{%- assign prog = site.data.msc_programme -%}
+
+{%- for pass in (1..2) %}
+{%- if pass == 1 %}{% assign sem = cur %}{% else %}{% assign sem = next_sem %}{% endif -%}
+{%- if pass == 1 %}
+<section class="ug-block" id="msc-now">
+  <div class="section-title"><h2>{{ t.msc_now[cur] }} {{ site.academic_year }}</h2></div>
+  {%- if mtt.note %}<p class="programme__note">{{ mtt.note }}</p>{% endif %}
+{%- else %}
+<details class="fold ug-block" id="msc-next">
+  <summary><h2>{{ t.msc_now[next_sem] }} {{ site.academic_year }}</h2></summary>
+{%- endif %}
+  <div class="spec-now">
+    {%- for sp in prog.specialisations %}{% assign key = sp.key %}
+    {%- assign lists = site.data.msc_lists[key] -%}
+    {%- assign all = lists.core | concat: lists.elective -%}
+    {%- assign now = all | where: "semester", sem -%}
+    {%- assign extra = m.extra_courses | where: "semester", sem | where_exp: "x", "x.programs contains key" -%}
+    <section class="semester">
+      <h3>{{ sp[lang] | default: sp.el }}</h3>
+      <ul>
+        {%- for c in now %}{% include tr.html doc=c %}
+        {%- if c.codes %}{% assign ccode = c.codes[key] %}{% else %}{% assign ccode = c.code %}{% endif -%}
+        {%- assign g = c.group %}{% if c.groups %}{% assign g = c.groups[key] %}{% endif -%}
+        <li class="course{% if g == 'core' %} course--required{% endif %}">
+          <span class="course__code">{{ ccode }}</span>
+          <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
+          <span class="course__tags"><abbr title="{{ t.msc_group[g] }}">{% if g == 'core' %}{{ t.msc_core_short }}{% else %}{{ t.msc_elective_short }}{% endif %}</abbr></span>
+          <span class="course__info">
+            {%- if c.instructors %}<span class="course__who">{{ c.instructors | join: ", " }}</span>{% endif -%}
+            {%- if pass == 1 %}{% for s in mtt.slots %}{% if s.code == ccode or s.also contains ccode %}<span class="course__when">{{ s.day | slice: 0, 3 }} {{ s.start }}–{{ s.end }} · {{ s.room }}</span>{% endif %}{% endfor %}{% endif -%}
+          </span>
+        </li>
+        {%- endfor %}
+        {%- for x in extra %}
+        <li class="course">
+          <span class="course__code">{{ x.code }}</span><span lang="el">{{ x.title }}</span><span class="course__tags"></span>
+          <span class="course__info">
+            <span class="course__who">{{ x.instructors | join: ", " }}</span>
+            {%- if pass == 1 %}{% for s in mtt.slots %}{% if s.code == x.code %}<span class="course__when">{{ s.day | slice: 0, 3 }} {{ s.start }}–{{ s.end }} · {{ s.room }}</span>{% endif %}{% endfor %}{% endif -%}
+          </span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endfor %}
+  </div>
+{%- if pass == 1 %}
+</section>
+{%- else %}
+</details>
+{%- endif %}
+
+{%- if pass == 1 and mtt %}
+<details class="fold ug-block" id="msc-orologio">
+  <summary><h2>{{ t.msc_tt[cur] }} {{ site.academic_year }}</h2></summary>
+  <div class="tt-days">
+    {%- for day in days %}
+    {%- assign ds = mtt.slots | where: "day", day | sort: "start" -%}
+    {%- if ds.size > 0 %}
+    <section>
+      <h3 class="tt-day">{{ day }}</h3>
+      <table class="data-table tt">
+        <tbody>
+        {%- for s in ds %}
+          <tr><td class="nowrap">{{ s.start }}–{{ s.end }}</td>
+            <td><span class="course__code">{{ s.code }}{% for a in s.also %}={{ a }}{% endfor %}</span> {{ s.course }}<small>{{ s.room }}{% if s.instructors.size > 0 %} · {{ s.instructors | join: ", " }}{% endif %}</small></td></tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </section>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</details>
+{%- endif %}
+
+{%- if pass == 1 and m.exams_september %}
+<details class="fold ug-block" id="msc-exams">
+  <summary><h2>{{ t.msc_exams_sept }}</h2></summary>
+  {%- assign by_date = m.exams_september | group_by: "date" -%}
+  <div class="fold__cols">
+    {%- for d in by_date %}
+    <div>
+      <h3>{{ d.name | date: "%d/%m/%Y" }}</h3>
+      <ul class="plain-list">
+        {%- for e in d.items %}<li><span class="course__when">{% if e.start %}{{ e.start }}–{{ e.end }}{% else %}—{% endif %}</span> <span class="course__code">{{ e.code }}{% for a in e.also %}={{ a }}{% endfor %}</span> {{ e.course }}{% if e.room or e.note %}<small>{{ e.room }}{% if e.room and e.note %} · {% endif %}{{ e.note }}</small>{% endif %}</li>{% endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</details>
+{%- endif %}
+{%- endfor %}

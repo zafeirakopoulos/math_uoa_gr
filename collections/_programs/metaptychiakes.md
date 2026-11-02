@@ -44,17 +44,6 @@ el:
       url: /anakoinoseis/2026/anakoinosi-graptes-exetaseis-b-desmis-ypopsifion-pms-2026/
     - title: Αποτελέσματα και εγγραφές νέων φοιτητών
       url: /anakoinoseis/2026/apotelesmata-kai-eggrafes-neon-metaptychiakon-akad-etoys/
-  - title: Ακαδημαϊκό έτος 2026-27
-    links:
-    - title: Αναθέσεις μαθημάτων 2026-27
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf
-      pdf: true
-    - title: Ωρολόγιο χειμερινού εξαμήνου
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Orologio_programma_PMS_2026_27_FINAL_V.pdf
-      pdf: true
-    - title: Πρόγραμμα εξετάσεων Σεπτεμβρίου 2026
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Programma_exetaseon_PMS_-_Septembrios_2026_-_teliko.pdf
-      pdf: true
   - title: Διπλωματικές εργασίες
     links:
     - title: Θεωρητικά Μαθηματικά
@@ -113,9 +102,6 @@ en:
       url: "#eidikeuseis"
     - title: Programme regulation 2024 (Greek)
       url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/KANONISMPS_PMS_MATHIMATIKA_2024.pdf
-      pdf: true
-    - title: Course assignments 2026-27 (Greek)
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf
       pdf: true
   - title: Master's theses
     links:

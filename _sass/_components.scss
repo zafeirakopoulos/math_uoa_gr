@@ -224,3 +224,4 @@
 .course__when { font-family: var(--font-ui); white-space: nowrap; }
 .tt-days { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 0 24px;
   .tt-day { margin-top: 10px; } .data-table { font-size: 13px; td { padding: 5px 6px; } } }
+.spec-now { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: 20px; }

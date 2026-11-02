@@ -4,6 +4,7 @@
 {%- endcomment -%}
 {%- include lang.html -%}
 {%- assign prog = site.data.msc_programme -%}
+{% include studies/grad-now.html %}
 {%- if page.facts %}
 <ul class="facts-row">
   {%- for f in page.facts %}<li><strong>{{ f.value }}</strong> {{ f.label }}</li>{% endfor %}

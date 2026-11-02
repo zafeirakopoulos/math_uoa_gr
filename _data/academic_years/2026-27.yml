@@ -2625,3 +2625,527 @@ spring:
       instructors:
       - Σ. Τρέβεζας
       - Δ. Χελιώτης
+# MSc «Μαθηματικά»: winter timetable, courses taught this year without a course file
+# (special topics etc.), September exams. Course semesters/instructors are in collections/_msc_courses/.
+# MSc 2026-27: χειμερινό ωρολόγιο, έκτακτα μαθήματα, εξετάσεις Σεπτεμβρίου 2026
+msc:
+  winter:
+    timetable:
+      note: 'Έναρξη μαθημάτων: 28/9/2026 • Τέλος μαθημάτων: 15/1/2027'
+      slots:
+      - day: Δευτέρα
+        start: "09:00"
+        end: "11:00"
+        code: Θ13
+        also:
+        - Ε20
+        course: Θεωρία Τελεστών
+        room: Α31
+        instructors:
+        - Ε. Κακαριάδης
+      - day: Δευτέρα
+        start: "09:00"
+        end: "11:00"
+        code: Θ21
+        course: Αλγεβρική Γεωμετρία
+        room: Α21
+        instructors:
+        - Αλέξιος Τερεζάκης
+      - day: Δευτέρα
+        start: "09:00"
+        end: "13:00"
+        code: ΣΕΠ19
+        course: Θεωρία Παιγνίων
+        room: Α12
+        instructors:
+        - Π. Μερτικόπουλος
+      - day: Δευτέρα
+        start: "11:00"
+        end: "13:00"
+        code: Θ31
+        course: Αλγεβρική Θεωρία Αριθμών
+        room: Α31
+        instructors:
+        - Α. Κοντογεώργης
+      - day: Δευτέρα
+        start: "11:00"
+        end: "13:00"
+        code: Θ8
+        also:
+        - Ε8
+        course: Μερικές Διαφορικές Εξισώσεις Ι
+        room: Α21
+        instructors:
+        - Ν. Αλικάκος
+        - Α. Χατζηκαλέας
+      - day: Δευτέρα
+        start: "13:00"
+        end: "15:00"
+        code: Θ5
+        also:
+        - Ε23
+        course: Διαφορική Γεωμετρία Ι
+        room: Α31
+        instructors:
+        - Ι. Ανδρουλιδάκης
+        - Α. Μελάς
+      - day: Τρίτη
+        start: "09:00"
+        end: "11:00"
+        code: ΕΜ3α
+        course: Κρυπτογραφία και Συστήματα Ασφάλειας Πληροφοριών
+        room: Α21
+        instructors:
+        - Μ. Μητρούλη
+        - Ν. Μπάρδης
+      - day: Τρίτη
+        start: "09:00"
+        end: "11:00"
+        code: Θ9
+        also:
+        - Ε19
+        course: Μιγαδική Ανάλυση μιας Μεταβλητής
+        room: Α31
+        instructors:
+        - Τ. Χατζηαφράτης
+      - day: Τρίτη
+        start: "11:00"
+        end: "13:00"
+        code: Ε3
+        course: Υπολογιστικά Μαθηματικά Ι
+        room: Α21
+        instructors:
+        - Σ. Νοτάρης
+      - day: Τρίτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ1
+        also:
+        - Ε17
+        course: Ανάλυση Ι
+        room: Α31
+        instructors:
+        - Κ. Τύρος
+      - day: Τρίτη
+        start: "13:00"
+        end: "15:00"
+        code: Ε26
+        also:
+        - ΣΕΠ1
+        course: Μαθηματική Στατιστική
+        room: Α12
+        instructors:
+        - Ε. Βαγγελάτου
+      - day: Τρίτη
+        start: "13:00"
+        end: "15:00"
+        code: Ε9
+        course: Υπολογιστικά Μαθηματικά ΙΙ
+        room: Α21
+        instructors:
+        - Δ. Αντωνοπούλου
+      - day: Τρίτη
+        start: "13:00"
+        end: "15:00"
+        code: Θ26.β
+        course: 'Ειδικά Θέματα: Ανάλυση Μερικών Διαφορικών Εξισώσεων'
+        room: Α11
+        instructors:
+        - Α. Μενεγάκη
+      - day: Τρίτη
+        start: "13:00"
+        end: "15:00"
+        code: Θ3
+        course: Άλγεβρα Ι
+        room: Α31
+        instructors:
+        - Χ. Γερανιός
+      - day: Τετάρτη
+        start: "09:00"
+        end: "11:00"
+        code: Θ13
+        also:
+        - Ε20
+        course: Θεωρία Τελεστών
+        room: Α31
+        instructors:
+        - Ε. Κακαριάδης
+      - day: Τετάρτη
+        start: "09:00"
+        end: "11:00"
+        code: Θ21
+        course: Αλγεβρική Γεωμετρία
+        room: Α21
+        instructors:
+        - Αλέξιος Τερεζάκης
+      - day: Τετάρτη
+        start: "09:00"
+        end: "13:00"
+        code: ΣΕΠ6
+        course: Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα
+        room: Γ31
+        instructors:
+        - Α. Οικονόμου
+      - day: Τετάρτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ18
+        also:
+        - Ε21
+        course: Θεωρία Γραφημάτων
+        room: Α12
+        instructors:
+        - Δ. Θηλυκός
+      - day: Τετάρτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ31
+        course: Αλγεβρική Θεωρία Αριθμών
+        room: Α31
+        instructors:
+        - Α. Κοντογεώργης
+      - day: Τετάρτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ8
+        also:
+        - Ε8
+        course: Μερικές Διαφορικές Εξισώσεις Ι
+        room: Α21
+        instructors:
+        - Ν. Αλικάκος
+        - Α. Χατζηκαλέας
+      - day: Τετάρτη
+        start: "13:00"
+        end: "15:00"
+        code: Θ5
+        also:
+        - Ε23
+        course: Διαφορική Γεωμετρία Ι
+        room: Α31
+        instructors:
+        - Ι. Ανδρουλιδάκης
+        - Α. Μελάς
+      - day: Πέμπτη
+        start: "09:00"
+        end: "11:00"
+        code: Ε3
+        course: Υπολογιστικά Μαθηματικά Ι
+        room: Α21
+        instructors:
+        - Σ. Νοτάρης
+      - day: Πέμπτη
+        start: "09:00"
+        end: "11:00"
+        code: Θ9
+        also:
+        - Ε19
+        course: Μιγαδική Ανάλυση μιας Μεταβλητής
+        room: Α31
+        instructors:
+        - Τ. Χατζηαφράτης
+      - day: Πέμπτη
+        start: "09:00"
+        end: "13:00"
+        code: ΣΕΠ16
+        course: Μπεϋζιανή Στατιστική
+        room: Εργαστήριο – Αίθ. Α
+        instructors:
+        - Λ. Μελιγκοτσίδου
+      - day: Πέμπτη
+        start: "11:00"
+        end: "13:00"
+        code: ΕΜ3α
+        course: Κρυπτογραφία και Συστήματα Ασφάλειας Πληροφοριών
+        room: Α21
+        instructors:
+        - Μ. Μητρούλη
+        - Ν. Μπάρδης
+      - day: Πέμπτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ18
+        also:
+        - Ε21
+        course: Θεωρία Γραφημάτων
+        room: Α12
+        instructors:
+        - Δ. Θηλυκός
+      - day: Πέμπτη
+        start: "11:00"
+        end: "13:00"
+        code: Θ26.β
+        course: 'Ειδικά Θέματα: Ανάλυση Μερικών Διαφορικών Εξισώσεων'
+        room: Α11
+        instructors:
+        - Α. Μενεγάκη
+      - day: Πέμπτη
+        start: "13:00"
+        end: "15:00"
+        code: Ε26
+        also:
+        - ΣΕΠ1
+        course: Μαθηματική Στατιστική
+        room: Α12
+        instructors:
+        - Ε. Βαγγελάτου
+      - day: Πέμπτη
+        start: "13:00"
+        end: "15:00"
+        code: Ε9
+        course: Υπολογιστικά Μαθηματικά ΙΙ
+        room: Α21
+        instructors:
+        - Δ. Αντωνοπούλου
+      - day: Παρασκευή
+        start: "11:00"
+        end: "13:00"
+        code: Θ1
+        also:
+        - Ε17
+        course: Ανάλυση Ι
+        room: Α31
+        instructors:
+        - Κ. Τύρος
+      - day: Παρασκευή
+        start: "13:00"
+        end: "15:00"
+        code: Θ3
+        course: Άλγεβρα Ι
+        room: Α31
+        instructors:
+        - Χ. Γερανιός
+  extra_courses:
+  - code: Θ26.β
+    semester: winter
+    title: 'Ειδικά Θέματα: Ανάλυση Μερικών Διαφορικών Εξισώσεων'
+    instructors:
+    - Α. Μενεγάκη
+    programs:
+    - theoritika
+    note: Ο κωδικός Θ26 χωρίς επίθημα αντιστοιχεί στο «Θεωρία Ομάδων Ι» (theoritika-th26.md)
+  - code: ΕΜ3α
+    semester: winter
+    title: Κρυπτογραφία και Συστήματα Ασφάλειας Πληροφοριών
+    instructors:
+    - Μ. Μητρούλη
+    - Ν. Μπάρδης
+    programs:
+    - efarmosmena
+  - code: Θ26.α
+    semester: spring
+    title: 'Ειδικά θέματα: Χώροι τελεστών και εφαρμογές στην κβαντική θεωρία πληροφορίας'
+    instructors:
+    - Α. Κατάβολος
+    programs:
+    - theoritika
+  - code: Θ35
+    semester: spring
+    title: Εισαγωγή στη Θεωρία Δεσμών Ινών
+    instructors:
+    - Ε. Πρασίδης
+    programs:
+    - theoritika
+  - code: Θ25.β
+    also:
+    - Ε25.α
+    semester: spring
+    title: 'Ειδικά θέματα: Υπολογιστική Άλγεβρα'
+    instructors:
+    - Ζ. Ζαφειρακόπουλος
+    programs:
+    - theoritika
+    - efarmosmena
+    note: Ο κωδικός Θ25/Ε25 χωρίς επίθημα αντιστοιχεί στο «Ψευδοδιαφορικός Λογισμός» (theoritika-th25.md)
+  - code: Ε1-2
+    semester: spring
+    title: Μέθοδοι Εφαρμοσμένων Μαθηματικών
+    instructors:
+    - Γ. Καραλή
+    programs:
+    - efarmosmena
+    note: Υπάρχουν αρχεία για Ε1 και Ε2 (Μέθοδοι Εφαρμοσμένων Μαθηματικών Ι/ΙΙ) χωρίς semester/instructors
+  - code: Ε28
+    also:
+    - ΣΕΠ33
+    semester: spring
+    title: Αριθμητική Βελτιστοποίηση
+    instructors:
+    - Μ. Δρακόπουλος
+    programs:
+    - efarmosmena
+    - statistiki
+    note: Το statistiki-sep33.md έχει τίτλο «Ειδικά θέματα Πιθανοτήτων»
+  - code: ΣΕΠ36
+    semester: spring
+    title: 'Ειδικά θέματα Επιχειρησιακής Έρευνας: Μηχανική Μάθηση'
+    instructors:
+    - Α. Μπουρνέτας
+    programs:
+    - statistiki
+  exams_september:
+  - date: '2026-09-01'
+    start: "16:30"
+    end: "18:30"
+    code: Ε15
+    course: Υπολογιστική Επιστήμη και τεχνολογία
+  - date: '2026-09-02'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ6
+    course: Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα
+  - date: '2026-09-02'
+    start: "16:30"
+    end: "18:30"
+    code: Θ23β
+    course: 'Ειδικά θέματα: Θεωρία Τελεστών στο χώρο του Hardy'
+  - date: '2026-09-03'
+    start: "11:00"
+    end: "14:00"
+    code: Θ1
+    also:
+    - Ε17
+    course: Ανάλυση Ι
+  - date: '2026-09-04'
+    start: "11:00"
+    end: "14:00"
+    code: Θ8
+    also:
+    - Ε8
+    course: Μερικές Διαφορικές Εξισώσεις Ι
+  - date: '2026-09-07'
+    start: "11:00"
+    end: "14:00"
+    code: Θ6
+    also:
+    - Ε24
+    course: Διαφορική Γεωμετρία ΙΙ
+  - date: '2026-09-07'
+    start: "11:00"
+    end: "14:00"
+    code: Ε11
+    course: Κυματική διάδοση και σκέδαση
+  - date: '2026-09-07'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ18
+    course: Βιοστατιστική
+  - date: '2026-09-08'
+    start: "11:00"
+    end: "14:00"
+    code: Θ13
+    also:
+    - Ε20
+    course: Θεωρία Τελεστών
+  - date: '2026-09-09'
+    start: "11:00"
+    end: "14:00"
+    code: Θ4
+    course: Άλγεβρα ΙΙ
+  - date: '2026-09-09'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ2
+    course: Γραμμικά και μη-γραμμικά μοντέλα
+  - date: '2026-09-10'
+    start: "11:00"
+    end: "14:00"
+    code: Θ9
+    also:
+    - Ε19
+    course: Μιγαδική Ανάλυση μιας μεταβλητής
+  - date: '2026-09-10'
+    start: "11:00"
+    end: "14:00"
+    code: Ε4
+    course: Αριθμητικές μέθοδοι για Μερικές Διαφορικές Εξισώσεις
+  - date: '2026-09-14'
+    start: "15:00"
+    end: "18:00"
+    code: ΣΕΠ3
+    also:
+    - Ε27
+    course: Θεωρία Πιθανοτήτων
+    room: Αμφιθέατρο 1 Γενικών Εδρών ΕΜΠ
+  - date: '2026-09-15'
+    code: Θ25β
+    also:
+    - Ε25α
+    course: 'Ειδικά θέματα: Υπολογιστική Άλγεβρα'
+    note: Δεν αναγράφεται ώρα
+  - date: '2026-09-16'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ12
+    course: Χρονοσειρές
+  - date: '2026-09-17'
+    start: "11:00"
+    end: "14:00"
+    code: Θ3
+    course: Άλγεβρα Ι
+  - date: '2026-09-18'
+    start: "11:00"
+    end: "14:00"
+    code: Ε5
+    course: Εφαρμοσμένη Γραμμική Άλγεβρα
+  - date: '2026-09-18'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ4
+    course: Στοχαστικές Ανελίξεις
+  - date: '2026-09-21'
+    start: "09:00"
+    end: "12:00"
+    code: Θ30
+    course: Συμπλεκτική Γεωμετρία
+  - date: '2026-09-21'
+    start: "11:00"
+    end: "14:00"
+    code: ΕΜ3α
+    course: Κρυπτογραφία και Συστήματα Ασφάλειας Πληροφοριών
+  - date: '2026-09-21'
+    start: "11:30"
+    end: "14:30"
+    code: ΣΕΠ1
+    also:
+    - Ε26
+    course: Μαθηματική Στατιστική
+  - date: '2026-09-22'
+    start: "14:00"
+    end: "16:00"
+    code: Ε1-2
+    course: Μέθοδοι Εφαρμοσμένων Μαθηματικών Ι (Κ)
+  - date: '2026-09-23'
+    start: "11:00"
+    end: "14:00"
+    code: Θ2
+    also:
+    - Ε18
+    course: Ανάλυση ΙΙ
+  - date: '2026-09-23'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ5
+    course: Ντετερμινιστικά Μοντέλα στην Επιχειρησιακή Έρευνα
+  - date: '2026-09-24'
+    start: "11:00"
+    end: "14:00"
+    code: Θ25α
+    course: 'Ειδικά θέματα: Αλγεβρική Κ θεωρία'
+  - date: '2026-09-24'
+    start: "11:00"
+    end: "14:00"
+    code: Ε12
+    course: Θεωρία Ελέγχου
+  - date: '2026-09-25'
+    start: "09:00"
+    end: "12:00"
+    code: Θ5
+    also:
+    - Ε23
+    course: Διαφορική Γεωμετρία Ι
+  - date: '2026-09-25'
+    start: "11:00"
+    end: "14:00"
+    code: ΣΕΠ28
+    course: Θεωρία Ουρών Αναμονής
