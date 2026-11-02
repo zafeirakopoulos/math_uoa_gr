@@ -13,6 +13,6 @@ el:
     2. Εφαρμοσμένα Μαθηματικά, και
     3. Στατιστική και Επιχειρησιακή Έρευνα.
 
-    **[Κείμενο Προκήρυξης](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/2022-23/P.M.S._MATHIMATIKA_Prokiryxi_2022-23.pdf)[Αρχείο Αίτησης](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/2022-23/P.M.S._MATHIMATIKA_Aitisi_2022-2023.doc)Λήξη Προθεσμίας Υποβολής Αιτήσεων : Τετάρτη 8 Ιουνίου 2022**
+    **[Κείμενο Προκήρυξης](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/2022-23/P.M.S._MATHIMATIKA_Prokiryxi_2022-23.pdf)<br>[Αρχείο Αίτησης](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Metaptychiakoy_Programmatos/2022-23/P.M.S._MATHIMATIKA_Aitisi_2022-2023.doc)Λήξη Προθεσμίας Υποβολής Αιτήσεων : Τετάρτη 8 Ιουνίου 2022**
 generated: true
 ---

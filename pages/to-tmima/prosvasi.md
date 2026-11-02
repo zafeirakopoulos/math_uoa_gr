@@ -18,7 +18,7 @@ el:
 
     Το τμήμα είναι προσβάσιμο και με την χρήση λεωφορειακών γραμμών του ΟΑΣΑ που έχουν στάση πλησίον της κεντρικής πύλης του τμήματος (Στάση Γεωλογία). Παράλληλα κάνουν και στάση στην κεντρική είσοδο του τμήματος Φυσικής (Στάση Φυσικό) από του χώρους του οποίου υπάρχει άμεση πρόσβαση.
 
-    **[Γραμμή 250 ΠΑΝΕΠΙΣΤΗΜΙΟΥΠΟΛΗ - ΣΤ. ΕΥΑΓΓΕΛΙΣΜΟΥ (ΚΥΚΛΙΚΗ ΣΧΟΛΙΚΗ)](http://telematics.oasa.gr/#lineDetails_952_250%20:%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20-%20%CE%A3%CE%A4.%20%CE%95%CE%A5%CE%91%CE%93%CE%93%CE%95%CE%9B%CE%99%CE%A3%CE%9C%CE%9F%CE%A5%20(%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9A%CE%97)_121-54)[Γραμμή Ε90 ΠΕΙΡΑΙΑΣ - ΠΑΝΕΠΙΣΤΗΜΙΟΥΠΟΛΗ (ΣΧΟΛΙΚΗ EXPRESS)](http://telematics.oasa.gr/#lineDetails_1019_%CE%9590%20:%20%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3%20-%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20(%CE%A3%CE%A7%CE%9F%CE%9B%CE%99%CE%9A%CE%97%20EXPRESS)_230-54)**
+    **[Γραμμή 250 ΠΑΝΕΠΙΣΤΗΜΙΟΥΠΟΛΗ - ΣΤ. ΕΥΑΓΓΕΛΙΣΜΟΥ (ΚΥΚΛΙΚΗ ΣΧΟΛΙΚΗ)](http://telematics.oasa.gr/#lineDetails_952_250%20:%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20-%20%CE%A3%CE%A4.%20%CE%95%CE%A5%CE%91%CE%93%CE%93%CE%95%CE%9B%CE%99%CE%A3%CE%9C%CE%9F%CE%A5%20(%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9A%CE%97)_121-54)<br>[Γραμμή Ε90 ΠΕΙΡΑΙΑΣ - ΠΑΝΕΠΙΣΤΗΜΙΟΥΠΟΛΗ (ΣΧΟΛΙΚΗ EXPRESS)](http://telematics.oasa.gr/#lineDetails_1019_%CE%9590%20:%20%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3%20-%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20(%CE%A3%CE%A7%CE%9F%CE%9B%CE%99%CE%9A%CE%97%20EXPRESS)_230-54)**
 
     Επίσης μπορούν να χρησιμοποιηθούν οι ακόλουθες λεωφορειακές γραμμές του ΟΑΣΑ που έχουν τέρμα δίπλα σε κάποια από τις πύλες της Πανεπιστημιούπολης.
 
@@ -52,7 +52,7 @@ en:
 
     The department is accessible by the following bus lines, which make stops in the Department of Geology and the Department of Physics, both at closes vicinity.
 
-    **[Line 250 Panepistemiopolis - Evangelismos](http://telematics.oasa.gr/#lineDetails_952_250%20:%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20-%20%CE%A3%CE%A4.%20%CE%95%CE%A5%CE%91%CE%93%CE%93%CE%95%CE%9B%CE%99%CE%A3%CE%9C%CE%9F%CE%A5%20(%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9A%CE%97)_121-54)[Line E90 Piraeus - Panepistemiopolis (EXPRESS)](http://telematics.oasa.gr/#lineDetails_1019_%CE%9590%20:%20%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3%20-%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20(%CE%A3%CE%A7%CE%9F%CE%9B%CE%99%CE%9A%CE%97%20EXPRESS)_230-54)**
+    **[Line 250 Panepistemiopolis - Evangelismos](http://telematics.oasa.gr/#lineDetails_952_250%20:%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20-%20%CE%A3%CE%A4.%20%CE%95%CE%A5%CE%91%CE%93%CE%93%CE%95%CE%9B%CE%99%CE%A3%CE%9C%CE%9F%CE%A5%20(%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9A%CE%97)_121-54)<br>[Line E90 Piraeus - Panepistemiopolis (EXPRESS)](http://telematics.oasa.gr/#lineDetails_1019_%CE%9590%20:%20%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3%20-%20%CE%A0%CE%91%CE%9D%CE%95%CE%A0%CE%99%CE%A3%CE%A4%CE%97%CE%9C%CE%99%CE%9F%CE%A5%CE%A0%CE%9F%CE%9B%CE%97%20(%CE%A3%CE%A7%CE%9F%CE%9B%CE%99%CE%9A%CE%97%20EXPRESS)_230-54)**
 
     In addition, the following bus lines stop next to some of the campus entrances.
 

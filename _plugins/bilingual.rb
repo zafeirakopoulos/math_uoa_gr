@@ -32,9 +32,13 @@ module Bilingual
   LANGS = %w(el en).freeze
   NOT_IN_VIEW = (LANGS + %w(body excerpt i18n urls)).freeze
 
+  # A language version of a page or document. Each variant gets its own (virtual) path so that
+  # Jekyll's Liquid template cache, which is keyed by path, never mixes up two variants, and an
+  # extension that matches its body (".md" for Markdown bodies) so that it is converted.
   class Variant < Jekyll::PageWithoutAFile
-    def initialize(site, data, content)
-      super(site, site.source, "", "index.html")
+    def initialize(site, data, content, source_path, lang, ext)
+      dir = File.join("_i18n", lang, File.dirname(source_path))
+      super(site, site.source, dir, File.basename(source_path, ".*") + ext)
       @data = data
       self.content = content
     end
@@ -82,6 +86,13 @@ module Bilingual
       LANGS.select { |l| data[l].is_a?(Hash) }
     end
 
+    # ".md" when the body comes from a `body:` block in front matter (always Markdown),
+    # otherwise the extension of the source file.
+    def body_ext(data, lang, file_body, primary, source_path)
+      from_block = data.dig(lang, "body") || (file_body.to_s.strip.empty? && data.dig(primary, "body"))
+      from_block ? ".md" : File.extname(source_path)
+    end
+
     def body_for(data, lang, file_body, primary)
       data.dig(lang, "body") || (file_body.to_s.strip.empty? ? nil : file_body) || data.dig(primary, "body") || ""
     end
@@ -126,7 +137,8 @@ module Bilingual
         data = merged(original, lang, langs).merge("permalink" => url, "collection" => coll.label,
                                                    "slug" => doc.data["slug"], "variant_of" => doc.relative_path)
         data["date"] ||= doc.date if doc.respond_to?(:date)
-        variants << Variant.new(@site, data, body_for(original, lang, file_body, primary))
+        variants << Variant.new(@site, data, body_for(original, lang, file_body, primary), doc.relative_path, lang,
+                                body_ext(original, lang, file_body, primary, doc.relative_path))
       end
 
       doc.data.merge!(merged(original, primary, langs))
@@ -173,7 +185,8 @@ module Bilingual
         end
         urls[lang] = url
         data = merged(original, lang, langs).merge("permalink" => url, "variant_of" => page.relative_path)
-        variants << Variant.new(@site, data, body_for(original, lang, file_body, primary))
+        variants << Variant.new(@site, data, body_for(original, lang, file_body, primary), page.relative_path, lang,
+                                body_ext(original, lang, file_body, primary, page.relative_path))
       end
 
       page.data.merge!(merged(original, primary, langs))

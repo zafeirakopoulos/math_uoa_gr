@@ -4,7 +4,6 @@ key: proptychiakes
 section: proptychiakes
 nav_order: 2
 sidebar: false
-year: 2026-27
 el:
   title: Προπτυχιακές σπουδές
   nav_title: Προπτυχιακές σπουδές
@@ -40,7 +39,7 @@ el:
       pdf: true
   - title: Πρόγραμμα σπουδών
     links:
-    - title: Ενδεικτικό πρόγραμμα ανά εξάμηνο
+    - title: Μαθήματα του τρέχοντος εξαμήνου
       url: "#programma"
     - title: Όλα τα μαθήματα
       url: /spoudes/proptychiakes/mathimata/
@@ -134,7 +133,7 @@ en:
       pdf: true
   - title: Curriculum
     links:
-    - title: Suggested programme by semester
+    - title: Courses this semester
       url: "#programma"
     - title: All courses
       url: /en/studies/undergraduate/courses/

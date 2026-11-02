@@ -1,5 +1,5 @@
 ---
-section: spoudes
+section: proptychiakes
 en:
   title: Curriculum
   parent_url: /en/studies/undergraduate/

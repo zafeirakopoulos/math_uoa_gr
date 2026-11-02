@@ -11,7 +11,7 @@ el:
 
     **►** [**Διπλωματικές Εργασίες Στατιστικής και Επιχειρησιακής Έρευνας**](/spoudes/metaptychiakes/diplomatikes/statistiki/)
 
-    **►**[https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v2.pdf](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v2.pdf)[**Αναθέσεις Μαθημάτων Ακαδημαϊκό Έτος 2026-27**](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf)
+    **►**[https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v2.pdf](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v2.pdf)<br>[**Αναθέσεις Μαθημάτων Ακαδημαϊκό Έτος 2026-27**](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PMS_26-27_v5.pdf)
 
     **►**[**Ωρολόγιο Χειμερινού Εξαμήνου 2026-2027**](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Orologio_programma_PMS_2026_27_FINAL_V.pdf)
 

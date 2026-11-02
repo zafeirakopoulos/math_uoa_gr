@@ -1,6 +1,6 @@
 ---
 section: to-tmima
-nav_order: 5
+nav_order: 6
 section_root: true
 el:
   title: Το Τμήμα

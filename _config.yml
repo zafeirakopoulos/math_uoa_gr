@@ -147,6 +147,10 @@ feed:
     news:
       path: /feed.xml
 paginate_news: 12
+# Teaching period shown on the undergraduate hub: courses whose `offered` includes it.
+# Change to "spring" when the spring semester starts (course `offered` data is for academic_year).
+academic_year: 2026-27
+current_semester: winter
 show_legacy_note: true   # set false once migration is reviewed
 exclude:
   - DEPinternal        # separate project living in this folder; never publish

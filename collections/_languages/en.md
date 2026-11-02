@@ -122,6 +122,12 @@ t:
   msc_group:
     core: Core courses
     elective: Elective courses
+  offered_now:
+    winter: Courses this winter semester
+    spring: Courses this spring semester
+  offered_now_note: The courses taught this semester, by semester of the suggested programme. Compulsory courses are in bold; choose a concentration to highlight its courses. Course titles and descriptions are in Greek.
+  all_concentrations: All concentrations
+  other_courses: Other courses
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

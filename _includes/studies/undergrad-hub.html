@@ -20,14 +20,16 @@
   {%- endfor %}
 </div>
 
-{%- assign courses = site.courses | where_exp: "c", "c.semester" -%}
+{%- assign cur = site.current_semester -%}
+{%- assign all_courses_page = navable | where: "nav_key", "courses" | first -%}
+{%- assign courses = site.courses | where_exp: "c", "c.offered contains cur" -%}
 {%- if courses.size > 0 %}
 <section class="programme" id="programma">
-  <div class="section-title"><h2>{{ t.suggested_programme }}</h2></div>
-  <p class="programme__note">{{ t.suggested_programme_note }}</p>
+  <div class="section-title"><h2>{{ t.offered_now[cur] }} {{ site.academic_year }}</h2><a class="more-link" href="{{ all_courses_page.url | relative_url }}">{{ t.all_courses }}</a></div>
+  <p class="programme__note">{{ t.offered_now_note }}</p>
   {%- assign tags = site.data.course_tags -%}
   <div class="programme__filter" data-programme-filter role="group" aria-label="{{ t.concentration }}">
-    <button type="button" aria-pressed="true" data-tag="">{{ t.all_courses }}</button>
+    <button type="button" aria-pressed="true" data-tag="">{{ t.all_concentrations }}</button>
     {%- assign conc = "kthm,kem,ksee,kme" | split: "," -%}{%- for k in conc %}{% if tags[k] %}<button type="button" aria-pressed="false" data-tag="{{ k }}">{{ tags[k][lang].long | default: tags[k].el.long }}</button>{% endif %}{% endfor %}
   </div>
   <div class="semesters">
@@ -51,6 +53,17 @@
     </section>
     {%- endif %}
     {%- endfor %}
+    {%- assign other = courses | where_exp: "c", "c.semester == nil" | sort: "code" -%}
+    {%- if other.size > 0 %}
+    <section class="semester">
+      <h3>{{ t.other_courses }}</h3>
+      <ul>
+        {%- for c in other %}{% include tr.html doc=c %}
+        <li class="course" data-tags="{{ c.tags | join: ' ' }}"><span class="course__code">{{ c.code }}</span> <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a><span class="course__tags">{% for k in c.tags %}{% if tags[k] %}<abbr title="{{ tags[k][lang].long }}">{{ tags[k][lang].short }}</abbr>{% endif %}{% endfor %}</span></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
   </div>
 </section>
 {%- endif %}

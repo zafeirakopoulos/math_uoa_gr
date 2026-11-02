@@ -1,8 +1,10 @@
 ---
-section: proptychiakes
-nav_order: 7
+section_root: true
+section: erasmus
+nav_order: 4
 el:
   title: Erasmus+ και CIVIS
+  nav_title: Erasmus+ / CIVIS
   lede: Σπουδές και πρακτική άσκηση σε άλλο ευρωπαϊκό πανεπιστήμιο, για προπτυχιακούς, μεταπτυχιακούς και υποψήφιους διδάκτορες.
   permalink: /spoudes/erasmus-civis/
   body: |
@@ -22,6 +24,7 @@ el:
     - **Ακαδημαϊκός υπεύθυνος Erasmus του Τμήματος:** *(προς συμπλήρωση)*
 en:
   title: Erasmus+ and CIVIS
+  nav_title: Erasmus+ / CIVIS
   lede: Study or train at another European university — for undergraduate, graduate and doctoral students.
   permalink: /en/studies/erasmus-civis/
   body: |
