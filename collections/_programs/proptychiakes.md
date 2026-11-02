@@ -39,8 +39,6 @@ el:
       pdf: true
   - title: Πρόγραμμα σπουδών
     links:
-    - title: Μαθήματα του τρέχοντος εξαμήνου
-      url: "#programma"
     - title: Όλα τα μαθήματα
       url: /spoudes/proptychiakes/mathimata/
     - title: Οδηγός σπουδών 2026-27
@@ -53,16 +51,6 @@ el:
       pdf: true
   - title: Ακαδημαϊκό έτος 2026-27
     links:
-    - title: Βασικές ημερομηνίες έτους
-      url: /spoudes/proptychiakes/imerominies/
-    - title: Ωρολόγιο πρόγραμμα 1ου έτους
-      url: /spoudes/proptychiakes/orologio/#proto-etos
-    - title: Ωρολόγιο πρόγραμμα χειμερινού εξαμήνου
-      url: /spoudes/proptychiakes/orologio/#cheimerino
-    - title: Αναθέσεις διδασκαλίας χειμερινού
-      url: /spoudes/proptychiakes/anatheseis/#cheimerino
-    - title: Αναθέσεις διδασκαλίας εαρινού
-      url: /spoudes/proptychiakes/anatheseis/#earino
     - title: Πρόγραμμα εξετάσεων Σεπτεμβρίου 2026
       url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Programma_ekserastikhs_09_2026-final_.pdf
       pdf: true
@@ -128,8 +116,6 @@ en:
       pdf: true
   - title: Curriculum
     links:
-    - title: Courses this semester
-      url: "#programma"
     - title: All courses
       url: /en/studies/undergraduate/courses/
     - title: Study guide 2026-27 (Greek)
@@ -137,10 +123,6 @@ en:
       pdf: true
   - title: Academic year 2026-27
     links:
-    - title: Key dates
-      url: /en/studies/undergraduate/imerominies/
-    - title: Winter semester timetable
-      url: /en/studies/undergraduate/orologio/#cheimerino
     - title: Course registration (My-Studies)
       url: https://my-studies.uoa.gr/
   - title: Opportunities

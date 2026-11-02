@@ -1,0 +1,2627 @@
+# Academic year 2026-27 of the undergraduate programme: the single source for the
+# undergraduate hub (key dates, first-year timetable, and per semester: teaching and exam
+# periods, weekly timetable, teaching assignments). Add one file per year, named after the
+# year, and set `academic_year` / `current_semester` in _config.yml.
+year: 2026-27
+dates:
+- section: Χειμερινό εξάμηνο
+  label: Έναρξη διδασκαλίας μαθημάτων
+  start: '2026-09-28'
+- section: Χειμερινό εξάμηνο
+  label: Πέρας διδασκαλίας μαθημάτων
+  start: '2027-01-15'
+- section: Χειμερινό εξάμηνο
+  label: Εβδομάδα αναπληρώσεων και μελέτης
+  start: '2027-01-11'
+  end: '2027-01-15'
+- section: Χειμερινό εξάμηνο
+  label: Διακοπές Χριστουγέννων – Νέου Έτους
+  start: '2026-12-24'
+  end: '2027-01-06'
+- section: Χειμερινό εξάμηνο
+  label: Έναρξη Εξετάσεων
+  start: '2027-01-18'
+- section: Χειμερινό εξάμηνο
+  label: Πέρας Εξετάσεων
+  start: '2027-02-12'
+  note: 'Διάρκεια εξετάσεων: 4 εβδομάδες. Η παραπάνω εξεταστική περίοδος περιλαμβάνει και την πτυχιακή εξεταστική περίοδο του Εαρινού Εξαμήνου 2025-2026.'
+- section: Εαρινό εξάμηνο
+  label: Έναρξη διδασκαλίας μαθημάτων
+  start: '2027-02-15'
+- section: Εαρινό εξάμηνο
+  label: Πέρας διδασκαλίας μαθημάτων
+  start: '2027-06-04'
+- section: Εαρινό εξάμηνο
+  label: Εβδομάδα αναπληρώσεων και μελέτης
+  start: '2027-05-31'
+  end: '2027-06-04'
+- section: Εαρινό εξάμηνο
+  label: Διακοπές Πάσχα
+  start: '2027-04-26'
+  end: '2027-05-09'
+- section: Εαρινό εξάμηνο
+  label: Έναρξη Εξετάσεων
+  start: '2027-06-07'
+- section: Εαρινό εξάμηνο
+  label: Πέρας Εξετάσεων
+  start: '2027-07-02'
+  note: 'Διάρκεια Εξετάσεων: 4 εβδομάδες. Η παραπάνω εξεταστική περίοδος περιλαμβάνει και την πτυχιακή εξεταστική περίοδο του Χειμερινού Εξαμήνου 2026-2027.'
+- section: Συμπληρωματικές εξετάσεις Σεπτεμβρίου 2027
+  label: Έναρξη Εξετάσεων
+  start: '2027-08-30'
+- section: Συμπληρωματικές εξετάσεις Σεπτεμβρίου 2027
+  label: Πέρας Εξετάσεων
+  start: '2027-09-24'
+  note: 'Διάρκεια εξετάσεων: 4 εβδομάδες'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Εθνική Εορτή
+  start: '2026-10-28'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Επέτειος Πολυτεχνείου
+  start: '2026-11-17'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Τριών Ιεραρχών
+  start: '2027-01-30'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Επέτειος κατάληψης Νομικής Σχολής
+  start: '2027-02-21'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Καθαρά Δευτέρα
+  start: '2027-03-15'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Εθνική εορτή
+  start: '2027-03-25'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Πρωτομαγιά
+  start: '2027-05-01'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Επέτειος ίδρυσης του Πανεπιστημίου
+  start: '2027-05-03'
+- section: Αργίες ακαδημαϊκού έτους 2026-2027
+  label: Αγίου Πνεύματος
+  start: '2027-06-21'
+date_notes:
+- 'Διακοπή Μαθημάτων: την ημέρα διεξαγωγής των Φοιτητικών Εκλογών και την επόμενή της.'
+first_year:
+  groups:
+    Ομάδα 0-4: Φοιτητές/τριες με τελευταίο ψηφίο Α.Μ. 0-4
+    Ομάδα 5-9: Φοιτητές/τριες με τελευταίο ψηφίο Α.Μ. 5-9
+    Ομάδα (*): Παρακαλούνται οι φοιτητές/φοιτήτριες να δουν τη σχετική ανακοίνωση στη σελίδα του μαθήματος Πληροφορική Ι https://eclass.uoa.gr/courses/MATH843/
+  courses:
+  - course_code: 101
+    course: Απειροστικός Λογισμός Ι
+    instructors:
+    - Π. Δοδός
+    - Γ. Μπαρμπάτης (ασκήσεις)
+  - course_code: 109
+    course: Θεμέλια Μαθηματικής Ανάλυσης
+    instructors:
+    - Ε. Δεληγιάννη
+    - Μ. Ηλιοπούλου
+  - course_code: 120
+    course: Θεμέλια Άλγεβρας και Γεωμετρίας
+    instructors:
+    - Μ. Χλουβεράκη
+  - course_code: 122
+    course: Γεωμετρία Ι
+    instructors:
+    - Ι. Ανδρουλιδάκης
+  - course_code: 141
+    course: Πληροφορική Ι
+    instructors:
+    - Ζ. Ζαφειρακόπουλος (ομάδα 0-4)
+    - Δ. Θηλυκός (ομάδα 5-9)
+    - Δ. Αντωνόπουλος (εργαστήριο)
+  - course_code: 151
+    course: Συνδυαστική
+    instructors:
+    - Ν. Παπαδάτος
+  - course_code: 872
+    course: Θεωρίες Μάθησης και Διδασκαλίας
+    instructors:
+    - Ζ. Σμυρναίου
+    - Ολ. Παπαϊωάννου
+  slots:
+  - day: Δευτέρα
+    start: '11:00'
+    end: '13:00'
+    course_code: 101
+    course: Απειροστικός Λογισμός Ι
+    room: ΑΜΦ22
+  - day: Τετάρτη
+    start: '11:00'
+    end: '13:00'
+    course_code: 101
+    course: Απειροστικός Λογισμός Ι
+    room: ΑΜΦ22
+  - day: Πέμπτη
+    start: '12:00'
+    end: '13:00'
+    course_code: 101
+    course: Απειροστικός Λογισμός Ι
+    type: ασκήσεις
+    room: ΑΜΦ23
+  - day: Παρασκευή
+    start: '11:00'
+    end: '13:00'
+    course_code: 101
+    course: Απειροστικός Λογισμός Ι
+    room: ΑΜΦ22
+  - day: Δευτέρα
+    start: '13:00'
+    end: '15:00'
+    course_code: 109
+    course: Θεμέλια Μαθηματικής Ανάλυσης
+    room: ΑΜΦ22
+  - day: Τετάρτη
+    start: '13:00'
+    end: '15:00'
+    course_code: 109
+    course: Θεμέλια Μαθηματικής Ανάλυσης
+    room: ΑΜΦ22
+  - day: Παρασκευή
+    start: '13:00'
+    end: '16:00'
+    course_code: 120
+    course: Θεμέλια Άλγεβρας και Γεωμετρίας
+    room: ΑΜΦ22
+  - day: Δευτέρα
+    start: 09:00
+    end: '11:00'
+    course_code: 122
+    course: Γεωμετρία Ι
+    room: ΑΜΦ22
+  - day: Τετάρτη
+    start: 09:00
+    end: '11:00'
+    course_code: 122
+    course: Γεωμετρία Ι
+    room: ΑΜΦ22
+  - day: Παρασκευή
+    start: 09:00
+    end: '11:00'
+    course_code: 122
+    course: Γεωμετρία Ι
+    room: ΑΜΦ22
+  - day: Τρίτη
+    start: '13:00'
+    end: '15:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 0-4
+    type: θεωρία
+    room: ΑΜΦ23
+  - day: Πέμπτη
+    start: '15:00'
+    end: '17:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 0-4
+    type: θεωρία
+    room: ΑΜΦ23
+  - day: Τρίτη
+    start: '15:00'
+    end: '17:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 5-9
+    type: θεωρία
+    room: ΑΜΦ23
+  - day: Πέμπτη
+    start: '13:00'
+    end: '15:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 5-9
+    type: θεωρία
+    room: ΑΜΦ23
+  - day: Πέμπτη
+    start: '13:00'
+    end: '15:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 0-4
+    type: εργαστήριο
+    instructor: Δ. Αντωνόπουλος
+    note: Δεν αναγράφεται αίθουσα στο PDF.
+  - day: Τρίτη
+    start: '11:00'
+    end: '13:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 5-9
+    type: εργαστήριο
+    instructor: Δ. Θηλυκός
+    room: Αιθ. Γ
+  - day: Τρίτη
+    start: '11:00'
+    end: '13:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα 5-9
+    type: εργαστήριο
+    instructor: Δ. Αντωνόπουλος
+    room: Αιθ. Α
+  - day: Τρίτη
+    start: 09:00
+    end: '11:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα (*)
+    type: εργαστήριο
+    instructor: Ζ. Ζαφειρακόπουλος
+    room: Αιθ. Γ
+  - day: Τρίτη
+    start: 09:00
+    end: '11:00'
+    course_code: 141
+    course: Πληροφορική Ι
+    group: Ομάδα (*)
+    type: εργαστήριο
+    instructor: Δ. Αντωνόπουλος
+    room: Αιθ. Α
+  - day: Δευτέρα
+    start: '15:00'
+    end: '17:00'
+    course_code: 151
+    course: Συνδυαστική
+    room: ΑΜΦ23
+  - day: Τετάρτη
+    start: '15:00'
+    end: '17:00'
+    course_code: 151
+    course: Συνδυαστική
+    room: ΑΜΦ23
+  - day: Δευτέρα
+    start: '16:00'
+    end: '19:00'
+    course_code: 872
+    course: Θεωρίες Μάθησης και Διδασκαλίας
+    room: Γ31
+  updated: '2026-09-17'
+winter:
+  teaching:
+  - '2026-09-28'
+  - '2027-01-15'
+  exams:
+  - '2027-01-18'
+  - '2027-02-12'
+  updated: '2026-09-29'
+  timetable:
+    note: Το ωρολόγιο πρόγραμμα ενδέχεται να αναθεωρηθεί τις επόμενες ημέρες/εβδομάδες. Παρακαλούμε να το ελέγχετε τακτικά για τυχόν αλλαγές.
+    slots:
+    - day: Δευτέρα
+      start: 09:00
+      end: '13:00'
+      msc_code: ΣΕΠ19
+      course: Θεωρία Παιγνίων
+      room: Α12
+      instructors:
+      - Μερτικόπουλος
+      level: postgraduate
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ21
+      course: Αλγεβρική Γεωμετρία
+      room: Α21
+      instructors:
+      - Τερεζάκης
+      level: postgraduate
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ13=Ε20
+      course: Θεωρία Τελεστών
+      room: Α31
+      instructors:
+      - Κακαριάδης
+      level: postgraduate
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 634
+      course: Γεωμετρία ΙΙ
+      room: ΑΜΦ21
+      instructors:
+      - Γιαννιώτης
+      level: undergraduate
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 122
+      course: Γεωμετρία Ι
+      room: ΑΜΦ22
+      instructors:
+      - Ανδρουλιδάκης
+      level: undergraduate
+      year: 1
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 301
+      course: Απειροστικός Λογισμός ΙΙΙ
+      room: ΑΜΦ23
+      instructors:
+      - Σμυρνέλης
+      level: undergraduate
+      year: 2
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 421
+      course: Βασική Άλγεβρα
+      room: ΑΜΦ24
+      instructors:
+      - Κοντογεώργης
+      level: undergraduate
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 559
+      course: Θεωρία Παιγνίων
+      room: Γ22
+      instructors:
+      - Μπουρνέτας
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 615
+      course: Γεωμετρική Ανάλυση
+      room: Γ23
+      instructors:
+      - Χατζηκαλέας
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: 09:00
+      end: '11:00'
+      course_code: 555
+      course: Μπεϋζιανή Στατιστική
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Μελιγκοτσίδου
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '10:00'
+      end: '13:00'
+      course_code: 713
+      course: Μερικές Διαφορικές Εξισώσεις ΙΙ
+      room: Γ21
+      instructors:
+      - Πασχάλης
+      notes: 'Έναρξη: 5/10'
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ8=Ε8
+      course: Μερικές Διαφορικές Εξισώσεις Ι
+      room: Α21
+      instructors:
+      - Αλικάκος
+      - Χατζηκαλέας
+      level: postgraduate
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ31
+      course: Αλγεβρική Θεωρία Αριθμών
+      room: Α31
+      instructors:
+      - Κοντογεώργης
+      level: postgraduate
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 101
+      course: Απειροστικός Λογισμός Ι
+      room: ΑΜΦ22
+      instructors:
+      - Δοδός
+      level: undergraduate
+      year: 1
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      room: ΑΜΦ23
+      instructors:
+      - Τρέβεζας
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 221
+      course: Γραμμική Άλγεβρα ΙΙ
+      room: ΑΜΦ24
+      instructors:
+      - Μαλιάκας
+      level: undergraduate
+      year: 2
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 798
+      course: Διδακτική της Άλγεβρας
+      room: Γ23
+      instructors:
+      - Μάλη
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 602
+      course: Εισαγωγή στην Συναρτησιακή Ανάλυση
+      room: Γ31
+      instructors:
+      - Κατάβολος
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 616
+      course: Θεωρία Προσέγγισης
+      room: Γ32
+      instructors:
+      - Νοτάρης
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: '11:00'
+      end: '13:00'
+      course_code: 721
+      course: Εισαγωγή στη Διαφορική Γεωμετρία των Πολλαπλοτήτων
+      room: Γ33
+      instructors:
+      - Μελάς
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '13:00'
+      end: '15:00'
+      msc_code: Θ5=Ε23
+      course: Διαφορική Γεωμετρία Ι
+      room: Α31
+      instructors:
+      - Ανδρουλιδάκης
+      - Μελάς
+      level: postgraduate
+    - day: Δευτέρα
+      start: '13:00'
+      end: '15:00'
+      course_code: 109
+      course: Θεμέλια Μαθηματικής Ανάλυσης
+      room: ΑΜΦ22
+      instructors:
+      - Δεληγιάννη
+      - Ηλιοπούλου
+      level: undergraduate
+      year: 1
+    - day: Δευτέρα
+      start: '13:00'
+      end: '15:00'
+      course_code: 241
+      course: Πιθανότητες Ι
+      room: ΑΜΦ23
+      instructors:
+      - Χελιώτης
+      level: undergraduate
+      year: 2
+    - day: Δευτέρα
+      start: '13:00'
+      end: '15:00'
+      course_code: 712
+      course: Γραμμικοί Τελεστές
+      room: Γ21
+      instructors:
+      - Κακαριάδης
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '13:00'
+      end: '16:00'
+      course_code: 732
+      course: Θέματα Άλγεβρας και Γεωμετρίας Ι
+      room: Γ32
+      instructors:
+      - Παπατριανταφύλλου
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: '15:00'
+      end: '18:00'
+      course_code: 302
+      course: Συνήθεις Διαφορικές Εξισώσεις
+      room: ΑΜΦ21
+      instructors:
+      - Καραλή
+      level: undergraduate
+    - day: Δευτέρα
+      start: '15:00'
+      end: '17:00'
+      course_code: 151
+      course: Συνδυαστική
+      room: ΑΜΦ23
+      instructors:
+      - Παπαδάτος
+      level: undergraduate
+      year: 1
+    - day: Δευτέρα
+      start: '15:00'
+      end: '17:00'
+      course_code: 121
+      course: Γραμμική Άλγεβρα Ι
+      room: ΑΜΦ24
+      instructors:
+      - Γκότσης
+      - Φακιολάς (Ασκ.)
+      level: undergraduate
+    - day: Δευτέρα
+      start: '15:00'
+      end: '17:00'
+      course_code: 761
+      course: Κβαντική Φυσική
+      room: Γ21
+      instructors:
+      - Παπαθανασίου
+      - Σπανός
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '15:00'
+      end: '17:00'
+      course_code: 442
+      course: Πιθανότητες ΙΙ
+      room: Γ23
+      instructors:
+      - Χελιώτης
+      level: undergraduate
+      year: 3
+    - day: Δευτέρα
+      start: '15:00'
+      end: '17:00'
+      course_code: 533
+      course: Εισαγωγή στη Θεμελίωση της Γεωμετρίας
+      room: Γ33
+      instructors:
+      - Πρασίδης
+      level: undergraduate
+      year: 2
+    - day: Δευτέρα
+      start: '16:00'
+      end: '19:00'
+      course_code: 735
+      course: Εισαγωγή στην Αλγεβρική Θεωρία Αριθμών
+      room: Γ22
+      instructors:
+      - Καραγιάννης
+      level: undergraduate
+      year: 4
+    - day: Δευτέρα
+      start: '16:00'
+      end: '19:00'
+      course_code: 872
+      course: Θεωρίες Μάθησης και Διδασκαλίας
+      room: Γ31
+      instructors:
+      - Παπαϊωάννου
+      - Σμυρναίου
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      msc_code: ΕΜ3α
+      course: ΕΜ3α
+      room: Α21
+      instructors:
+      - Μητρούλη
+      - Μπάρδης
+      level: postgraduate
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ9=Ε19
+      course: Μιγαδική Ανάλυση Μιας Μεταβλητής
+      room: Α31
+      instructors:
+      - Χατζηαφράτης
+      level: postgraduate
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 252
+      course: Διακριτά Μαθηματικά
+      room: ΑΜΦ24
+      instructors:
+      - Αθανασιάδης
+      level: undergraduate
+      year: 2
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 714
+      course: Τοπολογία
+      room: Γ21
+      instructors:
+      - Δεληγιάννη
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 651
+      course: Στοχαστικές Ανελίξεις
+      room: Γ22
+      instructors:
+      - Μάνου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 859
+      course: Ουρές Αναμονής
+      room: Γ32
+      instructors:
+      - Οικονόμου
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: (*)
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Αντωνόπουλος
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: 09:00
+      end: '11:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: (*)
+      room: Εργαστήριο (Αίθ. Γ)
+      instructors:
+      - Ζαφειρακόπουλος
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Ε3
+      course: Υπολογιστικά Μαθηματικά Ι
+      room: Α21
+      instructors:
+      - Νοτάρης
+      level: postgraduate
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ1=Ε17
+      course: Ανάλυση Ι
+      room: Α31
+      instructors:
+      - Τύρος
+      level: postgraduate
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 261
+      course: Κλασική Μηχανική
+      room: ΑΜΦ22
+      instructors:
+      - Καζαντζίδης
+      - Χατζηδημητρίου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 693
+      course: Διδακτική της Γεωμετρίας
+      room: Γ21
+      instructors:
+      - Μεταξάς
+      - Πόταρη
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 653
+      course: Αριθμητική Ανάλυση Διαφορικών Εξισώσεων
+      room: Γ23
+      instructors:
+      - Αντωνοπούλου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 423
+      course: Δακτύλιοι και Πρότυπα
+      room: Γ31
+      instructors:
+      - Χλουβεράκη
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 755
+      course: Υπολογιστική Στατιστική
+      room: Γ33
+      instructors:
+      - Σιάννης
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 5-9
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Αντωνόπουλος
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 5-9
+      room: Εργαστήριο (Αίθ. Γ)
+      instructors:
+      - Θηλυκός
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: Θ26.β
+      course: Θ26.β
+      room: Α11
+      instructors:
+      - Μενεγάκη
+      level: postgraduate
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: ΣΕΠ1=Ε26
+      course: Μαθηματική Στατιστική
+      room: Α12
+      instructors:
+      - Βαγγελάτου
+      level: postgraduate
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: Ε9
+      course: Υπολογιστικά Μαθηματικά ΙΙ
+      room: Α21
+      instructors:
+      - Αντωνοπούλου
+      level: postgraduate
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 834
+      msc_code: Θ3
+      course: Θεωρία Ομάδων
+      room: Α31
+      instructors:
+      - Γερανιός
+      level: undergraduate+postgraduate
+      year: 4
+    - day: Τρίτη
+      start: '13:00'
+      end: '16:00'
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      room: ΑΜΦ21
+      instructors:
+      - Καραλιοπούλου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 0-4
+      room: ΑΜΦ23
+      instructors:
+      - Ζαφειρακόπουλος
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 591
+      course: Διδακτική Απειροστικού Λογισμού
+      room: Γ21
+      instructors:
+      - Μάλη
+      - Μεταξάς
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 361
+      course: Φυσική Μετεωρολογία
+      room: Γ22
+      instructors:
+      - Καρατάσου
+      - Τυρλής
+      level: undergraduate
+      year: 2
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 511
+      course: Θεωρία Μέτρου
+      room: Γ31
+      instructors:
+      - Ηλιοπούλου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 752
+      course: Αριθμητική Γραμμική Άλγεβρα
+      room: Γ32
+      instructors:
+      - Μητρούλη
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 5-9
+      room: ΑΜΦ23
+      instructors:
+      - Θηλυκός
+      level: undergraduate
+      year: 1
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 411
+      course: Μερικές Διαφορικές Εξισώσεις Ι
+      room: ΑΜΦ24
+      instructors:
+      - Μπαρμπάτης
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 756
+      course: Χρηματοοικονομικά Μαθηματικά
+      room: Γ21
+      instructors:
+      - Βαγγελάτου
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 814
+      course: Θεωρία Ελέγχου
+      room: Γ22
+      instructors:
+      - Χαλικιάς
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 897
+      course: Επιστημολογία και Διδακτική των Μαθηματικών
+      room: Γ23
+      instructors:
+      - Χριστοπούλου
+      - Τριανταφύλλου
+      level: undergraduate
+      year: 3
+    - day: Τρίτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 832
+      course: Αλγεβρική Τοπολογία
+      room: Γ32
+      instructors:
+      - Πρασίδης
+      level: undergraduate
+      year: 4
+    - day: Τρίτη
+      start: '16:00'
+      end: '19:00'
+      course_code: 352
+      course: Δομές Δεδομένων
+      room: Γ31
+      instructors:
+      - Ψαρρός
+      notes: 'Έναρξη: 6/10'
+      level: undergraduate
+      year: 2
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ21
+      course: Αλγεβρική Γεωμετρία
+      room: Α21
+      instructors:
+      - Τερεζάκης
+      level: postgraduate
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ13=Ε20
+      course: Θεωρία Τελεστών
+      room: Α31
+      instructors:
+      - Κακαριάδης
+      level: postgraduate
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 634
+      course: Γεωμετρία ΙΙ
+      room: ΑΜΦ21
+      instructors:
+      - Γιαννιώτης
+      level: undergraduate
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 122
+      course: Γεωμετρία Ι
+      room: ΑΜΦ22
+      instructors:
+      - Ανδρουλιδάκης
+      level: undergraduate
+      year: 1
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 301
+      course: Απειροστικός Λογισμός ΙΙΙ
+      room: ΑΜΦ23
+      instructors:
+      - Σμυρνέλης
+      level: undergraduate
+      year: 2
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 421
+      course: Βασική Άλγεβρα
+      room: ΑΜΦ24
+      instructors:
+      - Κοντογεώργης
+      level: undergraduate
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 559
+      course: Θεωρία Παιγνίων
+      room: Γ22
+      instructors:
+      - Μπουρνέτας
+      level: undergraduate
+      year: 3
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 615
+      course: Γεωμετρική Ανάλυση
+      room: Γ23
+      instructors:
+      - Χατζηκαλέας
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: 09:00
+      end: '13:00'
+      msc_code: ΣΕΠ6
+      course: Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα
+      room: Γ31
+      instructors:
+      - Οικονόμου
+      level: postgraduate
+    - day: Τετάρτη
+      start: 09:00
+      end: '11:00'
+      course_code: 555
+      course: Μπεϋζιανή Στατιστική
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Μελιγκοτσίδου
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '10:00'
+      end: '13:00'
+      course_code: 711
+      course: Θέματα Μαθηματικής Ανάλυσης Ι
+      room: Γ21
+      instructors:
+      - Πασχάλης
+      notes: 'Έναρξη: 7/10'
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Δ27
+      course: Δ27
+      room: Α11
+      instructors:
+      - Βασιλείου
+      level: postgraduate
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ18=Ε21
+      course: Θεωρία Γραφημάτων
+      room: Α12
+      instructors:
+      - Γιαννοπούλου
+      - Θηλυκός
+      level: postgraduate
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ8=Ε8
+      course: Μερικές Διαφορικές Εξισώσεις Ι
+      room: Α21
+      instructors:
+      - Αλικάκος
+      - Χατζηκαλέας
+      level: postgraduate
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ31
+      course: Αλγεβρική Θεωρία Αριθμών
+      room: Α31
+      instructors:
+      - Κοντογεώργης
+      level: postgraduate
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 101
+      course: Απειροστικός Λογισμός Ι
+      room: ΑΜΦ22
+      instructors:
+      - Δοδός
+      level: undergraduate
+      year: 1
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      room: ΑΜΦ23
+      instructors:
+      - Τρέβεζας
+      level: undergraduate
+      year: 3
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 221
+      course: Γραμμική Άλγεβρα ΙΙ
+      room: ΑΜΦ24
+      instructors:
+      - Μαλιάκας
+      level: undergraduate
+      year: 2
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 798
+      course: Διδακτική της Άλγεβρας
+      room: Γ23
+      instructors:
+      - Μάλη
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 616
+      course: Θεωρία Προσέγγισης
+      room: Γ32
+      instructors:
+      - Νοτάρης
+      level: undergraduate
+      year: 3
+    - day: Τετάρτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 721
+      course: Εισαγωγή στη Διαφορική Γεωμετρία των Πολλαπλοτήτων
+      room: Γ33
+      instructors:
+      - Μελάς
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: Θ5=Ε23
+      course: Διαφορική Γεωμετρία Ι
+      room: Α31
+      instructors:
+      - Ανδρουλιδάκης
+      - Μελάς
+      level: postgraduate
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 109
+      course: Θεμέλια Μαθηματικής Ανάλυσης
+      room: ΑΜΦ22
+      instructors:
+      - Δεληγιάννη
+      - Ηλιοπούλου
+      level: undergraduate
+      year: 1
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 241
+      course: Πιθανότητες Ι
+      room: ΑΜΦ23
+      instructors:
+      - Χελιώτης
+      level: undergraduate
+      year: 2
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 712
+      course: Γραμμικοί Τελεστές
+      room: Γ21
+      instructors:
+      - Κακαριάδης
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 898
+      course: Η διδασκαλία μέσω επίλυσης προβλημάτων - μαθηματικοποίηση
+      room: Γ22
+      instructors:
+      - Τριανταφύλλου
+      level: undergraduate
+      year: 4
+    - day: Τετάρτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 691
+      course: Διδακτική των Μαθηματικών Ι
+      room: Γ31
+      instructors:
+      - Πετροπούλου
+      - Ψυχάρης
+      level: undergraduate
+      year: 3
+    - day: Τετάρτη
+      start: '15:00'
+      end: '18:00'
+      course_code: 302
+      course: Συνήθεις Διαφορικές Εξισώσεις
+      room: ΑΜΦ21
+      instructors:
+      - Καραλή
+      level: undergraduate
+    - day: Τετάρτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 151
+      course: Συνδυαστική
+      room: ΑΜΦ23
+      instructors:
+      - Παπαδάτος
+      level: undergraduate
+      year: 1
+    - day: Τετάρτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 121
+      course: Γραμμική Άλγεβρα Ι
+      room: ΑΜΦ24
+      instructors:
+      - Γκότσης
+      - Φακιολάς (Ασκ.)
+      level: undergraduate
+    - day: Τετάρτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 442
+      course: Πιθανότητες ΙΙ
+      room: Γ23
+      instructors:
+      - Χελιώτης
+      level: undergraduate
+      year: 3
+    - day: Τετάρτη
+      start: '15:00'
+      end: '17:00'
+      course: Σεμινάριο Συναρτησιακής Ανάλυσης και Θεωρίας Τελεστών
+      type: seminar
+      room: Γ31
+    - day: Τετάρτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 533
+      course: Εισαγωγή στη Θεμελίωση της Γεωμετρίας
+      room: Γ33
+      instructors:
+      - Πρασίδης
+      level: undergraduate
+      year: 2
+    - day: Τετάρτη
+      start: '16:00'
+      end: '19:00'
+      course_code: 736
+      course: Ομολογική Άλγεβρα και Κατηγορίες
+      room: Γ22
+      instructors:
+      - Καραγιάννης
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      msc_code: Ε3
+      course: Υπολογιστικά Μαθηματικά Ι
+      room: Α21
+      instructors:
+      - Νοτάρης
+      level: postgraduate
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      msc_code: Θ9=Ε19
+      course: Μιγαδική Ανάλυση Μιας Μεταβλητής
+      room: Α31
+      instructors:
+      - Χατζηαφράτης
+      level: postgraduate
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      course_code: 252
+      course: Διακριτά Μαθηματικά
+      room: ΑΜΦ24
+      instructors:
+      - Αθανασιάδης
+      level: undergraduate
+      year: 2
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      course_code: 714
+      course: Τοπολογία
+      room: Γ21
+      instructors:
+      - Δεληγιάννη
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      course_code: 651
+      course: Στοχαστικές Ανελίξεις
+      room: Γ22
+      instructors:
+      - Μάνου
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: 09:00
+      end: '11:00'
+      course_code: 859
+      course: Ουρές Αναμονής
+      room: Γ32
+      instructors:
+      - Οικονόμου
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: 09:00
+      end: '13:00'
+      msc_code: ΣΕΠ16
+      course: Μπεϋζιανή Στατιστική
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Μελιγκοτσίδου
+      level: postgraduate
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ26.β
+      course: Θ26.β
+      room: Α11
+      instructors:
+      - Μενεγάκη
+      level: postgraduate
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ18=Ε21
+      course: Θεωρία Γραφημάτων
+      room: Α12
+      instructors:
+      - Γιαννοπούλου
+      - Θηλυκός
+      level: postgraduate
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      msc_code: ΕΜ3α
+      course: ΕΜ3α
+      room: Α21
+      instructors:
+      - Μητρούλη
+      - Μπάρδης
+      level: postgraduate
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 261
+      course: Κλασική Μηχανική
+      room: ΑΜΦ22
+      instructors:
+      - Καζαντζίδης
+      - Χατζηδημητρίου
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 653
+      course: Αριθμητική Ανάλυση Διαφορικών Εξισώσεων
+      room: Γ23
+      instructors:
+      - Αντωνοπούλου
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 602
+      course: Εισαγωγή στην Συναρτησιακή Ανάλυση
+      room: Γ31
+      instructors:
+      - Κατάβολος
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '11:00'
+      end: '13:00'
+      course_code: 755
+      course: Υπολογιστική Στατιστική
+      room: Γ33
+      instructors:
+      - Σιάννης
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: '12:00'
+      end: '13:00'
+      course_code: 101
+      course: Απειροστικός Λογισμός Ι
+      room: ΑΜΦ23
+      instructors:
+      - Μπαρμπάτης
+      notes: Ασκήσεις
+      level: undergraduate
+      year: 1
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: ΣΕΠ1=Ε26
+      course: Μαθηματική Στατιστική
+      room: Α12
+      instructors:
+      - Βαγγελάτου
+      level: postgraduate
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      msc_code: Ε9
+      course: Υπολογιστικά Μαθηματικά ΙΙ
+      room: Α21
+      instructors:
+      - Αντωνοπούλου
+      level: postgraduate
+    - day: Πέμπτη
+      start: '13:00'
+      end: '16:00'
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      room: ΑΜΦ21
+      instructors:
+      - Καραλιοπούλου
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 5-9
+      room: ΑΜΦ23
+      instructors:
+      - Θηλυκός
+      level: undergraduate
+      year: 1
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 591
+      course: Διδακτική Απειροστικού Λογισμού
+      room: Γ21
+      instructors:
+      - Μάλη
+      - Μεταξάς
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 898
+      course: Η διδασκαλία μέσω επίλυσης προβλημάτων - μαθηματικοποίηση
+      room: Γ22
+      instructors:
+      - Τριανταφύλλου
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: '13:00'
+      end: '14:00'
+      course: Γενικό Σεμινάριο
+      type: seminar
+      room: Γ23
+    - day: Πέμπτη
+      start: '13:00'
+      end: '14:00'
+      course: Γενικό Σεμινάριο
+      type: seminar
+      room: Γ31
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 752
+      course: Αριθμητική Γραμμική Άλγεβρα
+      room: Γ32
+      instructors:
+      - Μητρούλη
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '13:00'
+      end: '15:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 3-6
+      room: Εργαστήριο (Αίθ. Α)
+      instructors:
+      - Αντωνόπουλος
+      level: undergraduate
+      year: 1
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 141
+      course: Πληροφορική Ι
+      group: 0-4
+      room: ΑΜΦ23
+      instructors:
+      - Ζαφειρακόπουλος
+      level: undergraduate
+      year: 1
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 411
+      course: Μερικές Διαφορικές Εξισώσεις Ι
+      room: ΑΜΦ24
+      instructors:
+      - Μπαρμπάτης
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 756
+      course: Χρηματοοικονομικά Μαθηματικά
+      room: Γ21
+      instructors:
+      - Βαγγελάτου
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 814
+      course: Θεωρία Ελέγχου
+      room: Γ22
+      instructors:
+      - Χαλικιάς
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 897
+      course: Επιστημολογία και Διδακτική των Μαθηματικών
+      room: Γ23
+      instructors:
+      - Χριστοπούλου
+      - Τριανταφύλλου
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 423
+      course: Δακτύλιοι και Πρότυπα
+      room: Γ31
+      instructors:
+      - Χλουβεράκη
+      level: undergraduate
+      year: 3
+    - day: Πέμπτη
+      start: '15:00'
+      end: '17:00'
+      course_code: 832
+      course: Αλγεβρική Τοπολογία
+      room: Γ32
+      instructors:
+      - Πρασίδης
+      level: undergraduate
+      year: 4
+    - day: Πέμπτη
+      start: '15:00'
+      end: '18:00'
+      course_code: 573
+      course: Ιστορία των Μαθηματικών από την Αρχαιότητα έως την Αναγέννηση
+      room: Γ33
+      instructors:
+      - Χριστιανίδης
+      level: undergraduate
+      year: 3
+    - day: Παρασκευή
+      start: 09:00
+      end: '11:00'
+      course_code: 634
+      course: Γεωμετρία ΙΙ
+      room: ΑΜΦ21
+      instructors:
+      - Γιαννιώτης
+      level: undergraduate
+    - day: Παρασκευή
+      start: 09:00
+      end: '11:00'
+      course_code: 122
+      course: Γεωμετρία Ι
+      room: ΑΜΦ22
+      instructors:
+      - Ανδρουλιδάκης
+      level: undergraduate
+      year: 1
+    - day: Παρασκευή
+      start: 09:00
+      end: '11:00'
+      course_code: 301
+      course: Απειροστικός Λογισμός ΙΙΙ
+      room: ΑΜΦ23
+      instructors:
+      - Σμυρνέλης
+      level: undergraduate
+      year: 2
+    - day: Παρασκευή
+      start: 09:00
+      end: '11:00'
+      course_code: 421
+      course: Βασική Άλγεβρα
+      room: ΑΜΦ24
+      instructors:
+      - Κοντογεώργης
+      level: undergraduate
+    - day: Παρασκευή
+      start: '11:00'
+      end: '14:00'
+      msc_code: Δ29
+      course: Δ29
+      room: Α11
+      instructors:
+      - Χριστοπούλου
+      level: postgraduate
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      msc_code: Θ1=Ε17
+      course: Ανάλυση Ι
+      room: Α31
+      instructors:
+      - Τύρος
+      level: postgraduate
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      course_code: 101
+      course: Απειροστικός Λογισμός Ι
+      room: ΑΜΦ22
+      instructors:
+      - Δοδός
+      level: undergraduate
+      year: 1
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      room: ΑΜΦ23
+      instructors:
+      - Τρέβεζας
+      level: undergraduate
+      year: 3
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      course_code: 221
+      course: Γραμμική Άλγεβρα ΙΙ
+      room: ΑΜΦ24
+      instructors:
+      - Μαλιάκας
+      level: undergraduate
+      year: 2
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      course_code: 693
+      course: Διδακτική της Γεωμετρίας
+      room: Γ21
+      instructors:
+      - Μεταξάς
+      - Πόταρη
+      level: undergraduate
+      year: 3
+    - day: Παρασκευή
+      start: '11:00'
+      end: '14:00'
+      course_code: 718
+      course: Θεωρία Κατανομών
+      room: Γ23
+      instructors:
+      - Μενεγάκη
+      level: undergraduate
+      year: 4
+    - day: Παρασκευή
+      start: '11:00'
+      end: '13:00'
+      course_code: 511
+      course: Θεωρία Μέτρου
+      room: Γ31
+      instructors:
+      - Ηλιοπούλου
+      level: undergraduate
+      year: 3
+    - day: Παρασκευή
+      start: '13:00'
+      end: '15:00'
+      course_code: 834
+      msc_code: Θ3
+      course: Θεωρία Ομάδων
+      room: Α31
+      instructors:
+      - Γερανιός
+      level: undergraduate+postgraduate
+      year: 4
+    - day: Παρασκευή
+      start: '13:00'
+      end: '16:00'
+      course_code: 120
+      course: Θεμέλια Άλγεβρας και Γεωμετρίας
+      room: ΑΜΦ22
+      instructors:
+      - Χλουβεράκη
+      level: undergraduate
+      year: 1
+    - day: Παρασκευή
+      start: '13:00'
+      end: '15:00'
+      course_code: 761
+      course: Κβαντική Φυσική
+      room: Γ21
+      instructors:
+      - Παπαθανασίου
+      - Σπανός
+      level: undergraduate
+      year: 4
+    - day: Παρασκευή
+      start: '13:00'
+      end: '15:00'
+      course_code: 361
+      course: Φυσική Μετεωρολογία
+      room: Γ22
+      instructors:
+      - Καρατάσου
+      - Τυρλής
+      level: undergraduate
+      year: 2
+    - day: Παρασκευή
+      start: '13:00'
+      end: '15:00'
+      course_code: 691
+      course: Διδακτική των Μαθηματικών Ι
+      room: Γ31
+      instructors:
+      - Πετροπούλου
+      - Ψυχάρης
+      level: undergraduate
+      year: 3
+    - day: Παρασκευή
+      start: '14:00'
+      end: '16:00'
+      msc_code: Δ27
+      course: Δ27
+      room: Α11
+      instructors:
+      - Βασιλείου
+      level: postgraduate
+    - day: Παρασκευή
+      start: '15:00'
+      end: '17:00'
+      course_code: 241
+      course: Πιθανότητες Ι
+      room: ΑΜΦ23
+      instructors:
+      - Χελιώτης
+      level: undergraduate
+      year: 2
+    - day: Παρασκευή
+      start: '15:00'
+      end: '17:00'
+      course_code: 121
+      course: Γραμμική Άλγεβρα Ι
+      room: ΑΜΦ24
+      instructors:
+      - Γκότσης
+      - Φακιολάς (Ασκ.)
+      level: undergraduate
+    - day: Παρασκευή
+      start: '15:00'
+      end: '18:00'
+      course_code: 812
+      course: Θέματα Μαθηματικής Ανάλυσης ΙΙ
+      room: Γ23
+      instructors:
+      - Νεστορίδης
+      level: undergraduate
+      year: 4
+  assignments:
+    title: Ενδεικτικό πρόγραμμα αναθέσεων Χειμερινού Εξαμήνου 2026-27
+    notes:
+    - section: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      text: Η εκδήλωση ενδιαφέροντος για την παρακολούθηση των παρακάτω μαθημάτων στο Τμήμα Πληροφορικής και Τηλεπικοινωνιών (ΤΠΤ) γίνεται με αίτηση των ενδιαφερομένων φοιτητών και μετά από σχετικό κάλεσμα στην ιστοσελίδα του Τμήματος Μαθηματικών. Το κάλεσμα αναρτάται μόλις γίνει διαθέσιμο το Ωρολόγιο Πρόγραμμα του ΤΠΤ για το Χειμερινό Εξάμηνο. Οι αιτήσεις εξετάζονται από επιτροπή. Η λίστα με την αντιστοιχία φοιτητών και μαθημάτων καταρτίζεται βάση κριτηρίων και προϋποθέσεων που αναφέρονται στο σχετικό κάλεσμα. Στη συνέχεια η λίστα εγκρίνεται από την Γενική Συνέλευση και ανακοινώνεται στην ιστοσελίδα του Τμήματος. Τα μαθήματα διδάσκονται στους χώρους του Τμήματος Πληροφορικής του ΕΚΠΑ.
+    items:
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 101
+      course: Απειροστικός Λογισμός Ι
+      instructors:
+      - Π. Δοδός
+      exercises:
+      - Γ. Μπαρμπάτης
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 122
+      course: Γεωμετρία Ι
+      instructors:
+      - Ι. Ανδρουλιδάκης
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 141
+      course: Πληροφορική Ι
+      instructors:
+      - Δ. Θηλυκός
+      - Ζ. Ζαφειρακόπουλος
+      - Δ. Αντωνόπουλος
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 120
+      course: Θεμέλια Άλγεβρας και Γεωμετρίας
+      instructors:
+      - Μ. Χλουβεράκη
+      notes: Το μάθημα προσφέρεται μόνο σε φοιτητές που βρίσκονται στο 1ο έτος σπουδών τους.
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 109
+      course: Θεμέλια Μαθηματικής Ανάλυσης
+      instructors:
+      - Ε. Δεληγιάννη
+      - Μ. Ηλιοπούλου
+      notes: Το μάθημα προσφέρεται μόνο σε φοιτητές που βρίσκονται στο 1ο έτος σπουδών τους.
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 151
+      course: Συνδυαστική
+      instructors:
+      - Ν. Παπαδάτος
+      notes: Το μάθημα προσφέρεται μόνο σε φοιτητές 1ου και 2ου έτους.
+    - section: Για τους φοιτητές α΄ εξαμήνου
+      course_code: 872
+      course: Θεωρίες Μάθησης και Διδασκαλίας
+      instructors:
+      - Ζ. Σμυρναίου
+      - Ολ. Παπαϊωάννου
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 301
+      course: Απειροστικός Λογισμός ΙΙΙ
+      instructors:
+      - Π. Σμυρνέλης
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 221
+      course: Γραμμική Άλγεβρα ΙΙ
+      instructors:
+      - Μ. Μαλιάκας
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 241
+      course: Πιθανότητες Ι
+      instructors:
+      - Δ. Χελιώτης
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 121
+      course: Γραμμική Άλγεβρα Ι (ε)
+      instructors:
+      - Κ. Γκότσης
+      - Α. Φακιολάς (Ασκήσεις)
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 252
+      course: Διακριτά Μαθηματικά
+      instructors:
+      - Χ. Αθανασιάδης
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 533
+      course: Εισαγωγή στη θεμελίωση της Γεωμετρίας
+      instructors:
+      - Ε. Πρασίδης
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 352
+      course: Δομές Δεδομένων
+      instructors:
+      - Ι. Ψαρρός
+    - section: Για τους φοιτητές γ΄ εξαμήνου
+      course_code: 361
+      course: Φυσική Μετεωρολογία
+      instructors:
+      - Σ. Καρατάσου
+      - Ε.Τυρλής
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 541
+      course: Μαθηματική Στατιστική
+      instructors:
+      - Σ. Τρέβεζας
+      - Μ. Καραλιοπούλου
+      sections: 2
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 421
+      course: Βασική Άλγεβρα (ε)
+      instructors:
+      - Α. Κοντογεώργης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 302
+      course: Συνήθεις Διαφορικές Εξισώσεις (ε)
+      instructors:
+      - Γ. Καραλή
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 732
+      course: Θέματα Άλγεβρας και Γεωμετρίας Ι
+      instructors:
+      - Μ. Παπατριανταφύλλου
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 423
+      course: Δακτύλιοι και Πρότυπα
+      instructors:
+      - Μ. Χλουβεράκη
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 411
+      course: Μερικές Διαφορικές Εξισώσεις Ι
+      instructors:
+      - Γ. Μπαρμπάτης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 511
+      course: Θεωρία Μέτρου
+      instructors:
+      - Μ. Ηλιοπούλου
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 602
+      course: Εισαγωγή στη Συναρτησιακή Ανάλυση
+      instructors:
+      - Α. Κατάβολος
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 442
+      course: Πιθανότητες ΙΙ
+      instructors:
+      - Δ. Χελιώτης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 559
+      course: Θεωρία Παιγνίων
+      instructors:
+      - Α. Μπουρνέτας
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 651
+      course: Στοχαστικές Ανελίξεις
+      instructors:
+      - Α. Μάνου
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 616
+      course: Θεωρία Προσέγγισης
+      instructors:
+      - Σ. Νοτάρης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 653
+      course: Αριθμητική Ανάλυση Διαφορικών Εξισώσεων
+      instructors:
+      - Δ. Αντωνοπούλου
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 752
+      course: Αριθμητική Γραμμική Άλγεβρα
+      instructors:
+      - Μ. Μητρούλη
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 573
+      course: 'Ιστορία των Μαθηματικών: Από την Αρχαιότητα έως την Αναγέννηση'
+      instructors:
+      - Ι. Χριστιανίδης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 591
+      course: Διδακτική Απειροστικού Λογισμού
+      instructors:
+      - Α. Μάλη
+      - Ν. Μεταξάς
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 691
+      course: Διδακτική των Μαθηματικών Ι
+      instructors:
+      - Γ. Πετροπούλου
+      - Ι. Ψυχάρης
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 693
+      course: Διδακτική της Γεωμετρίας
+      instructors:
+      - N. Μεταξάς
+      - Δ. Πόταρη
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 897
+      course: Επιστημολογία και Διδακτική των Μαθηματικών
+      instructors:
+      - Δ. Χριστοπούλου
+      - Χ. Τριανταφύλλου
+    - section: Για τους φοιτητές ε΄ εξαμήνου
+      course_code: 261
+      course: Κλασική Μηχανική
+      instructors:
+      - Σ. Καζαντζίδης
+      - Δ. Χατζηδημητρίου
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 634
+      course: Γεωμετρία ΙΙ (ε)
+      instructors:
+      - Π. Γιαννιώτης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 721
+      course: Εισαγωγή στη Διαφορική Γεωμετρία των Πολλαπλοτήτων
+      instructors:
+      - Α. Μελάς
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 735
+      course: Εισαγωγή στην Αλγεβρική Θεωρία Αριθμών
+      instructors:
+      - Κ. Καραγιάννης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 736
+      course: Ομολογική Άλγεβρα και Κατηγορίες
+      instructors:
+      - Κ. Καραγιάννης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 834
+      course: Θεωρία Ομάδων
+      instructors:
+      - Χ. Γερανιός
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 832
+      course: Αλγεβρική Τοπολογία
+      instructors:
+      - Ε. Πρασίδης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 615
+      course: Γεωμετρική Ανάλυση
+      instructors:
+      - Α. Χατζηκαλέας
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 711
+      course: Θέματα Μαθηματικής Ανάλυσης Ι
+      instructors:
+      - Μ. Πασχάλης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 712
+      course: Γραμμικοί Τελεστές
+      instructors:
+      - Ε. Κακαριάδης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 713
+      course: Μερικές Διαφορικές Εξισώσεις ΙΙ
+      instructors:
+      - Μ. Πασχάλης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 714
+      course: Εισαγωγή στην Τοπολογία
+      instructors:
+      - Ε. Δεληγιάννη
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 718
+      course: Θεωρία Κατανομών
+      instructors:
+      - Α. Μενεγάκη
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 812
+      course: Θέματα Μαθηματικής Ανάλυσης ΙΙ
+      instructors:
+      - Β. Νεστορίδης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 752
+      course: Αριθμητική Γραμμική Άλγεβρα
+      instructors:
+      - Μ. Μητρούλη
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 814
+      course: Θεωρία Ελέγχου
+      instructors:
+      - Γ. Χαλικιάς
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 555
+      course: Μπεϋζιανή Στατιστική
+      instructors:
+      - Λ. Μελιγκοτσίδου
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 755
+      course: Υπολογιστική Στατιστική
+      instructors:
+      - Φ. Σιάννης
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 756
+      course: Χρηματοοικονομικά Μαθηματικά
+      instructors:
+      - Ε. Βαγγελάτου
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 859
+      course: Ουρές Αναμονής
+      instructors:
+      - Α. Οικονόμου
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 798
+      course: Διδακτική της Άλγεβρας
+      instructors:
+      - Α. Μάλη
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 898
+      course: Η Διδασκαλία μέσω επίλυσης προβλήματος - Μαθηματικοποίηση
+      instructors:
+      - Χ. Τριανταφύλλου
+    - section: Για τους φοιτητές ζ΄ εξαμήνου
+      course_code: 761
+      course: Κβαντική Φυσική
+      instructors:
+      - Γ. Παπαθανασίου
+      - Β. Σπανός
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 495
+      course: Ειδική Θεωρία της Σχετικότητας (ΔΦ, Ε’ εξάμηνο)
+      instructors:
+      - Κ. Θεοφιλάτος
+      - Ι. Παπαδημητρίου
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Φυσικής του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 763
+      course: Στατιστική Φυσική (ΔΦ, Ζ’ εξάμηνο)
+      instructors:
+      - Φ. Διάκονος
+      - Γ. Παπαθανασίου
+      - Α. Μουστάκας
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Φυσικής του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 191
+      course: Λογιστική Ι (ΔΟΕ, Ε΄ εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 391
+      course: Μικροοικονομική Θεωρία Ι (ΔΟΕ, Ε΄ εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 392
+      course: Μακροοικονομική Θεωρία Ι (ΔΟΕ, Ε΄ εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 362
+      course: Αρχές Γλωσσών Προγραμματισμού (5ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 661
+      course: Τεχνητή Νοημοσύνη Ι (5ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 663
+      course: Υπολογιστική Γεωμετρία (5ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 762
+      course: Σήματα και Συστήματα (3ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Παιδαγωγικό Τμήμα του ΕΚΠΑ
+      course_code: 881
+      course: Ειδική Αγωγή (ΚΜΕ, Ζ΄ εξάμηνο)
+      instructors:
+      - Π. Γαλάνης
+      notes: Η διδασκαλία θα γίνεται σε αμφιθέατρο της Φιλοσοφικής Σχολής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το ΙΦΕ (που δεν διδάσκονται στους χώρους του Τμήματος Μαθηματικών)
+      course_code: 873
+      course: Ιστορία των Φυσικών Επιστημών (Ζ’ εξάμηνο)
+      instructors:
+      - Β. Καρακώστας
+      notes: Προϋπόθεση για να δηλωθεί το μάθημα είναι να έχουν περαστεί τα μαθήματα 496. Αρχαία Ελληνικά Μαθηματικά-Στοιχεία Ευκλείδη, 573. Ιστορία των Μαθηματικών από την Αρχαιότητα έως την Αναγέννηση 613. Φιλοσοφία των Μαθηματικών. Η διδασκαλία του μαθήματος θα διεξάγεται στους χώρους του Τμήματος Φυσικής
+      prerequisite_codes:
+      - 496
+      - 573
+      - 613
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Φυσικής
+      course: Ανάλυση Ι και Εφαρμογές
+      instructors:
+      - Κ. Τύρος
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Φυσικής
+      course: Μαθηματικές Μέθοδοι Φυσικής Ι
+      instructors:
+      - Γ. Μπαρμπάτης
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Χημείας
+      course: Μαθηματικά Ι
+      instructors:
+      - Ι. Εμμανουήλ
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Πληροφορικής και Τηλεπικοινωνιών
+      course: Κ06. Ανάλυση ΙΙ
+      instructors:
+      - Γ. Χαλικιάς
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Φαρμακευτικής
+      course: Μαθηματικά
+      instructors:
+      - Δ. Χριστοπούλου
+      - Μέλος ΔΕΠ Τμήματος Φαρμακευτικής
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα ΙΦΕ
+      course: Μαθηματικά
+      instructors:
+      - Δ. Πόταρη
+      - Χ. Τριανταφύλλου
+spring:
+  teaching:
+  - '2027-02-15'
+  - '2027-06-04'
+  exams:
+  - '2027-06-07'
+  - '2027-07-02'
+  updated: '2026-09-29'
+  assignments:
+    title: Ενδεικτικό πρόγραμμα αναθέσεων Εαρινού Εξαμήνου 2026-27
+    notes:
+    - section: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      text: Η εκδήλωση ενδιαφέροντος για την παρακολούθηση των παρακάτω μαθημάτων στο Τμήμα Πληροφορικής και Τηλεπικοινωνιών (ΤΠΤ) γίνεται με αίτηση των ενδιαφερομένων φοιτητών και μετά από σχετικό κάλεσμα στην ιστοσελίδα του Τμήματος Μαθηματικών. Το κάλεσμα αναρτάται μόλις γίνει διαθέσιμο το Ωρολόγιο Πρόγραμμα του ΤΠΤ για το Χειμερινό Εξάμηνο. Οι αιτήσεις εξετάζονται από επιτροπή. Η λίστα με την αντιστοιχία φοιτητών και μαθημάτων καταρτίζεται βάση κριτηρίων και προϋποθέσεων που αναφέρονται στο σχετικό κάλεσμα. Στη συνέχεια η λίστα εγκρίνεται από την Γενική Συνέλευση και ανακοινώνεται στην ιστοσελίδα του Τμήματος. Τα μαθήματα διδάσκονται στους χώρους του Τμήματος Πληροφορικής του ΕΚΠΑ.
+    items:
+    - section: Για τους φοιτητές β΄ εξαμήνου
+      course_code: 121
+      course: Γραμμική Άλγεβρα Ι
+      instructors:
+      - Ι. Ντόκας
+    - section: Για τους φοιτητές β΄ εξαμήνου
+      course_code: 201
+      course: Απειροστικός Λογισμός ΙΙ
+      instructors:
+      - Π. Δοδός
+    - section: Για τους φοιτητές β΄ εξαμήνου
+      course_code: 532
+      course: Θεωρία Αριθμών
+      instructors:
+      - Χ. Αθανασιάδης
+    - section: Για τους φοιτητές β΄ εξαμήνου
+      course_code: 151
+      course: Συνδυαστική
+      instructors:
+      - Α. Οικονόμου
+      notes: Το μάθημα προσφέρεται μόνο σε φοιτητές 1ου και 2ου έτους.
+    - section: Για τους φοιτητές β΄ εξαμήνου
+      course_code: 251
+      course: Πληροφορική ΙΙ
+      instructors:
+      - Μ. Δρακόπουλος
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 421
+      course: Βασική Άλγεβρα
+      instructors:
+      - Χ. Γερανιός
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 302
+      course: Συνήθεις Διαφορικές Εξισώσεις
+      instructors:
+      - Π. Σμυρνέλης
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 401
+      course: Πραγματική Ανάλυση
+      instructors:
+      - Ε. Δεληγιάννη
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 341
+      course: Αριθμητική Ανάλυση
+      instructors:
+      - Δ. Αντωνοπούλου
+      - Δ. Αντωνόπουλος
+      - Σ. Νοτάρης
+      sections: 2
+      lab:
+      - Δ. Αντωνόπουλος
+      - Σ. Νοτάρης
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 221
+      course: Γραμμική Άλγεβρα ΙΙ (ε)
+      instructors:
+      - Κ. Γκότσης
+      - Α. Φακιολάς (Ασκήσεις)
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 241
+      course: Πιθανότητες Ι (ε)
+      instructors:
+      - Ε. Βαγγελάτου
+      exercises:
+      - Μ. Καραλιοπούλου
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 431
+      course: Προβολική Γεωμετρία
+      instructors:
+      - Μ. Παπατριανταφύλλου
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 342
+      course: 'Επιχειρησιακή Έρευνα: Μαθηματικός Προγραμματισμός'
+      instructors:
+      - Α. Μάνου
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 373
+      course: Θεωρία Γραφημάτων
+      instructors:
+      - Δ. Θηλυκός
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 439
+      course: Υπολογιστική Άλγεβρα
+      instructors:
+      - Ζ. Ζαφειρακόπουλος
+      lab:
+      - Ζ. Ζαφειρακόπουλος
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 518
+      course: Εισαγωγή στο σχεδιασμό και ανάλυση Αλγορίθμων
+      instructors:
+      - Ζ. Ζαφειρακόπουλος
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 496
+      course: Αρχαία Ελληνικά Μαθηματικά-Στοιχεία Ευκλείδη
+      instructors:
+      - Β. Φαρμάκη
+    - section: Για τους φοιτητές δ΄ εξαμήνου
+      course_code: 461
+      course: Ηλεκτρομαγνητισμός
+      instructors:
+      - Λ. Κουτσοκέρας
+      - Κ. Τσακμακίδης
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 634
+      course: Γεωμετρία ΙΙ
+      instructors:
+      - Α. Μελάς
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 701
+      course: Μιγαδική Ανάλυση Ι
+      instructors:
+      - Α. Χατζηκαλέας
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 821
+      course: Θεωρία Galois
+      instructors:
+      - Ι. Εμμανουήλ
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 606
+      course: Βασική Πραγματική και Συναρτησιακή Ανάλυση
+      instructors:
+      - Κ. Τύρος
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 552
+      course: 'Επιχειρησιακή Έρευνα: Στοχαστικά Μοντέλα'
+      instructors:
+      - Α. Μάνου
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 553
+      course: Αναλογιστικά Μαθηματικά
+      instructors:
+      - Ν. Παπαδάτος
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 654
+      course: Γραμμικά Μοντέλα
+      instructors:
+      - Λ. Μελιγκοτσίδου
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 659
+      course: Γραμμικός και μη γραμμικός προγραμματισμός
+      instructors:
+      - Π. Μερτικόπουλος
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 754
+      course: Δυναμικός Προγραμματισμός
+      instructors:
+      - Α. Μπουρνέτας
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 618
+      course: Υπολογιστική πολυπλοκότητα
+      instructors:
+      - Δ. Θηλυκός
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 658
+      course: Μέθοδοι Εφαρμοσμένων Μαθηματικών
+      instructors:
+      - Γ. Καραλή
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 792
+      course: Διδακτική Μαθηματικών ΙΙ
+      instructors:
+      - Α. Μάλη
+      - Γ. Πετροπούλου
+      - Δ. Πόταρη
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 613
+      course: Φιλοσοφία των Μαθηματικών
+      instructors:
+      - Δ. Αναπολιτάνος
+      - Δ. Χριστοπούλου
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 697
+      course: Αξιοποίηση των Πανεπιστημιακών Μαθηματικών
+      instructors:
+      - Α. Μάλη
+      - Ν. Μεταξάς
+      - Θ. Ζαχαριάδης
+    - section: Για τους φοιτητές στ΄ εξαμήνου
+      course_code: 777
+      course: Εισαγωγή στην Κοινωνιολογία της Εκπαίδευσης
+      instructors:
+      - Α.Α. Παπακωνσταντίνου
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 431
+      course: Προβολική Γεωμετρία
+      instructors:
+      - Μ. Παπατριανταφύλλου
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 534
+      course: Μεταθετική Άλγεβρα και εφαρμογές
+      instructors:
+      - Α. Κοντογεώργης
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 831
+      course: Διαφορικές μορφές
+      instructors:
+      - Π. Γιαννιώτης
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 812
+      course: Θέματα Μαθηματικής Ανάλυσης ΙΙ
+      instructors:
+      - Α. Κατάβολος
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 813
+      course: Μιγαδική Ανάλυση ΙΙ
+      instructors:
+      - Β. Νεστορίδης
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 753
+      course: Πολυμεταβλητή Ανάλυση Δεδομένων
+      instructors:
+      - Φ. Σιάννης
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 854
+      course: Θεωρία Αξιοπιστίας
+      instructors:
+      - Μ. Καραλιοπούλου
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 715
+      course: Μαθηματική Βιολογία
+      instructors:
+      - Νέο μέλος ΔΕΠ/Γ. Χαλικιάς
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 739
+      course: Δυναμικά Συστήματα
+      instructors:
+      - Νέο μέλος ΔΕΠ/Γ. Χαλικιάς
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 815
+      course: Αριθμητική Βελτιστοποίηση
+      instructors:
+      - Μ. Δρακόπουλος
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 692
+      course: Διδακτική των Μαθηματικών με την Αξιοποίηση Ψηφιακών Τεχνολογιών
+      instructors:
+      - Χρ. Κυνηγός
+      - Γ. Ψυχάρης
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 696
+      course: Διδακτική Στοχαστικών Μαθηματικών
+      instructors:
+      - Γ. Πετροπούλου
+    - section: Για τους φοιτητές η΄ εξαμήνου
+      course_code: 795
+      course: 'Πρακτική Άσκηση: Διδασκαλία των Μαθηματικών σε Σχολεία της Δευτεροβάθμιας εκπαίδευσης'
+      instructors:
+      - Δ. Πόταρη
+      - Γ. Ψυχάρης
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 464
+      course: Θερμότητα και Κύματα (ΔΦ, Β’ Εξάμηνο)
+      instructors:
+      - Ν. Σαρλής
+      - Δ. Χατζηδημητρίου
+      notes: Το μάθημα διδάσκεται σε συνδιδασκαλία με το Τμήμα Φυσικής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 695
+      course: Κβαντική Μηχανική ΙΙ (ΔΦ, ΣΤ’ Εξάμηνο)
+      instructors:
+      - Π. Σφήκας
+      notes: Το μάθημα διδάσκεται σε συνδιδασκαλία με το Τμήμα Φυσικής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 861
+      course: Μηχανική ΙΙ (ΔΦ, Η’ Εξάμηνο)
+      instructors:
+      - Θ. Αποστολάτος
+      notes: Το μάθημα διδάσκεται σε συνδιδασκαλία με το Τμήμα Φυσικής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 865
+      course: Δυναμική των Ρευστών
+      instructors:
+      - Ν. Βλαχάκης
+      - Σ. Σοφιανός
+      notes: Το μάθημα διδάσκεται σε συνδιδασκαλία με το Τμήμα Φυσικής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Φυσικής του ΕΚΠΑ
+      course_code: 895
+      course: Μη Γραμμικά Δυναμικά Συστήματα (ΔΦ, Η’ Εξάμηνο)
+      instructors:
+      - Π. Ιωάννου
+      - Δ. Φραντζεσκάκης
+      notes: Το μάθημα διδάσκεται σε συνδιδασκαλία με το Τμήμα Φυσικής.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 491
+      course: Μικροοικονομική Θεωρία ΙΙ (ΔΟΕ, ΣΤ’ Εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 492
+      course: Μακροοικονομική Θεωρία ΙΙ (ΔΟΕ, ΣΤ’ Εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Οικονομικών Επιστημών του ΕΚΠΑ
+      course_code: 493
+      course: Οικονομετρία (ΔΟΕ, ΣΤ’ Εξάμηνο)
+      instructors: []
+      notes: Το μάθημα αυτό διδάσκεται στους χώρους του Τμήματος Οικονομικών Επιστημών του ΕΚΠΑ.
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 465
+      course: Σχεδίαση και χρήση βάσεων δεδομένων (4ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 664
+      course: Θεωρία πληροφορίας (6ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 662
+      course: Μεταγλωττιστές (6ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ
+      course_code: 665
+      course: Λογικός Προγραμματισμός (6ο εξάμηνο)
+      instructors: []
+      notes: Εκκρεμεί η ανάθεση
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το ΙΦΕ (που δεν διδάσκονται στους χώρους του Τμήματος Μαθηματικών)
+      course_code: 874
+      course: Σύγχρονη Φιλοσοφία της Επιστήμης (η’ εξάμηνο)
+      instructors:
+      - Β. Καρακώστας
+      notes: Η διδασκαλία θα διεξάγεται στους χώρους του Τμήματος ΙΦΕ. Προϋπόθεση για να δηλωθεί το μάθημα είναι να έχουν περαστεί τα μαθήματα 496. Αρχαία Ελληνικά Μαθηματικά-Στοιχεία Ευκλείδη, 573. Ιστορία των Μαθηματικών από την Αρχαιότητα έως την Αναγέννηση 613. Φιλοσοφία των Μαθηματικών.
+      prerequisite_codes:
+      - 496
+      - 573
+      - 613
+    - section: Μαθήματα που προσφέρονται από άλλα Τμήματα του ΕΚΠΑ σε συνδιδασκαλία
+      subsection: Μαθήματα που προσφέρονται από το ΙΦΕ (που δεν διδάσκονται στους χώρους του Τμήματος Μαθηματικών)
+      course_code: 875
+      course: Γνωσιακή Επιστήμη
+      instructors:
+      - Ε. Σκαλιώρα
+      notes: Η διδασκαλία θα διεξάγεται στους χώρους του Τμήματος ΙΦΕ. Το μάθημα αυτό μπορεί να επιλεγεί από φοιτητές οποιουδήποτε έτους.
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Φυσικής
+      course: Ανάλυση ΙΙ και Εφαρμογές
+      instructors:
+      - Π. Μερτικόπουλος
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Χημείας
+      course: Μαθηματικά ΙΙ
+      instructors:
+      - Ι. Εμμανουήλ
+    - section: Αναθέσεις Μαθημάτων σε άλλα Τμήματα
+      department: Τμήμα Πληροφορικής και Τηλεπικοινωνιών
+      course: Ανάλυση Ι
+      instructors:
+      - Σ. Τρέβεζας
+      - Δ. Χελιώτης

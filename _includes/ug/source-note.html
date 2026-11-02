@@ -1,1 +1,0 @@
-<p class="source-note">{{ t.source_pdf }}: <a href="{{ include.src }}">{{ include.src | split: "/" | last }}</a>{% if include.updated %} · {{ t.last_update }}: {% for u in include.updated %}{{ u | date: "%d/%m/%Y" }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>

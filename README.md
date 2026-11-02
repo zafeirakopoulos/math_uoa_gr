@@ -44,6 +44,7 @@ en:
 - **Interface text**: UI strings, logo and per-language URLs live in `collections/_languages/` (`el.md`, `en.md`). These define the languages themselves, so they are one file per language rather than per item.
 - **Ranks**: academic rank labels (by language and `gender: m|f`) come from `_data/ranks.yml`; each person file stores only the canonical Greek `rank`.
 - **Supervisors** (`theses`, `msc_theses`): `supervisors:` is a list of people ids — the file name in `_people/` without `.md` (e.g. `bournetas-apostolos`) — which become links to the person in the current language and take the Επιβλέπων/Επιβλέπουσα form from the person's `gender`. Someone not in `_people/` is written as a plain name; then set `supervisor_gender: f` on the thesis if needed.
+- **Academic year** (`_data/academic_years/<year>.yml`, one file per year): key dates, first-year timetable, and per semester the teaching/exam periods, weekly timetable and teaching assignments. The undergraduate hub shows the year `academic_year` and semester `current_semester` set in `_config.yml`; switch `current_semester` to `spring` in February and add the next year's file in September. Courses taught in a semester are marked with `offered:` in `collections/_courses/`.
 - **News**: most announcements exist only in Greek. English news listings show both languages and mark Greek titles with `lang="el"`.
 
 ## Content model: everything listable is a collection

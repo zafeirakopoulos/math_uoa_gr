@@ -1,8 +1,166 @@
 {%- comment -%}
-  Undergraduate hub: key facts, every link grouped by task (one click), and the suggested
-  programme per semester built from the courses collection (course pages are the second click).
+  Undergraduate hub. Opens with what a student needs this semester, built from _data/ug
+  (key dates, timetables, teaching assignments) and the courses collection:
+    1. key dates (next ones highlighted), 2. courses offered this semester with instructors and
+    timetable, 3. first-year week, 4. full timetable by day and next semester's assignments (folded).
+  Then every other link grouped by task (one click). Course pages are the second click.
 {%- endcomment -%}
 {%- include lang.html -%}
+{%- assign cur = site.current_semester -%}
+{%- assign year = site.data.academic_years[site.academic_year] -%}
+{%- if cur == "winter" %}{% assign next_sem = "spring" %}{% else %}{% assign next_sem = "winter" %}{% endif -%}
+{%- assign sem_data = year[cur] -%}
+{%- assign asg = sem_data.assignments -%}
+{%- assign tt = sem_data.timetable -%}
+{%- assign fy = year.first_year -%}
+{%- assign asg_next = year[next_sem].assignments -%}
+{%- assign tags = site.data.course_tags -%}
+{%- assign all_courses_page = navable | where: "nav_key", "courses" | first -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
+
+{%- if year.dates %}
+<section class="ug-block" id="imerominies">
+  <div class="section-title"><h2>{{ t.ug_dates }} {{ site.academic_year }}</h2></div>
+  {%- assign upcoming = year.dates | where_exp: "d", "d.start >= today" | sort: "start" -%}
+  <ol class="date-cards">
+    {%- for d in upcoming limit: 4 %}
+    <li{% if forloop.first %} class="is-next"{% endif %}>
+      <time datetime="{{ d.start }}"><span class="d">{{ d.start | date: "%-d" }}</span> {% assign mi = d.start | date: "%-m" | minus: 1 %}{{ L.months_short[mi] }} {{ d.start | date: "%Y" }}</time>
+      <strong>{{ d.label }}</strong>
+      {%- if d.end %}<small>{{ t.ug_until }} {{ d.end | date: "%d/%m/%Y" }}</small>{% endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+  <details class="fold">
+    <summary>{{ t.ug_all_dates }}</summary>
+    {%- assign secs = year.dates | group_by: "section" -%}
+    <div class="fold__cols">
+      {%- for s in secs %}
+      <div>
+        <h3>{{ s.name }}</h3>
+        <dl class="date-list">
+          {%- for it in s.items %}<dt>{{ it.start | date: "%d/%m" }}{% if it.end %}–{{ it.end | date: "%d/%m" }}{% endif %}</dt><dd>{{ it.label }}{% if it.note %}<small>{{ it.note }}</small>{% endif %}</dd>{% endfor %}
+        </dl>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- for n in year.date_notes %}<p class="muted">{{ n }}</p>{% endfor %}
+  </details>
+</section>
+{%- endif %}
+
+{%- assign courses = site.courses | where_exp: "c", "c.offered contains cur" -%}
+{%- if courses.size > 0 %}
+<section class="ug-block programme" id="programma">
+  <div class="section-title"><h2>{{ t.offered_now[cur] }} {{ site.academic_year }}</h2><a class="more-link" href="{{ all_courses_page.url | relative_url }}">{{ t.all_courses }}</a></div>
+  <p class="programme__note">{% if sem_data %}{{ t.as_teaching }} {{ sem_data.teaching[0] | date: "%d/%m" }} – {{ sem_data.teaching[1] | date: "%d/%m/%Y" }} · {{ t.as_exams }} {{ sem_data.exams[0] | date: "%d/%m" }} – {{ sem_data.exams[1] | date: "%d/%m/%Y" }}. {% endif %}{{ t.offered_now_note }}</p>
+  <div class="programme__filter" data-programme-filter role="group" aria-label="{{ t.concentration }}">
+    <button type="button" aria-pressed="true" data-tag="">{{ t.all_concentrations }}</button>
+    {%- assign conc = "kthm,kem,ksee,kme" | split: "," -%}{%- for kk in conc %}{% if tags[kk] %}<button type="button" aria-pressed="false" data-tag="{{ kk }}">{{ tags[kk][lang].long | default: tags[kk].el.long }}</button>{% endif %}{% endfor %}
+  </div>
+  <div class="semesters">
+    {%- for n in (1..9) %}
+    {%- if n == 9 %}{% assign sem = courses | where_exp: "c", "c.semester == nil" | sort: "code" %}{% else %}{% assign sem = courses | where: "semester", n | sort: "order" %}{% endif -%}
+    {%- if sem.size > 0 %}
+    <section class="semester">
+      <h3>{% if n == 9 %}{{ t.other_courses }}{% elsif lang == "el" %}{{ n }}ο εξάμηνο{% else %}Semester {{ n }}{% endif %}</h3>
+      <ul>
+        {%- for c in sem %}{% include tr.html doc=c %}
+        {%- assign a = nil %}{% if asg %}{% assign a = asg.items | where: "course_code", c.code | first %}{% endif -%}
+        {%- assign slots = nil %}{% if tt %}{% assign slots = tt.slots | where: "course_code", c.code %}{% endif -%}
+        <li class="course{% if c.required %} course--required{% endif %}" data-tags="{{ c.tags | join: ' ' }}{% if c.required %} required{% endif %}">
+          <span class="course__code">{{ c.code }}</span>
+          <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
+          <span class="course__tags">
+            {%- if c.required %}<abbr title="{{ tags.required[lang].long }}">{{ tags.required[lang].short }}</abbr>{% endif -%}
+            {%- for kk in c.tags %}{% if tags[kk] %}<abbr title="{{ tags[kk][lang].long }}">{{ tags[kk][lang].short }}</abbr>{% endif %}{% endfor -%}
+          </span>
+          {%- if a or slots.size > 0 %}
+          <span class="course__info">
+            {%- if a and a.instructors.size > 0 %}<span class="course__who">{{ a.instructors | join: ", " }}</span>{% endif -%}
+            {%- for s in slots limit: 4 %}<span class="course__when">{{ s.day | slice: 0, 3 }} {{ s.start }}–{{ s.end }} · {{ s.room }}</span>{% endfor -%}
+          </span>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+  {%- if sem_data.updated %}<p class="source-note">{{ t.last_update }}: {{ sem_data.updated | date: "%d/%m/%Y" }}</p>{% endif %}
+</section>
+{%- endif %}
+
+{%- if fy and cur == "winter" %}
+<section class="ug-block" id="proto-etos">
+  <div class="section-title"><h2>{{ t.tt_first_year }}</h2></div>
+  <div class="week">
+    {%- for day in days %}
+    {%- assign ds = fy.slots | where: "day", day | sort: "start" -%}
+    <section class="week__day">
+      <h3>{{ day }}</h3>
+      <ul>
+        {%- for s in ds %}
+        <li><time>{{ s.start }}–{{ s.end }}</time>{% include ug/course-link.html code=s.course_code title=s.course %}{% if s.type %} <span class="muted">({{ s.type }})</span>{% endif %}
+          <small>{% if s.group %}{{ s.group }} · {% endif %}{{ s.room }}{% if s.instructor %} · {{ s.instructor }}{% endif %}{% if s.note %} · {{ s.note }}{% endif %}</small></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endfor %}
+  </div>
+  <ul class="legend">{% for g in fy.groups %}<li><strong>{{ g[0] }}</strong>: {{ g[1] }}</li>{% endfor %}</ul>
+</section>
+{%- endif %}
+
+{%- if tt %}
+<details class="fold ug-block" id="orologio">
+  <summary>{{ t.tt_all }}</summary>
+  {%- if tt.note %}<p class="muted">{{ tt.note }}</p>{% endif %}
+  <div class="programme__filter" data-tt-filter role="group" aria-label="{{ t.tt_year }}">
+    <button type="button" aria-pressed="true" data-year="">{{ t.tt_all_years }}</button>
+    {%- for y in (1..4) %}<button type="button" aria-pressed="false" data-year="{{ y }}">{% if lang == "el" %}{{ y }}ο έτος{% else %}Year {{ y }}{% endif %}</button>{% endfor %}
+    <button type="button" aria-pressed="false" data-year="msc">{{ t.tt_msc }}</button>
+  </div>
+  <div class="tt-days">
+    {%- for day in days %}
+    {%- assign ds = tt.slots | where: "day", day | sort: "start" -%}
+    <section>
+      <h3 class="tt-day">{{ day }}</h3>
+      <table class="data-table tt">
+        <tbody>
+        {%- for s in ds %}
+          <tr data-year="{% if s.level == 'postgraduate' %}msc{% else %}{{ s.year }}{% endif %}">
+            <td class="nowrap">{{ s.start }}–{{ s.end }}</td>
+            <td>{% include ug/course-link.html code=s.course_code title=s.course %}{% if s.msc_code %} <span class="badge badge--muted">{{ s.msc_code }}</span>{% endif %}<small>{{ s.room }}{% if s.instructors.size > 0 %} · {{ s.instructors | join: ", " }}{% endif %}{% if s.group %} · {{ s.group }}{% endif %}{% if s.notes %} · {{ s.notes }}{% endif %}</small></td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </section>
+    {%- endfor %}
+  </div>
+</details>
+{%- endif %}
+
+{%- if asg_next %}
+<details class="fold ug-block" id="anatheseis-{{ next_sem }}">
+  <summary>{{ asg_next.title }}</summary>
+  {%- assign groups = asg_next.items | group_by: "section" -%}
+  <div class="fold__cols">
+    {%- for g in groups %}
+    <div>
+      <h3>{{ g.name }}</h3>
+      <ul class="plain-list">
+        {%- for it in g.items %}<li>{% include ug/course-link.html code=it.course_code title=it.course %}{% if it.instructors.size > 0 %}<small>{{ it.instructors | join: ", " }}</small>{% endif %}</li>{% endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</details>
+{%- endif %}
+
 {%- if page.facts %}
 <ul class="facts-row">
   {%- for f in page.facts %}<li><strong>{{ f.value }}</strong> {{ f.label }}</li>{% endfor %}
@@ -19,51 +177,3 @@
   </section>
   {%- endfor %}
 </div>
-
-{%- assign cur = site.current_semester -%}
-{%- assign all_courses_page = navable | where: "nav_key", "courses" | first -%}
-{%- assign courses = site.courses | where_exp: "c", "c.offered contains cur" -%}
-{%- if courses.size > 0 %}
-<section class="programme" id="programma">
-  <div class="section-title"><h2>{{ t.offered_now[cur] }} {{ site.academic_year }}</h2><a class="more-link" href="{{ all_courses_page.url | relative_url }}">{{ t.all_courses }}</a></div>
-  <p class="programme__note">{{ t.offered_now_note }}</p>
-  {%- assign tags = site.data.course_tags -%}
-  <div class="programme__filter" data-programme-filter role="group" aria-label="{{ t.concentration }}">
-    <button type="button" aria-pressed="true" data-tag="">{{ t.all_concentrations }}</button>
-    {%- assign conc = "kthm,kem,ksee,kme" | split: "," -%}{%- for k in conc %}{% if tags[k] %}<button type="button" aria-pressed="false" data-tag="{{ k }}">{{ tags[k][lang].long | default: tags[k].el.long }}</button>{% endif %}{% endfor %}
-  </div>
-  <div class="semesters">
-    {%- for n in (1..8) %}
-    {%- assign sem = courses | where: "semester", n | sort: "order" -%}
-    {%- if sem.size > 0 %}
-    <section class="semester">
-      <h3>{% if lang == "el" %}{{ n }}ο εξάμηνο{% else %}Semester {{ n }}{% endif %}</h3>
-      <ul>
-        {%- for c in sem %}{% include tr.html doc=c %}
-        <li class="course{% if c.required %} course--required{% endif %}" data-tags="{{ c.tags | join: ' ' }}{% if c.required %} required{% endif %}">
-          <span class="course__code">{{ c.code }}</span>
-          <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
-          <span class="course__tags">
-            {%- if c.required %}<abbr title="{{ tags.required[lang].long }}">{{ tags.required[lang].short }}</abbr>{% endif -%}
-            {%- for k in c.tags %}{% if tags[k] %}<abbr title="{{ tags[k][lang].long }}">{{ tags[k][lang].short }}</abbr>{% endif %}{% endfor -%}
-          </span>
-        </li>
-        {%- endfor %}
-      </ul>
-    </section>
-    {%- endif %}
-    {%- endfor %}
-    {%- assign other = courses | where_exp: "c", "c.semester == nil" | sort: "code" -%}
-    {%- if other.size > 0 %}
-    <section class="semester">
-      <h3>{{ t.other_courses }}</h3>
-      <ul>
-        {%- for c in other %}{% include tr.html doc=c %}
-        <li class="course" data-tags="{{ c.tags | join: ' ' }}"><span class="course__code">{{ c.code }}</span> <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a><span class="course__tags">{% for k in c.tags %}{% if tags[k] %}<abbr title="{{ tags[k][lang].long }}">{{ tags[k][lang].short }}</abbr>{% endif %}{% endfor %}</span></li>
-        {%- endfor %}
-      </ul>
-    </section>
-    {%- endif %}
-  </div>
-</section>
-{%- endif %}

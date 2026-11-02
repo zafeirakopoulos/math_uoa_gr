@@ -1,4 +1,4 @@
 {%- comment -%} Course title linked to its course page when include.code matches a course. {%- endcomment -%}
-{%- assign cl_doc = nil -%}{%- if include.code %}{% assign cl_doc = site.courses | where: "code", include.code | first %}{% endif -%}
+{%- assign cl_key = include.code | append: "" -%}{%- assign cl_doc = site.data.course_by_code[cl_key] -%}
 {%- if include.code %}<span class="course__code">{{ include.code }}</span> {% endif -%}
 {%- if cl_doc %}{% assign cl_tr = cl_doc.i18n[lang] | default: cl_doc %}<a href="{{ cl_tr.url | relative_url }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif -%}

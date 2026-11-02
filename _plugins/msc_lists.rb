@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# site.data["course_by_code"]: undergraduate course documents by code (as a string), for quick links.
 # Per-specialisation course lists for the graduate hub: site.data["msc_lists"][spec][group] is the
 # list of msc_courses documents of that specialisation and group (core/elective), in catalogue order.
 # A shared course has its own code, group and position per specialisation (codes/groups/orders maps).
@@ -9,6 +10,8 @@ module MscLists
     priority :low
 
     def generate(site)
+      courses = site.collections["courses"]
+      site.data["course_by_code"] = courses.docs.to_h { |d| [d.data["code"].to_s, d] } if courses
       coll = site.collections["msc_courses"] or return
       lists = Hash.new { |h, k| h[k] = Hash.new { |g, j| g[j] = [] } }
       coll.docs.each do |doc|
