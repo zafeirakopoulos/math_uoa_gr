@@ -21,19 +21,8 @@
 
 {%- if year.dates %}
 <section class="ug-block" id="imerominies">
-  <div class="section-title"><h2>{{ t.ug_dates }} {{ site.academic_year }}</h2></div>
-  {%- assign upcoming = year.dates | where_exp: "d", "d.start >= today" | sort: "start" -%}
-  <ol class="date-cards">
-    {%- for d in upcoming limit: 4 %}
-    <li{% if forloop.first %} class="is-next"{% endif %}>
-      <time datetime="{{ d.start }}"><span class="d">{{ d.start | date: "%-d" }}</span> {% assign mi = d.start | date: "%-m" | minus: 1 %}{{ L.months_short[mi] }} {{ d.start | date: "%Y" }}</time>
-      <strong>{{ d.label }}</strong>
-      {%- if d.end %}<small>{{ t.ug_until }} {{ d.end | date: "%d/%m/%Y" }}</small>{% endif %}
-    </li>
-    {%- endfor %}
-  </ol>
   <details class="fold">
-    <summary>{{ t.ug_all_dates }}</summary>
+    <summary><h2>{{ t.ug_dates }} {{ site.academic_year }}</h2></summary>
     {%- assign secs = year.dates | group_by: "section" -%}
     <div class="fold__cols">
       {%- for s in secs %}
@@ -116,7 +105,7 @@
 
 {%- if tt %}
 <details class="fold ug-block" id="orologio">
-  <summary>{{ t.tt_all }}</summary>
+  <summary><h2>{{ t.tt_semester[cur] }} {{ site.academic_year }}</h2></summary>
   {%- if tt.note %}<p class="muted">{{ tt.note }}</p>{% endif %}
   <div class="programme__filter" data-tt-filter role="group" aria-label="{{ t.tt_year }}">
     <button type="button" aria-pressed="true" data-year="">{{ t.tt_all_years }}</button>
@@ -146,7 +135,7 @@
 
 {%- if asg_next %}
 <details class="fold ug-block" id="anatheseis-{{ next_sem }}">
-  <summary>{{ asg_next.title }}</summary>
+  <summary><h2>{{ t.as_semester[next_sem] }} {{ site.academic_year }}</h2></summary>
   {%- assign groups = asg_next.items | group_by: "section" -%}
   <div class="fold__cols">
     {%- for g in groups %}

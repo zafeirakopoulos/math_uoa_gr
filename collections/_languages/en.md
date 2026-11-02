@@ -143,6 +143,13 @@ t:
   as_sections: sections
   as_exercises: Exercises
   as_lab: Lab
+  ug_dates: Key dates
+  tt_semester:
+    winter: Winter semester timetable
+    spring: Spring semester timetable
+  as_semester:
+    winter: Winter semester teaching assignments
+    spring: Spring semester teaching assignments
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term
