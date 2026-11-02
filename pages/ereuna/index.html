@@ -1,0 +1,29 @@
+---
+section: ereuna
+section_root: true
+nav_order: 3
+el:
+  title: Έρευνα
+  lede: Η ερευνητική δραστηριότητα του Τμήματος οργανώνεται σε πέντε Τομείς, με τακτικά σεμινάρια και διεθνή συνέδρια.
+  permalink: /ereuna/
+  body: |
+    {%- include lang.html -%}
+    <h2>{{ t.sectors }}</h2>
+    {% include listings/sectors.html %}
+    <h2>{{ t.seminars }}</h2>
+    {% include listings/seminars.html %}
+    <h2>Διδακτορικές διατριβές</h2>
+    <p><a href="{{ '/spoudes/didaktorikes/didaktores/' | relative_url }}">Διδάκτορες του Τμήματος</a> · <a href="{{ '/spoudes/didaktorikes/ypopsifioi/' | relative_url }}">Υποψήφιοι διδάκτορες</a></p>
+en:
+  title: Research
+  lede: Research in the Department is organised in five Sectors, with regular seminars and international conferences.
+  permalink: /en/research/
+  body: |
+    {%- include lang.html -%}
+    <h2>{{ t.sectors }}</h2>
+    {% include listings/sectors.html %}
+    <h2>{{ t.seminars }}</h2>
+    {% include listings/seminars.html %}
+    <h2>Doctoral theses</h2>
+    <p><a href="{{ '/en/studies/doctoral/phd-holders/' | relative_url }}">PhD holders of the Department</a> · <a href="{{ '/en/studies/doctoral/phd-candidates/' | relative_url }}">PhD candidates</a></p>
+---

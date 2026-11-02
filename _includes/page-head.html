@@ -1,0 +1,13 @@
+{%- comment -%}
+  Banner + breadcrumbs + emblem title, as on uoa.gr inner pages.
+  params: title, kicker, lede, parent_url, parent_title
+{%- endcomment -%}
+<div class="page-banner" style="background-image:url('{{ page.banner | default: site.banner | relative_url }}')" role="presentation"></div>
+<div class="container">
+  {% include breadcrumbs.html parent_url=include.parent_url parent_title=include.parent_title title=include.title %}
+  <div class="page-title">
+    <img src="{{ '/assets/brand/uoa-emblem-dark.svg' | relative_url }}" alt="" width="26" height="40">
+    <h1>{{ include.title | default: page.title }}</h1>
+  </div>
+  {%- if include.kicker %}<p class="page-kicker">{{ include.kicker }}</p>{% endif %}
+</div>

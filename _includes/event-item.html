@@ -1,0 +1,12 @@
+{%- assign e = include.event -%}
+{%- include tr.html doc=e -%}
+{%- assign _mi = e.date | date: "%-m" | minus: 1 -%}
+<li class="event">
+  <time class="datebox" datetime="{{ e.date | date: '%Y-%m-%d' }}">
+    <span class="d">{{ e.date | date: "%-d" }}</span><span class="m">{{ L.months_short[_mi] }}</span><span class="y">{{ e.date | date: "%Y" }}</span>
+  </time>
+  <div>
+    <h3><a href="{{ tr.url | relative_url }}">{{ tr.title }}</a></h3>
+    <p>{% if e.dates_text %}{{ e.dates_text }}{% endif %}{% if e.speaker %}{% if e.dates_text %} · {% endif %}{{ e.speaker }}{% endif %}{% if e.location %} · {{ e.location }}{% endif %}</p>
+  </div>
+</li>

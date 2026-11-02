@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- comment %} Most announcements exist only in Greek: the English listing shows both. {% endcomment -%}
+{%- if lang == "el" %}{% assign all = site.news | where: "lang", "el" %}{% else %}{% assign all = site.news %}{% endif -%}
+{%- if page.key == "all" %}{% assign items = all | sort: "date" | reverse %}{% else %}{% assign items = all | where_exp: "n", "n.categories contains page.key" | sort: "date" | reverse %}{% endif -%}
+{% include page-head.html %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      {{ content }}
+      {%- assign by_year = items | group_by_exp: "n", "n.date | date: '%Y'" -%}
+      {%- for y in by_year %}
+      <div class="section-title"><h2>{{ y.name }}</h2></div>
+      <ul class="news-list">{% for n in y.items %}{% include news-item.html item=n %}{% endfor %}</ul>
+      {%- else %}
+      <p class="muted">{{ t.no_news }}</p>
+      {%- endfor %}
+    </div>
+    {% include sidebar.html %}
+  </div>
+</div>

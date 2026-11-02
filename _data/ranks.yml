@@ -1,0 +1,17 @@
+# Academic ranks. The key is the value of `rank:` in collections/_people/*.md;
+# the label shown depends on the page language and the person's `gender` (m by default, f).
+Καθηγητής:
+  el: { m: Καθηγητής, f: Καθηγήτρια }
+  en: { m: Professor, f: Professor }
+Αναπληρωτής Καθηγητής:
+  el: { m: Αναπληρωτής Καθηγητής, f: Αναπληρώτρια Καθηγήτρια }
+  en: { m: Associate Professor, f: Associate Professor }
+Επίκουρος Καθηγητής:
+  el: { m: Επίκουρος Καθηγητής, f: Επίκουρη Καθηγήτρια }
+  en: { m: Assistant Professor, f: Assistant Professor }
+Λέκτορας:
+  el: { m: Λέκτορας, f: Λέκτορας }
+  en: { m: Lecturer, f: Lecturer }
+Ομότιμος Καθηγητής:
+  el: { m: Ομότιμος Καθηγητής, f: Ομότιμη Καθηγήτρια }
+  en: { m: Professor Emeritus, f: Professor Emerita }

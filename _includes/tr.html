@@ -1,0 +1,6 @@
+{%- comment -%}
+  Localised view of a collection item (one file per item, el:/en: blocks merged by
+  _plugins/bilingual.rb). `tr` has shared + translated fields and `url` for the current
+  language, falling back to Greek when the item has no English block.
+{%- endcomment -%}
+{%- assign tr = include.doc.i18n[lang] | default: include.doc -%}

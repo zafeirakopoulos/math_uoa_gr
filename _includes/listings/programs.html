@@ -1,0 +1,5 @@
+{%- include lang.html -%}
+{%- assign main = site.programs | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+<div class="cards">
+  {%- for p0 in main %}{% include tr.html doc=p0 %}{% assign p = tr %}<article class="card"><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>{% if p.lede %}<p>{{ p.lede }}</p>{% endif %}</article>{% endfor %}
+</div>

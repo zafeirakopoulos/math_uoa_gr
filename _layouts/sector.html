@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign members = site.people | where: "lang", "el" | where: "sector", base.key | where: "group", "dep" -%}
+{%- assign dep0 = site.staff_groups | where: "key", "dep" | first -%}{% include tr.html doc=dep0 %}{% assign dep = tr %}
+{%- assign labs = site.labs | where: "sector", base.key -%}
+{% include page-head.html parent_url=L.sectors_url parent_title=t.sectors kicker=t.sector %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      {%- assign c = content | strip -%}
+      {%- if c != '' %}<div class="prose">{{ content }}</div>{% endif %}
+      {%- for rank in dep.ranks %}
+      {%- assign in_rank = members | where: "rank", rank | sort: "sort_name" -%}
+      {%- if in_rank.size > 0 %}
+      <h2>{{ dep.rank_titles[rank] | default: rank }}</h2>
+      <ul class="people">{% for p in in_rank %}{% include person-card.html person=p show_rank=false %}{% endfor %}</ul>
+      {%- endif %}
+      {%- endfor %}
+      {%- if labs.size > 0 %}
+      <h2>{{ t.labs_of_sector }}</h2>
+      <div class="cards">{% for l in labs %}<article class="card"><h3><a href="{{ l.url | relative_url }}">{{ l.title }}</a></h3></article>{% endfor %}</div>
+      {%- endif %}
+    </div>
+    {% include sidebar.html parent_url=L.sectors_url %}
+  </div>
+</div>

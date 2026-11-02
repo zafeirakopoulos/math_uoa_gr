@@ -1,0 +1,8 @@
+{%- include lang.html -%}
+{%- assign sems = site.seminars | where: "lang", "el" | sort: "order" -%}
+<div class="cards">
+  {%- for s in sems %}{% include tr.html doc=s %}{% assign sem = tr %}
+  {%- assign sector_base = site.sectors | where: "lang", "el" | where: "key", s.sector | first -%}
+  <article class="card"><h3><a href="{{ sem.url | relative_url }}">{{ sem.title }}</a></h3>{% if sector_base %}{% include tr.html doc=sector_base %}<p>{{ tr.title }}</p>{% endif %}</article>
+  {%- endfor %}
+</div>

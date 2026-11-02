@@ -1,0 +1,32 @@
+---
+section: spoudes
+el:
+  title: Πανεπιστημιακό Έτος 2021-22
+  legacy_url: /proptychiakes_spoydes/archeio_proigoymenon_eton/panepistimiako_etos_2021_22
+  permalink: /spoudes/archeio/panepistimiako-etos-2021-22/
+  body: |
+    ## ΠΑΝΕΠΙΣΤΗΜΙΑΚΟ ΕΤΟΣ 2021-22
+
+    ---
+
+    ### [Βασικές Πληροφορίες για τους Πρωτοετείς Φοιτητές του Τμήματος Μαθηματικών](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/First-year-2021.pdf)
+
+    ---
+
+    ## Γενικά
+
+    **[Πολιτική Διασφάλισης Ποιότητας Προπτυχιακού Προγράμματος Σπουδών](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Politiki_Diasfalisis_Poiotitas_Proptychiakoy_Programmatos_Spoydon_01.pdf)[Οδηγός σπουδών του Τμήματος Μαθηματικών (Για τους εγγραφέντες από το Α.Ε. 2020 – 2021 και μετά, υπό συνεχή αναθεώρηση)](http://users.uoa.gr/~sedthilk/OS/archive/%CE%95%CF%80%CE%AF%CF%83%CE%B7%CE%BC%CE%BF%CE%B9%20%CE%9F%CE%B4%CE%B7%CE%B3%CE%BF%CE%AF%20%CE%A3%CF%80%CE%BF%CF%85%CE%B4%CF%8E%CE%BD%20%CE%A4%CE%BC%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20%CE%9C%CE%B1%CE%B8%CE%B7%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8E%CE%BD%20%CF%84%CE%BF%CF%85%20%CE%95%CE%9A%CE%A0%CE%91%20/2021-2022/2021-2022_%ce%bd%ce%ad%ce%bf%cf%82/)[Οδηγός σπουδών του Τμήματος Μαθηματικών (Για τους εγγραφέντες έως και το Α.Ε. 2019 – 2020, υπό συνεχή αναθεώρηση)](http://users.uoa.gr/~sedthilk/OS/archive/%CE%95%CF%80%CE%AF%CF%83%CE%B7%CE%BC%CE%BF%CE%B9%20%CE%9F%CE%B4%CE%B7%CE%B3%CE%BF%CE%AF%20%CE%A3%CF%80%CE%BF%CF%85%CE%B4%CF%8E%CE%BD%20%CE%A4%CE%BC%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20%CE%9C%CE%B1%CE%B8%CE%B7%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8E%CE%BD%20%CF%84%CE%BF%CF%85%20%CE%95%CE%9A%CE%A0%CE%91%20/2021-2022/2021-2022_%CF%80%CE%B1%CE%BB%CE%B9%CF%8C%CF%82/)[Βασικές ημερομηνίες έτους](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Basikes_Imerominies_2021-2022.pdf)[Μερική Φοίτηση](/spoudes/meriki-foitisi/)[Ακαδημαϊκοί Σύμβουλοι Πρωτοετών](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Advisors-2021.pdf)[Σημαντική ενημέρωση και διευκρίνιση για τις ορκωμοσίες πτυχιούχων Ε.Κ.Π.Α.](https://www.math.uoa.gr/anakoinoseis_kai_ekdiloseis/proboli_anakoinosis/simantiki_enimerosi_kai_dieykrinisi_gia_tis_orkomosies_ptychioychon_ekpa-2)[Πρόγραμμα Πρακτικής Άσκησης](/spoudes/praktiki-askisi/)[Μεταφορά θέσεων φοίτησης στελεχών Ενόπλων Δυνάμεων και Σωμάτων Ασφαλείας](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepistimiako_Etos_2020-21/anakoinosienoplesdynameis2020.pdf)[Κατατακτήριες εξετάσεις Ακ. Έτους 2021 - 2022](/spoudes/archeio/panepistimiako-etos-2021-22/katataktiries-exetaseis-2021-2022/)[Εγγραφές πρωτοετών φοιτητών](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/2021-2022_ANAKOINOSI_EGGRAFES_PROTOETON_FOITITON.pdf)[Οδηγίες Εγγραφής στην Ηλεκτρονική Υπηρεσία της Γραμματείας My-Studies](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/sign_in_mystudies.pdf)[Κανονισμός Εξετάσεων](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/KANONISMOS_EXETASEON_APOFASI_13_7_2017.pdf)**
+
+    ## Χειμερινό εξάμηνο 2021-22
+
+    **[Ενδεικτικό πρόγραμμα αναθέσεων διδασκαλίας μαθημάτων](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Fall-Semester-2021-22.pdf)[Ωρολόγιο πρόγραμμα μαθημάτων χειμερινού εξαμήνου](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/OrologioCHeim2021-22.pdf)[Σύνδεσμοι στις η-τάξεις του Χειμερινού Εξαμήνου 2021-22](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/E-class-Undergraduate-Fall-Semester-2021-22.pdf)[Μαθήματα άλλων τμημάτων](/spoudes/archeio/panepistimiako-etos-2021-22/mathimata-allon-tmimaton-2021-2022/)Δήλωση και διανομή συγγραμμάτων για το χειμερινό εξάμηνο[Δηλώσεις μαθημάτων χειμερινού εξαμήνου](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Anakoinosi_gia_diloseis_ch.e._2021-22.pdf)[Οδηγίες για την επιτυχή δήλωση μαθημάτων](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/ODIGIES-DILOSEIS-MATHIMATON.pdf)[Πρόγραμμα εξετάσεων χειμερινού εξαμήνου](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Fall-Semester-Exams-2021-22.pdf)**
+
+    ## Εαρινό εξάμηνο 2021-22
+
+    **[Ενδεικτικό πρόγραμμα αναθέσεων διδασκαλίας μαθημάτων](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Spring-Semester-2021-22.pdf)[Ωρολόγιο πρόγραμμα μαθημάτων εαρινού εξαμήνου](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Schedule-All-Spring-2021-22.pdf)[Σύνδεσμοι στις η-τάξεις του Εαρινού Εξαμήνου 2021-22](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/E-class-Undergraduate-Spring-Semester-2021-22.pdf)[Μαθήματα άλλων τμημάτων](/spoudes/archeio/panepistimiako-etos-2021-22/mathimata-allon-tmimaton-2021-2022/)[Δήλωση και διανομή συγγραμμάτων για το εαρινό εξάμηνο](https://eudoxus.gr/files/Dianomi_Earinou_2021-22.pdf)[Δηλώσεις μαθημάτων εαρινού εξαμήνου](/anakoinoseis/2022/ilekroniki-ypoboli-dilosis-mathimaton-earinoy-examinoy/)[Οδηγίες για την επιτυχή δήλωση μαθημάτων](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/ODIGIES-DILOSEIS-MATHIMATON.pdf)[Πρόγραμμα εξετάσεων εαρινού εξαμήνου](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/programma-exetasewn-iounios-2022.pdf)**
+
+    ## Σεπτέμβριος 2021-2022
+
+    **[Πρόγραμμα εξετάσεων Σεπτεμβρίου 2022](https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/Archeia_Proptychiakoy_Programmatos/Panepisthmiako_Etos_2021-22/Exetaseis_Septembrioy_2021-2022.pdf)**
+generated: true
+---

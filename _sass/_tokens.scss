@@ -1,0 +1,31 @@
+// Visual language of www.uoa.gr (TYPO3 "uoa_website" theme), applied to the department site.
+//   primary blue  #0075CB   — links, menu button, active states (uoa.gr style.css)
+//   near-black    #1C1C1C   — top bar and footer
+//   greys         #F4F4F4 / #E5E5E5 / #DBDBDB / #CCCCCC
+//   emblem blue   #5A8FD2   — Pantone 279 U, official COL2 logo artwork
+// Typography as on uoa.gr: GFS Didot Bold for titles, Open Sans for text, Roboto for UI labels.
+
+:root {
+  --blue: #0075cb;
+  --blue-dark: #005a9c;
+  --blue-tint: #e8f2fb;
+  --emblem: #5a8fd2;
+  --black: #1c1c1c;
+  --text: #333333;
+  --text-2: #555555;
+  --text-3: #7f7f7f;
+  --line: #e5e5e5;
+  --line-2: #dbdbdb;
+  --line-3: #cccccc;
+  --paper: #ffffff;
+  --paper-2: #f4f4f4;
+  --paper-3: #f7f7f7;
+
+  --font-title: "Katsoulidis", "GFS Didot Bold", "GFS Didot", Georgia, serif;
+  --font-body: "Open Sans", "Segoe UI", system-ui, sans-serif;
+  --font-ui: "Roboto", "Open Sans", system-ui, sans-serif;
+
+  --max: 73.125rem; // 1170px, Bootstrap container as on uoa.gr
+  --gutter: 15px;
+  --radius: 0;
+}

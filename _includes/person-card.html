@@ -1,0 +1,17 @@
+{%- comment -%} include.person is the Greek (canonical) doc; tr is its overlay in the current language. {%- endcomment -%}
+{%- assign p = include.person -%}
+{%- include tr.html doc=p -%}
+{%- include rank-label.html person=p -%}
+<li class="person-card" data-search="{{ p.title | downcase }} {{ tr.title | downcase }} {{ p.interests | downcase }} {{ tr.interests | downcase }}" data-sector="{{ p.sector }}">
+  <h3><a href="{{ tr.url | relative_url }}">{{ tr.title }}</a></h3>
+  {%- if include.show_rank != false and rank_label %}<p class="rank">{{ rank_label }}</p>{% endif %}
+  {%- assign duties = tr.duties | default: p.duties -%}
+  {%- if duties %}<p class="interests">{{ duties }}</p>{% endif %}
+  {%- assign interests = tr.interests | default: p.interests -%}
+  {%- if interests %}<p class="interests">{{ interests | truncate: 140 }}</p>{% endif %}
+  <dl>
+    {%- if p.office %}<dt>{{ t.office }}</dt><dd>{{ p.office }}</dd>{% endif %}
+    {%- if p.phone %}<dt>{{ t.phone_short }}</dt><dd>{{ p.phone }}</dd>{% endif %}
+    {%- if p.email %}<dt>{{ t.email }}</dt><dd>{% include email.html address=p.email %}</dd>{% endif %}
+  </dl>
+</li>

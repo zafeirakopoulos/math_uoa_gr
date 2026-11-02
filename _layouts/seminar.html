@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign talks = site.events | where: "lang", "el" | where: "seminar", base.key | sort: "date" | reverse -%}
+{%- assign seminars_page = navable | where: "nav_key", "seminars" | first -%}
+{% include page-head.html parent_url=seminars_page.url parent_title=t.seminars kicker=t.seminar %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      <div class="prose">{{ content }}</div>
+      {%- if talks.size > 0 %}
+      <h2>{{ t.talks }}</h2>
+      <ul class="event-list">{% for e in talks %}{% include event-item.html event=e %}{% endfor %}</ul>
+      {%- endif %}
+    </div>
+    <aside>
+      <div class="facts">
+        <dl>
+          {%- if base.organizers %}<dt>{{ t.organizers }}</dt><dd>{{ base.organizers | join: ", " }}</dd>{% endif %}
+          {%- if base.schedule %}<dt>{{ t.when }}</dt><dd>{{ base.schedule }}</dd>{% endif %}
+          {%- if base.location %}<dt>{{ t.venue }}</dt><dd>{{ base.location }}</dd>{% endif %}
+          {%- if base.website %}<dt>{{ t.website }}</dt><dd><a href="{{ base.website }}">{{ base.website | remove: 'https://' | remove: 'http://' | truncate: 36 }}</a></dd>{% endif %}
+        </dl>
+      </div>
+      {% include sidebar.html parent_url=seminars_page.url %}
+    </aside>
+  </div>
+</div>

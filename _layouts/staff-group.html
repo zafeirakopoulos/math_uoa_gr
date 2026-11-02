@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign members = site.people | where: "lang", "el" | where: "group", base.key -%}
+{% include page-head.html %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      {%- assign c = content | strip -%}
+      {%- if c != '' %}<div class="prose">{{ content }}</div>{% endif %}
+      {%- if members.size > 6 %}
+      <div class="people-filter" data-people-filter>
+        <label class="visually-hidden" for="pf-q">{{ t.search }}</label>
+        <input id="pf-q" type="search" placeholder="{% if base.key == 'dep' or base.key == 'edip' %}{{ t.filter_people }}{% else %}{{ t.filter_names }}{% endif %}">
+        {%- if base.by_sector %}
+        <label class="visually-hidden" for="pf-s">{{ t.sector }}</label>
+        <select id="pf-s">
+          <option value="">{{ t.all_sectors }}</option>
+          {%- assign sectors = site.sectors | where: "lang", "el" | sort: "order" -%}
+          {%- for s in sectors %}{% include tr.html doc=s %}<option value="{{ s.key }}">{{ tr.title }}</option>{% endfor %}
+        </select>
+        {%- endif %}
+      </div>
+      {%- endif %}
+      {%- if base.ranks %}
+        {%- for rank in base.ranks %}
+        {%- assign in_rank = members | where: "rank", rank | sort: "sort_name" -%}
+        {%- if in_rank.size > 0 %}
+        <section data-people-group>
+          <h2>{{ page.rank_titles[rank] | default: base.rank_titles[rank] | default: rank }}</h2>
+          <ul class="people">{% for p in in_rank %}{% include person-card.html person=p show_rank=false %}{% endfor %}</ul>
+        </section>
+        {%- endif %}
+        {%- endfor %}
+      {%- else %}
+        {%- assign sorted = members | sort: "sort_name" -%}
+        <section data-people-group><ul class="people">{% for p in sorted %}{% include person-card.html person=p %}{% endfor %}</ul></section>
+      {%- endif %}
+    </div>
+    {% include sidebar.html %}
+  </div>
+</div>

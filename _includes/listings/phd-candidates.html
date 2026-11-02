@@ -1,0 +1,14 @@
+{%- include lang.html -%}
+{%- assign cands = site.theses | where: "status", "in-progress" -%}
+{%- assign sectors = site.sectors | where: "lang", "el" | sort: "order" -%}
+{%- for s in sectors %}{% include tr.html doc=s %}
+{%- assign in_s = cands | where: "sector", s.key | sort: "author" -%}
+{%- if in_s.size > 0 %}
+<h2>{{ tr.title }}</h2>
+<ul>
+  {%- for th in in_s %}{% assign sector_tr = tr %}{% include tr.html doc=th %}
+  <li><strong>{{ tr.author }}</strong> — {{ tr.title }}{% if th.supervisors %} <span class="muted">· {% include supervisors.html list=th.supervisors gender=th.supervisor_gender %}</span>{% endif %}</li>{% assign tr = sector_tr %}
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- endfor %}

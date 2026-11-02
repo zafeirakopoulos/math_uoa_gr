@@ -1,0 +1,26 @@
+{%- assign docs = site.pages | where: "lang", include.lang | where_exp: "p", "p.title" | where_exp: "p", "p.search != false" -%}
+{%- assign colls = site.news | concat: site.events | concat: site.people | concat: site.sectors | concat: site.labs | concat: site.seminars | concat: site.awards | concat: site.programs | concat: site.staff_groups | where: "lang", include.lang -%}
+{%- assign all = docs | concat: colls -%}
+{%- if include.lang == "el" %}{% assign all = all | concat: site.theses %}{% endif -%}
+[
+{%- for d in all %}
+  {%- if d.url contains "search.json" or d.url contains ".xml" -%}{% continue %}{%- endif -%}
+  {
+    "title": {% if d.collection == "theses" %}{{ d.author | append: " — " | append: d.title | jsonify }}{% else %}{{ d.title | jsonify }}{% endif %},
+    {%- if d.collection == "theses" -%}
+      {%- if d.status == "completed" %}{% assign u = "/spoudes/didaktorikes/didaktores/" %}{% else %}{% assign u = "/spoudes/didaktorikes/ypopsifioi/" %}{% endif -%}
+    {%- else -%}{% assign u = d.url %}{%- endif %}
+    "url": {{ u | relative_url | jsonify }},
+    {%- assign c = d.collection | default: "page" -%}
+    {%- if include.lang == "en" -%}
+      {%- assign typ = c | replace: "news", "News" | replace: "events", "Event" | replace: "people", "Person" | replace: "sectors", "Sector" | replace: "labs", "Lab" | replace: "seminars", "Seminar" | replace: "awards", "Award" | replace: "programs", "Programme" | replace: "staff_groups", "People" | replace: "page", "Page" -%}
+    {%- else -%}
+      {%- assign typ = c | replace: "news", "Ανακοίνωση" | replace: "events", "Εκδήλωση" | replace: "people", "Πρόσωπο" | replace: "sectors", "Τομέας" | replace: "labs", "Εργαστήριο" | replace: "seminars", "Σεμινάριο" | replace: "awards", "Διάκριση" | replace: "programs", "Πρόγραμμα" | replace: "theses", "Διατριβή" | replace: "staff_groups", "Προσωπικό" | replace: "page", "Σελίδα" -%}
+    {%- endif %}
+    "type": {{ typ | jsonify }},
+    "date": {% if d.date and d.collection == "news" or d.collection == "events" %}{{ d.date | date: "%d/%m/%Y" | jsonify }}{% else %}null{% endif %},
+    {%- assign sv = d.supervisors | join: " " %}
+    "text": {{ d.content | strip_html | append: " " | append: d.interests | append: " " | append: sv | append: " " | append: d.author | normalize_whitespace | truncatewords: 120 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

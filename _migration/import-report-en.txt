@@ -1,0 +1,166 @@
+kept existing en: block in collections/_people/androulidakis-iakovos.md
+kept existing en: block in collections/_people/antonopoulou-dimitra.md
+kept existing en: block in collections/_people/athanasiadis-christos.md
+kept existing en: block in collections/_people/barbatis-gerasimos.md
+kept existing en: block in collections/_people/bournetas-apostolos.md
+kept existing en: block in collections/_people/chalikias-georgios.md
+kept existing en: block in collections/_people/chatziafratis-tilemachos.md
+kept existing en: block in collections/_people/cheliotis-dimitrios.md
+kept existing en: block in collections/_people/chlouveraki-maria.md
+kept existing en: block in collections/_people/christopoulou-dimitra.md
+kept existing en: block in collections/_people/dodos-pantelis.md
+kept existing en: block in collections/_people/ntokas-ioannis.md
+kept existing en: block in collections/_people/drakopoulos-michail.md
+kept existing en: block in collections/_people/oikonomou-antonios.md
+kept existing en: block in collections/_people/emmanouil-ioannis.md
+kept existing en: block in collections/_people/gianniotis-panagiotis.md
+kept existing en: block in collections/_people/iliopoulou-marina.md
+kept existing en: block in collections/_people/karali-georgia.md
+kept existing en: block in collections/_people/kontogeorgis-aristeidis.md
+kept existing en: block in collections/_people/maliakas-michail.md
+kept existing en: block in collections/_people/manou-athanasia.md
+kept existing en: block in collections/_people/melas-antonios.md
+kept existing en: block in collections/_people/meligkotsidou-loukia.md
+kept existing en: block in collections/_people/mertikopoulos-panagiotis.md
+kept existing en: block in collections/_people/mitrouli-marilena.md
+kept existing en: block in collections/_people/notaris-sotirios.md
+kept existing en: block in collections/_people/papadatos-nikolaos.md
+kept existing en: block in collections/_people/potari-despoina.md
+kept existing en: block in collections/_people/psycharis-georgios.md
+kept existing en: block in collections/_people/siannis-fotios.md
+kept existing en: block in collections/_people/smyrnelis-panagiotis.md
+EN person not matched (dep): Sykiotis Michael
+kept existing en: block in collections/_people/thilykos-dimitrios.md
+kept existing en: block in collections/_people/trevezas-samis.md
+kept existing en: block in collections/_people/triantafyllou-chrysavgi.md
+kept existing en: block in collections/_people/tyros-konstantinos.md
+kept existing en: block in collections/_people/vaggelatou-evtychia.md
+kept existing en: block in collections/_people/deligianni-eirini.md
+kept existing en: block in collections/_people/fakiolas-alexandros.md
+kept existing en: block in collections/_people/gkotsis-konstantinos.md
+kept existing en: block in collections/_people/karaliopoulou-margarita.md
+kept existing en: block in collections/_people/kounia-sofia.md
+kept existing en: block in collections/_people/eleni-papadouli.md
+kept existing en: block in collections/_people/konstantinos-bougiatiotis.md
+kept existing en: block in collections/_people/vasileios-kousoulas.md
+kept existing en: block in collections/_people/evdokia-dervou.md
+kept existing en: block in collections/_people/theofanis-tsiokris.md
+kept existing en: block in collections/_people/petroula-zafeiropoulou.md
+kept existing en: block in collections/_people/anastasia-tsigka.md
+EN person not matched (admin): Tsaklanos Evangelos
+EN person not matched (teaching): Bitsouni Vasiliki
+EN person not matched (teaching): Gialelis Nikolaos
+EN person not matched (teaching): Skarmogiannis Nikolaos
+EN person not matched (teaching): Zoros Demetrios
+kept existing en: block in collections/_people/athanasiadis-christodoulos.md
+kept existing en: block in collections/_people/alikakos-nikolaos.md
+kept existing en: block in collections/_people/arachovitis-ioannis.md
+kept existing en: block in collections/_people/kakoullos-theofilos.md
+kept existing en: block in collections/_people/charalabidis-charalabos.md
+kept existing en: block in collections/_people/chrysakis-athanasios.md
+kept existing en: block in collections/_people/chrysafinou-ourania.md
+kept existing en: block in collections/_people/konte-thrasyvoulidou-anna.md
+kept existing en: block in collections/_people/damianou-charalabos.md
+kept existing en: block in collections/_people/ntaoultzi-malamou-zoi.md
+kept existing en: block in collections/_people/deriziotis-dimitrios.md
+kept existing en: block in collections/_people/dougalis-vasileios.md
+kept existing en: block in collections/_people/evaggelatou-dalla-leoni.md
+kept existing en: block in collections/_people/fragkoulopoulou-maria.md
+kept existing en: block in collections/_people/gatzouras-dimitrios.md
+kept existing en: block in collections/_people/giannakoulias-evstathios.md
+kept existing en: block in collections/_people/giotopoulos-stavros.md
+kept existing en: block in collections/_people/grispos-evaggelos.md
+kept existing en: block in collections/_people/charalabidou-marina.md
+kept existing en: block in collections/_people/kalamidas-nikolaos.md
+kept existing en: block in collections/_people/kalogeropoulos-grigorios.md
+kept existing en: block in collections/_people/kartsaklis-anastasios.md
+kept existing en: block in collections/_people/katavolos-aristeidis.md
+kept existing en: block in collections/_people/katseli-tsitsa-nelli.md
+kept existing en: block in collections/_people/kechagiopoulou-niovi.md
+kept existing en: block in collections/_people/koumoullis-georgios.md
+kept existing en: block in collections/_people/kounias-evstratios.md
+kept existing en: block in collections/_people/krikelis-petros.md
+kept existing en: block in collections/_people/kyrousis-elevtherios.md
+kept existing en: block in collections/_people/merkourakis-sofoklis.md
+kept existing en: block in collections/_people/moschovakis-ioannis.md
+kept existing en: block in collections/_people/nasopoulos-georgios.md
+kept existing en: block in collections/_people/negrepontis-stylianos.md
+kept existing en: block in collections/_people/nestoridis-vasileios.md
+kept existing en: block in collections/_people/panagopoulos-ioannis.md
+kept existing en: block in collections/_people/papageorgiou-charalabos.md
+kept existing en: block in collections/_people/papathanasiou-vasileios.md
+kept existing en: block in collections/_people/papathanasiou-maria.md
+kept existing en: block in collections/_people/papanastasiou-nikolaos.md
+kept existing en: block in collections/_people/papastavridis-stavros.md
+kept existing en: block in collections/_people/pavlakos-panagiotis.md
+kept existing en: block in collections/_people/peteinatos-konstantinos.md
+kept existing en: block in collections/_people/poulkou-anthippi.md
+kept existing en: block in collections/_people/raptis-evaggelos.md
+kept existing en: block in collections/_people/sagias-georgios.md
+kept existing en: block in collections/_people/soules-panagiotis.md
+kept existing en: block in collections/_people/spyrou-panagiotis.md
+kept existing en: block in collections/_people/stathakopoulos-konstantinos.md
+kept existing en: block in collections/_people/stavrakas-gerasimos.md
+kept existing en: block in collections/_people/stavrinos-panagiotis.md
+kept existing en: block in collections/_people/stavropoulos-theodoros.md
+kept existing en: block in collections/_people/strantzalos-polychronis.md
+kept existing en: block in collections/_people/stratis-ioannis.md
+kept existing en: block in collections/_people/talelli-olybia.md
+kept existing en: block in collections/_people/tsagkaris-panagiotis.md
+kept existing en: block in collections/_people/tsertos-ioannis.md
+kept existing en: block in collections/_people/tsitsas-leonidas.md
+kept existing en: block in collections/_people/vasileiou-evstathios.md
+24 Greek people have no English overlay (fall back to Greek): aggeliki-mastorou, antonopoulos-dimitrios, chatzikaleas-athanasios, fakinos-dimitrios, farmaki-vasiliki, geranios-charalabos, grylakis-konstantinos, kakariadis-evgenios, karagiannis-konstantinos, kotta-athanasiadou-evaggelia, lappas-dionysios, livieratos-ioannis, mali-aggeliki, menegaki-aggeliki, metaxas-nikolaos, milolidakis-konstantinos, oikonomidis-ioannis, papatriantafyllou-maria, paschalis-miltiadis, petropoulou-georgia, prasidis-evstratios, varsos-dimitrios, zachariadis-theodosios, zafeirakopoulos-zafeirakis
+EN PhD candidate not matched: Panagiotis Christou
+EN PhD candidate not matched: Ilias Kaperonis
+kept existing en: block in collections/_theses/candidate-metzaki-maria.md
+EN PhD candidate not matched: Vassilios-Dionyssios Moustakas
+EN PhD candidate not matched: Alexios Terezakis
+EN PhD candidate not matched: Ioannis Tsouknidas
+EN PhD candidate not matched: Dimitrios Andreou
+EN PhD candidate not matched: Panagiotis-Christos Branikas
+EN PhD candidate not matched: Kyranna Kioulafa
+EN PhD candidate not matched: Miltiadis Paschalis
+EN PhD candidate not matched: Vassilis Sterios
+EN PhD candidate not matched: Dimitrios Logothetis
+EN PhD candidate not matched: Alexandros Pasiouras
+EN PhD candidate not matched: Mathaios Antonopoulos
+kept existing en: block in collections/_theses/candidate-babili-amalia-christina.md
+EN PhD candidate not matched: Marina Brokou
+EN PhD candidate not matched: Chrysoula Choutou
+kept existing en: block in collections/_theses/candidate-elthini-nairouz.md
+EN PhD candidate not matched: Dimitra Kalisperi Relation of Platonic philosophy, especially of the Platonic dialogue Timaeus, with Mathematics
+EN PhD candidate not matched: Fotini Kantaridou Figures and Diagrams: their active role in the Development of Geometric Theories
+EN PhD candidate not matched: Konstantinos Karantzoulis
+EN PhD candidate not matched: Georgios-Ignatios Kafetzopoulos
+EN PhD candidate not matched: Roidoula Kioufti
+EN PhD candidate not matched: Styliani Kiriaki Kourti
+kept existing en: block in collections/_theses/candidate-pettas-nikolaos-markos.md
+kept existing en: block in collections/_theses/candidate-protopapas-dimitrios.md
+EN PhD candidate not matched: Ioannis Vlachos
+kept existing en: block in collections/_theses/candidate-vroutsis-nikolaos.md
+EN PhD candidate not matched: Angela Ζοupa
+EN PhD candidate not matched: Ioannis Arkoudis
+EN PhD candidate not matched: Grigorios Kounadis
+EN PhD candidate not matched: John Livieratos
+EN PhD candidate not matched: Paraskevi Roupa
+EN PhD candidate not matched: Leetha Saridaki
+EN PhD candidate not matched: Stefania-Maria Zoi
+kept existing en: block in collections/_seminars/geometrikis-theorias-anaparastaseon.md
+kept existing en: block in collections/_seminars/synartisiakis-analysis-kai-algevron-teleston.md
+kept existing en: block in collections/_seminars/arithmitikis-algevrikis-geometrias.md
+kept existing en: block in collections/_seminars/geniko-seminario-tmimatos-mathimatikon-ekpa.md
+kept existing en: block in collections/_seminars/elliniko-mathimatiko-seminario.md
+kept existing en: block in collections/_seminars/efarmosmenis-analysis-merikon-diaforikon-exisoseon.md
+kept existing en: block in collections/_seminars/statistikis-epicheirisiakis-erevnas.md
+kept existing en: block in collections/_programs/proptychiakes.md
+kept existing en: block in collections/_programs/metaptychiakes.md
+kept existing en: block in collections/_programs/didaktorikes.md
+kept existing file: pages/en/studies/undergraduate-courses.md
+kept existing file: pages/en/studies/undergraduate-curriculum.md
+kept existing file: collections/_news/2026-01-01-caratheodory-workshop-first-announcement.md
+kept existing file: collections/_news/2022-10-04-functional-analysis-and-operator-algebras-seminar-2022-23.md
+kept existing en: block in pages/to-tmima/istoria.md
+kept existing en: block in pages/to-tmima/dioikisi.md
+kept existing en: block in pages/to-tmima/dioikitiki-diarthrosi.md
+kept existing en: block in pages/to-tmima/prosvasi.md

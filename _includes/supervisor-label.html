@@ -1,0 +1,2 @@
+{%- comment -%} Επιβλέπων / Επιβλέπουσα / Επιβλέποντες for include.count supervisors and include.gender (f or empty). {%- endcomment -%}
+{%- if include.count > 1 %}{{ t.supervisors }}{% elsif include.gender == "f" %}{{ t.supervisor_f }}{% else %}{{ t.supervisor_m }}{% endif -%}

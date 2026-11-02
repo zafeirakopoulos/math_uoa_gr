@@ -1,0 +1,12 @@
+{%- include tr.html doc=include.item -%}{%- assign n = tr -%}
+<li class="news-item">
+  <div class="meta">
+    <time datetime="{{ n.date | date: '%Y-%m-%d' }}">{{ n.date | date: "%d/%m/%Y" }}</time>
+    {%- for key in n.categories %}
+    {%- assign cat0 = site.news_categories | where: "key", key | first -%}{% include tr.html doc=cat0 %}{% assign cat = tr %}{% assign cat0 = nil %}
+    {%- if cat %}<span class="sep">|</span><a href="{{ cat.url | relative_url }}">{{ cat.title }}</a>{% endif %}
+    {%- endfor %}
+  </div>
+  <h3{% unless include.item.langs contains lang %} lang="{{ include.item.lang }}"{% endunless %}><a href="{{ n.url | relative_url }}">{{ n.title }}</a></h3>
+  {%- if include.excerpt != false and n.summary %}<p>{{ n.summary | truncate: 180 }}</p>{% endif %}
+</li>

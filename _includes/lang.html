@@ -1,0 +1,11 @@
+{%- comment -%}
+  Language context for the current page. Sets:
+    lang, L (languages doc), t (UI strings), other_lang, L_other,
+    navable (pages + listing docs in this language, used for menus)
+{%- endcomment -%}
+{%- assign lang = page.lang | default: "el" -%}
+{%- assign L = site.languages | where: "key", lang | first -%}
+{%- assign t = L.t -%}
+{%- if lang == "el" %}{% assign other_lang = "en" %}{% else %}{% assign other_lang = "el" %}{% endif -%}
+{%- assign L_other = site.languages | where: "key", other_lang | first -%}
+{%- assign navable = site.nav[lang] -%}  {%- comment %} precomputed by _plugins/bilingual.rb {% endcomment -%}

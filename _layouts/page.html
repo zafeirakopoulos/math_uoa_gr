@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{% include page-head.html parent_url=page.parent_url parent_title=page.parent_title %}
+<div class="container">
+  <div class="layout{% if page.sidebar == false %} layout--full{% endif %}">
+    <div class="main">
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      <div class="{% if page.wide %}wide{% else %}prose{% endif %}">
+        {{ content }}
+        {%- if page.legacy_url and site.show_legacy_note %}
+        <p class="legacy-note">{{ t.migrated_from }}: <a href="{% if lang == 'en' %}https://en.math.uoa.gr{% else %}{{ site.legacy_url }}{% endif %}{{ page.legacy_url }}">{{ page.legacy_url }}</a></p>
+        {%- endif %}
+      </div>
+    </div>
+    {%- unless page.sidebar == false %}{% include sidebar.html parent_url=page.parent_url %}{% endunless %}
+  </div>
+</div>

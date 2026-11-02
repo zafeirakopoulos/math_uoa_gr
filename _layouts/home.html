@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- if lang == "el" %}{% assign news = site.news | where: "lang", "el" | sort: "date" | reverse %}{% else %}{% assign news = site.news | sort: "date" | reverse %}{% endif -%}
+{%- assign upcoming = site.events | where: "lang", "el" | where_exp: "e", "e.date >= site.time" | sort: "date" -%}
+{%- assign recent = site.events | where: "lang", "el" | sort: "date" | reverse -%}
+{%- assign quick = site.links | where_exp: "l", "l.placement contains 'home'" | sort: "order" -%}
+
+<div class="page-banner page-banner--home" style="background-image:url('{{ page.banner | default: site.banner | relative_url }}')" role="presentation"></div>
+
+<div class="container">
+  <div class="intro">
+    <div>
+      <div class="page-title" style="margin-top:28px">
+        <img src="{{ '/assets/brand/uoa-emblem-dark.svg' | relative_url }}" alt="" width="26" height="40">
+        <h1>{{ L.site_title }}</h1>
+      </div>
+      {{ content }}
+      <div class="intro__actions">
+        {%- for a in page.actions %}<a class="btn{% unless forloop.first %} btn--ghost{% endunless %}" href="{{ a.url | relative_url }}">{{ a.title }}</a>{% endfor %}
+      </div>
+    </div>
+    <aside class="sidebar" style="margin-top:28px">
+      <h2>{{ t.quick_access }}:</h2>
+      <ul>
+        {%- for l in quick %}<li><a href="{{ l.url_external }}">{{ l.i18n[lang].title | default: l.title }}</a></li>{% endfor %}
+      </ul>
+    </aside>
+  </div>
+
+  <nav class="tiles" aria-label="{{ L.site_title }}" style="margin-top:10px">
+    {%- for tile in page.tiles %}
+    <a class="tile" href="{{ tile.url | relative_url }}"><h3>{{ tile.title }}</h3><p>{{ tile.text }}</p></a>
+    {%- endfor %}
+  </nav>
+</div>
+
+<section class="home-section">
+  <div class="container news-grid">
+    <div>
+      <div class="section-title"><h2>{{ t.news }}</h2><a class="more-link" href="{{ L.news_url | relative_url }}">{{ t.all_news }}</a></div>
+      <ul class="news-list">{% for n in news limit: 6 %}{% include news-item.html item=n %}{% endfor %}</ul>
+    </div>
+    <div>
+      <div class="section-title"><h2>{{ t.events }}</h2><a class="more-link" href="{{ L.events_url | relative_url }}">{{ t.all_events }}</a></div>
+      <ul class="event-list">
+        {%- if upcoming.size > 0 %}{% for e in upcoming limit: 5 %}{% include event-item.html event=e %}{% endfor %}
+        {%- else %}{% for e in recent limit: 5 %}{% include event-item.html event=e %}{% endfor %}{% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-section--tint">
+  <div class="container">
+    <div class="section-title"><h2>{{ t.sectors_of_dept }}</h2><a class="more-link" href="{{ L.sectors_url | relative_url }}">{{ t.all_sectors }}</a></div>
+    {% include listings/sectors.html %}
+  </div>
+</section>

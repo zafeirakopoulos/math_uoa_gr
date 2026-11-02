@@ -1,0 +1,5 @@
+{%- include lang.html -%}
+{%- assign awards = site.awards | where: "lang", "el" | sort: "order" -%}
+<div class="cards">
+  {%- for a in awards %}{% include tr.html doc=a %}<article class="card"><h3><a href="{{ tr.url | relative_url }}">{{ tr.title }}</a></h3></article>{% endfor %}
+</div>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign series_base = site.seminars | where: "key", base.seminar | first -%}
+{%- if series_base %}{% include tr.html doc=series_base %}{% assign series = tr %}{% endif -%}
+{%- if series %}{% assign kicker = series.title %}{% elsif base.type == "conference" %}{% assign kicker = t.conference %}{% else %}{% assign kicker = t.event %}{% endif -%}
+{%- if series %}{% assign parent = series.url %}{% assign parent_t = series.title %}{% else %}{% assign parent = L.events_url %}{% assign parent_t = t.events %}{% endif -%}
+{% include page-head.html parent_url=parent parent_title=parent_t kicker=kicker %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if base.speaker %}<p class="lede">{{ base.speaker }}{% if base.affiliation %}, <span class="muted">{{ base.affiliation }}</span>{% endif %}</p>{% endif %}
+      <article class="prose">
+        {%- assign body = content | strip -%}
+        {{ content }}
+      </article>
+    </div>
+    <aside>
+      <div class="facts">
+        <dl>
+          <dt>{{ t.date }}</dt><dd>{% if base.dates_text and lang == "el" %}{{ base.dates_text }}{% else %}{% include date.html date=base.date %}{% endif %}</dd>
+          {%- if base.time %}<dt>{{ t.time }}</dt><dd>{{ base.time }}</dd>{% endif %}
+          {%- if base.location %}<dt>{{ t.venue }}</dt><dd>{{ base.location }}</dd>{% endif %}
+          {%- if base.website %}<dt>{{ t.website }}</dt><dd><a href="{{ base.website }}">{{ base.website | remove: 'https://' | remove: 'http://' | truncate: 36 }}</a></dd>{% endif %}
+          {%- if base.online %}<dt>{{ t.online }}</dt><dd><a href="{{ base.online }}">{{ t.link }}</a></dd>{% endif %}
+        </dl>
+      </div>
+      {% include sidebar.html parent_url=L.events_url %}
+    </aside>
+  </div>
+</div>

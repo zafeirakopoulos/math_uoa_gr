@@ -1,0 +1,18 @@
+{%- comment -%}
+  "Επιβλέπων: <a>Name</a>" for include.list (people slugs or, for people not in the
+  people collection, plain names). The label's gender comes from the person's `gender`,
+  or from include.gender (the thesis' supervisor_gender) for a plain name.
+{%- endcomment -%}
+{%- assign sv_gender = include.gender -%}
+{%- capture sv_names -%}
+  {%- for s in include.list -%}
+    {%- assign sv_person = site.people | where: "slug", s | first -%}
+    {%- unless forloop.first %} – {% endunless -%}
+    {%- if sv_person -%}
+      {%- assign sv_gender = sv_person.gender -%}
+      {%- assign sv_tr = sv_person.i18n[lang] | default: sv_person -%}
+      <a href="{{ sv_tr.url | relative_url }}">{{ sv_tr.title }}</a>
+    {%- else -%}{{ s }}{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- include supervisor-label.html count=include.list.size gender=sv_gender %}: {{ sv_names }}

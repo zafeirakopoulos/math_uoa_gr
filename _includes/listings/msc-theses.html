@@ -1,0 +1,16 @@
+{%- comment -%} Master's theses of one programme (include.program), newest first, grouped by year. {%- endcomment -%}
+{%- include lang.html -%}
+{%- assign theses = site.msc_theses | where: "program", include.program | sort: "number" | reverse -%}
+{%- assign by_year = theses | group_by: "year" -%}
+{%- for y in by_year %}
+<h2>{{ y.name }}</h2>
+<ol class="theses" reversed>
+  {%- for th0 in y.items %}{% include tr.html doc=th0 %}
+  <li value="{{ th0.number }}"><strong>{{ tr.author }}</strong><br>
+    {% if th0.link %}<a href="{{ th0.link }}"><em>{{ tr.title }}</em></a>{% else %}<em>{{ tr.title }}</em>{% endif %}
+    {%- if th0.supervisors or th0.date %}<br><span class="muted">
+      {%- if th0.supervisors %}{% include supervisors.html list=th0.supervisors gender=th0.supervisor_gender %}{% endif %}
+      {%- if th0.date %} ({{ th0.date | date: "%-d/%-m/%Y" }}){% endif %}</span>{% endif %}</li>
+  {%- endfor %}
+</ol>
+{%- endfor %}

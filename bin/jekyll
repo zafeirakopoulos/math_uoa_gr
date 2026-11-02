@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run the system Jekyll with the project-local Dart Sass converter (vendor/gems).
+# Used where `bundle install` is not possible (no ruby-dev headers for native gems).
+# Where Bundler works, prefer: bundle install && bundle exec jekyll ...
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+GEM_PATH="$ROOT/vendor/gems:$(gem env gempath)" JEKYLL_NO_BUNDLER_REQUIRE=true exec jekyll "$@"

@@ -1,0 +1,61 @@
+{%- assign footer_links = site.links | where_exp: "l", "l.placement contains 'footer'" | sort: "order" -%}
+{%- assign strip_links = site.links | where_exp: "l", "l.placement contains 'strip'" | sort: "order" -%}
+{%- assign roots = navable | where: "section_root", true | sort: "nav_order" -%}
+{%- assign half = footer_links.size | divided_by: 2 -%}
+{%- if strip_links.size > 0 %}
+<div class="footer-logos">
+  <div class="container">
+    <ul>{% for l in strip_links %}<li><a href="{{ l.url_external }}">{{ l.i18n[lang].title | default: l.title }}</a></li>{% endfor %}</ul>
+  </div>
+</div>
+{%- endif %}
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h2 class="footer__title">{{ L.site_title }}:</h2>
+        <ul>
+          {%- for root in roots %}<li><a href="{{ root.url | relative_url }}">{{ root.nav_title | default: root.title }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">{{ t.services }}:</h2>
+        <ul>
+          {%- for l in footer_links limit: half %}<li><a href="{{ l.url_external }}">{{ l.i18n[lang].title | default: l.title }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">{{ t.quick_links }}:</h2>
+        <ul>
+          {%- for l in footer_links offset: half %}<li><a href="{{ l.url_external }}">{{ l.i18n[lang].title | default: l.title }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">{{ t.contact }}:</h2>
+        <ul>
+          <li>{{ L.address }}</li>
+          <li>{{ t.secretariat }}: {% include email.html address=site.contact.email %}</li>
+          <li>{{ t.caretaker }}: <a href="tel:+30{{ site.contact.caretaker_phone | remove: ' ' }}">{{ site.contact.caretaker_phone }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <form class="footer__search" action="{{ L.search_url | relative_url }}" role="search">
+          <label class="visually-hidden" for="q-foot">{{ t.search }}</label>
+          <input id="q-foot" name="q" type="search" placeholder="{{ t.search }}">
+          <button type="submit" aria-label="{{ t.search }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg></button>
+        </form>
+        <h2 class="footer__title">{{ t.contact }}:</h2>
+        <ul class="footer__contact">
+          <li><a href="mailto:{{ site.contact.email }}" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5zm2 2v.5l7 4.6 7-4.6V7H5zm14 2.9-7 4.6-7-4.6V17h14V9.9z"/></svg></a></li>
+          <li><a href="{{ L.contact_url | relative_url }}" aria-label="{{ t.access }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></a></li>
+          {%- if site.social.facebook %}<li><a href="{{ site.social.facebook }}" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg></a></li>{% endif %}
+          <li><a href="{{ '/feed.xml' | relative_url }}" aria-label="{{ t.rss }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 10a11 11 0 0 1 11 11h-3a8 8 0 0 0-8-8v-3zm0-6a17 17 0 0 1 17 17h-3A14 14 0 0 0 3 7V4z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="seal"><img src="{{ '/assets/brand/uoa-emblem.svg' | relative_url }}" alt="" width="26" height="40" loading="lazy"></span>
+      <span>Copyright © {{ 'now' | date: '%Y' }}<br>{{ t.copyright }}</span>
+    </div>
+  </div>
+</footer>

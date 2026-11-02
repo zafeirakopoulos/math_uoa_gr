@@ -1,0 +1,5 @@
+{%- include lang.html -%}
+{%- assign labs = site.labs | where: "lang", "el" | sort: "title" -%}
+<div class="cards">
+  {%- for l in labs %}{% include tr.html doc=l %}<article class="card"><h3><a href="{{ tr.url | relative_url }}">{{ tr.title }}</a></h3>{% if tr.summary %}<p>{{ tr.summary }}</p>{% endif %}</article>{% endfor %}
+</div>

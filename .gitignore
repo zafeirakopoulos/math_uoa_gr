@@ -1,0 +1,21 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+# migration working files (crawl dumps, screenshots, downloaded brand sources)
+_migration/crawl/
+_migration/shots/
+_migration/render/
+_migration/brand/
+_migration/chrome-profile/
+_migration/*.log
+_migration/*.done
+_migration/backup-*/
+_migration/snapshot/
+_migration/crawl_en/
+
+# separate internal project living in this folder; never publish
+DEPinternal/
+__pycache__/

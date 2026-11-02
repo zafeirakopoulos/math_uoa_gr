@@ -1,0 +1,7 @@
+{%- include lang.html -%}
+{%- assign events = site.events | where: "lang", "el" | sort: "date" | reverse -%}
+{%- assign by_year = events | group_by_exp: "e", "e.date | date: '%Y'" -%}
+{%- for y in by_year %}
+<div class="section-title"><h2>{{ y.name }}</h2></div>
+<ul class="event-list">{% for e in y.items %}{% include event-item.html event=e %}{% endfor %}</ul>
+{%- endfor %}

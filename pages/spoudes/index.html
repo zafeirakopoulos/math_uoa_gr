@@ -1,0 +1,28 @@
+---
+section: spoudes
+section_root: true
+nav_order: 2
+el:
+  title: Σπουδές
+  lede: Προπτυχιακό, μεταπτυχιακό και διδακτορικό πρόγραμμα του Τμήματος Μαθηματικών.
+  permalink: /spoudes/
+  body: |
+    {%- include lang.html -%}
+    {% include listings/programs.html %}
+
+    <h2>{{ t.for_students }}</h2>
+    <ul>
+      <li><a href="{{ '/spoudes/eggrafes-protoeton/' | relative_url }}">Εγγραφές πρωτοετών φοιτητών</a></li>
+      <li><a href="{{ '/spoudes/praktiki-askisi/' | relative_url }}">Πρακτική άσκηση</a></li>
+      <li><a href="{{ '/spoudes/katataktiries/' | relative_url }}">Κατατακτήριες εξετάσεις</a></li>
+      <li><a href="{{ '/spoudes/meriki-foitisi/' | relative_url }}">Μερική φοίτηση</a></li>
+      <li><a href="{{ '/spoudes/entypa/' | relative_url }}">Έντυπα και αιτήσεις</a></li>
+      <li><a href="{{ '/spoudes/archeio/' | relative_url }}">Αρχείο προηγούμενων ακαδημαϊκών ετών</a></li>
+    </ul>
+en:
+  title: Studies
+  lede: Undergraduate, graduate and doctoral programmes of the Department of Mathematics.
+  permalink: /en/studies/
+  body: |
+    {% include listings/programs.html %}
+---

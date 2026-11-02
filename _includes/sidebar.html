@@ -1,0 +1,19 @@
+{%- comment -%} uoa.gr-style right sidebar: the pages of the current section. {%- endcomment -%}
+{%- assign root = navable | where: "section_root", true | where: "section", page.section | first -%}
+{%- assign items = navable | where: "section", page.section | where_exp: "p", "p.nav_order" | where_exp: "p", "p.section_root != true" | sort: "nav_order" -%}
+{%- if root -%}
+<aside class="sidebar" aria-label="{{ root.nav_title | default: root.title }}">
+  <h2>{{ root.nav_title | default: root.title }}:</h2>
+  <ul>
+    <li><a href="{{ root.url | relative_url }}"{% if root.url == page.url %} aria-current="page"{% endif %}>{{ t.overview }}</a></li>
+    {%- for p in items %}
+    {%- assign active = false -%}
+    {%- if p.url == page.url or p.url == include.parent_url %}{% assign active = true %}{% endif %}
+    <li><a href="{{ p.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ p.nav_title | default: p.title }}</a></li>
+    {%- if include.parent_url == p.url and page.url != p.url %}
+    <li class="sub"><a href="{{ page.url | relative_url }}" aria-current="page">{{ include.title | default: page.nav_title | default: page.title | truncate: 60 }}</a></li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+</aside>
+{%- endif -%}

@@ -1,0 +1,112 @@
+// ---------- Buttons / links ----------
+.btn {
+  display: inline-block; padding: 9px 18px; background: var(--blue); color: #fff; border: 1px solid var(--blue);
+  font-family: var(--font-ui); font-size: 13px; font-weight: 500; text-transform: uppercase;
+  &:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: #fff; text-decoration: none; }
+  &--ghost { background: #fff; color: var(--blue); &:hover { background: var(--blue); color: #fff; } }
+}
+.more-link { font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; font-weight: 500; &::after { content: " »"; } }
+
+// ---------- Section title (uoa.gr .news_section--title) ----------
+.section-title {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 0 0 18px;
+  h2 { margin: 0; font-size: 22px; text-transform: uppercase; }
+}
+.home-section { padding: 34px 0 10px; }
+.home-section--tint { background: var(--paper-2); padding-bottom: 34px; margin-top: 30px; }
+
+// ---------- Home intro ----------
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 262px; gap: 40px; padding: 6px 0 10px;
+  @media (max-width: 62rem) { grid-template-columns: 1fr; }
+  p { font-size: 16px; color: var(--text-2); text-align: justify; }
+}
+.intro__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+
+// ---------- Audience tiles ----------
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;
+  @media (max-width: 62rem) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 30rem) { grid-template-columns: 1fr; }
+}
+.tile { display: block; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--blue); padding: 18px 18px 16px; color: var(--text);
+  h3 { margin: 0 0 6px; font-family: var(--font-title); font-weight: 400; font-size: 18px; text-transform: uppercase; color: var(--black); }
+  p { margin: 0; font-size: 13px; color: var(--text-3); }
+  &:hover { text-decoration: none; border-color: var(--blue); h3 { color: var(--blue); } }
+}
+
+// ---------- News list ----------
+.news-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; @media (max-width: 62rem) { grid-template-columns: 1fr; } }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-item { padding: 14px 0; border-bottom: 1px solid var(--line);
+  &:first-child { padding-top: 0; }
+  h3 { margin: 4px 0; font-family: var(--font-body); font-size: 15px; font-weight: 700; line-height: 1.4;
+    a { color: var(--black); &:hover { color: var(--blue); text-decoration: none; } } }
+  p { margin: 0; font-size: 13px; color: var(--text-3); }
+}
+.meta { font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; color: var(--text-3);
+  time { color: var(--blue); font-weight: 500; }
+  .sep { margin: 0 6px; }
+  a { color: var(--text-3); &:hover { color: var(--blue); } }
+}
+
+// ---------- Events ----------
+.event-list { list-style: none; margin: 0; padding: 0; }
+.event { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line);
+  &:first-child { padding-top: 0; }
+  h3 { margin: 0 0 2px; font-family: var(--font-body); font-size: 14px; font-weight: 700; line-height: 1.4; a { color: var(--black); &:hover { color: var(--blue); text-decoration: none; } } }
+  p { margin: 0; font-size: 12px; color: var(--text-3); }
+}
+.datebox { background: var(--blue); color: #fff; text-align: center; font-family: var(--font-ui); line-height: 1.1; padding: 7px 2px; align-self: start;
+  .d { display: block; font-size: 20px; font-weight: 700; } .m { display: block; font-size: 11px; text-transform: uppercase; } .y { display: block; font-size: 10px; opacity: .85; }
+}
+
+// ---------- Cards ----------
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 20px; margin-bottom: 1.5rem; }
+.card { position: relative; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--blue); padding: 16px 18px;
+  h3 { margin: 0 0 6px; font-family: var(--font-ui); font-size: 14px; text-transform: uppercase; line-height: 1.35;
+    a { color: var(--black); &::after { content: ""; position: absolute; inset: 0; } } }
+  p { margin: 0; font-size: 13px; color: var(--text-3); }
+  &:hover { border-color: var(--blue); h3 a { color: var(--blue); text-decoration: none; } }
+}
+
+// ---------- People ----------
+.people-filter { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px;
+  input, select { font-family: var(--font-ui); font-size: 13px; padding: 8px 10px; border: 1px solid var(--line-2); background: #fff; color: var(--text); border-radius: 0; }
+  input { flex: 1 1 16rem; }
+}
+.people { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 16px; }
+.person-card { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--blue); padding: 12px 14px;
+  h3 { margin: 0; font-family: var(--font-body); font-size: 15px; font-weight: 700; a { color: var(--black); &:hover { color: var(--blue); text-decoration: none; } } }
+  .rank { font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; color: var(--blue); margin: 2px 0 6px; }
+  .interests { font-size: 13px; color: var(--text-2); margin: 2px 0 8px; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 1px 8px; margin: 0; font-size: 12px; color: var(--text-3); }
+  dt { font-family: var(--font-ui); text-transform: uppercase; font-size: 11px; padding-top: 1px; } dd { margin: 0; overflow-wrap: anywhere; }
+}
+.facts { background: var(--paper-2); border-top: 4px solid var(--blue); padding: 16px 18px; font-size: 14px; margin-bottom: 30px;
+  dl { margin: 0; } dt { font-family: var(--font-ui); font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--black); }
+  dd { margin: 0 0 12px; overflow-wrap: anywhere; } dd:last-child { margin-bottom: 0; }
+}
+
+// ---------- Quick links ----------
+.quick-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: 0 30px;
+  a { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); font-family: var(--font-ui); font-size: 13px; text-transform: uppercase;
+    &::before { content: "» "; } &:hover { color: var(--black); text-decoration: none; } }
+}
+
+// ---------- Documents / forms ----------
+.doc-list { list-style: none; margin: 0 0 28px; padding: 0; border-top: 1px solid var(--line); }
+.doc-list li { border-bottom: 1px solid var(--line); }
+.form-row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 9px 0; font-size: 14px; }
+.form-row__files { display: flex; gap: 4px; flex-shrink: 0; }
+.ext { display: inline-block; font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: #fff; background: var(--blue); padding: 2px 6px; text-transform: uppercase;
+  &:hover { background: var(--black); color: #fff; text-decoration: none; } }
+.doc-list a.attachment { display: flex; gap: 10px; align-items: baseline; padding: 9px 0; }
+
+// ---------- Tags / misc ----------
+.tag { display: inline-block; font-family: var(--font-ui); font-size: 11px; font-weight: 500; text-transform: uppercase; color: var(--blue); }
+.legacy-note { font-size: 12px; color: var(--text-3); border-top: 1px solid var(--line); margin-top: 30px; padding-top: 10px; text-align: left; }
+.search-page-form { display: flex; max-width: 34rem; margin-bottom: 18px; border-bottom: 2px solid var(--blue);
+  input { flex: 1; border: 0; font: inherit; font-size: 16px; padding: 8px 0; &:focus { outline: none; } }
+  button { border: 0; background: none; color: var(--blue); font-family: var(--font-ui); text-transform: uppercase; font-size: 13px; cursor: pointer; }
+}
+.search-results { list-style: none; padding: 0; li { padding: 12px 0; border-bottom: 1px solid var(--line); } p { margin: 2px 0 0; font-size: 12px; color: var(--text-3); text-transform: uppercase; font-family: var(--font-ui); } }

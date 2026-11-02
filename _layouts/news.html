@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- capture when %}{% include date.html date=page.date %}{% endcapture -%}
+{% include page-head.html parent_url=L.news_url parent_title=t.news kicker=when %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- if page.categories.size > 0 %}
+      <p class="meta">{% for key in page.categories %}{% assign cat0 = site.news_categories | where: "key", key | first %}{% include tr.html doc=cat0 %}{% assign cat = tr %}{% if cat %}<a class="tag" href="{{ cat.url | relative_url }}">{{ cat.title }}</a> {% endif %}{% endfor %}</p>
+      {%- endif %}
+      <article class="prose">
+        {{ content }}
+        {%- if page.attachments %}
+        <h2>{{ t.attachments }}</h2>
+        <ul class="doc-list">
+          {%- for a in page.attachments %}{% assign ext = a.url | split: "." | last | downcase %}
+          <li><a class="attachment" href="{{ a.url | relative_url }}"><span class="ext">{{ ext | truncate: 4, "" }}</span>{{ a.title }}</a></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        {%- if page.legacy_url and site.show_legacy_note %}
+        <p class="legacy-note">{{ t.original_post }}: <a href="{% if lang == 'en' %}https://en.math.uoa.gr{% else %}{{ site.legacy_url }}{% endif %}{{ page.legacy_url }}">{{ page.legacy_url | truncate: 70 }}</a></p>
+        {%- endif %}
+      </article>
+      <p><a class="more-link" href="{{ L.news_url | relative_url }}">{{ t.all_news }}</a></p>
+    </div>
+    {% include sidebar.html parent_url=L.news_url %}
+  </div>
+</div>

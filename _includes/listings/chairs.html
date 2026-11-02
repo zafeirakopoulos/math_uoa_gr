@@ -1,0 +1,19 @@
+{%- include lang.html -%}
+{%- assign terms = site.chairs | sort: "term_start" | reverse -%}
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">{{ t.term }}</th><th scope="col">{{ t.chair }}</th><th scope="col">{{ t.vice_chair }}</th></tr></thead>
+  <tbody>
+  {%- for c in terms %}
+    <tr>
+      <td>{{ c.term_start | date: "%-d.%-m.%Y" }} – {% if c.term_end %}{{ c.term_end | date: "%-d.%-m.%Y" }}{% else %}{{ t.present }}{% endif %}</td>
+      <td>{% if lang == "en" and c.chair_en %}{{ c.chair_en }}{% else %}{{ c.chair }}{% endif %}</td>
+      <td>
+        {%- for v in c.vice_chairs %}{% if lang == "en" and v.name_en %}{{ v.name_en }}{% else %}{{ v.name }}{% endif %}{% if v.period %} <span class="muted">({{ v.period }})</span>{% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+        {%- if lang == "el" %}{% for n in c.notes %}<br><small class="muted">{{ n }}</small>{% endfor %}{% endif %}
+      </td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,16 @@
+{%- include lang.html -%}
+{%- assign staff = site.people | where: "lang", "el" | where: "group", "admin" | sort: "sort_name" -%}
+<div class="layout" style="padding-bottom:0">
+  <div class="main">
+    <h2 style="margin-top:0">{{ t.secretariat }}</h2>
+    <ul class="people">{% for p in staff %}{% include person-card.html person=p %}{% endfor %}</ul>
+  </div>
+  <aside class="facts">
+    <dl>
+      <dt>{{ t.address }}</dt><dd>{{ L.university }}<br>{{ L.site_title }}<br>{{ L.address }}</dd>
+      <dt>{{ t.secretariat }}</dt><dd>{% include email.html address=site.contact.email %}</dd>
+      <dt>{{ t.caretaker }}</dt><dd><a href="tel:+30{{ site.contact.caretaker_phone | remove: ' ' }}">{{ site.contact.caretaker_phone }}</a></dd>
+      <dt>{{ t.access }}</dt><dd><a href="{{ L.access_url | relative_url }}">{{ t.access_link }}</a></dd>
+    </dl>
+  </aside>
+</div>

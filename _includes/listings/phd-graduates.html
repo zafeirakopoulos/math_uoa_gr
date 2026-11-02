@@ -1,0 +1,12 @@
+{%- include lang.html -%}
+{%- assign done = site.theses | where: "status", "completed" | sort: "author" -%}
+{%- assign by_year = done | group_by: "year" | sort: "name" | reverse -%}
+<p class="muted">{{ done.size }} {{ t.phd_count }}. {{ t.phd_note }}</p>
+{%- for y in by_year %}
+<h2>{{ y.name }}</h2>
+<ul>
+  {%- for th in y.items %}
+  <li><strong>{{ th.author }}</strong> — {% if th.link %}<a href="{{ th.link }}">{{ th.title }}</a>{% else %}{{ th.title }}{% endif %}{% if th.supervisors %} <span class="muted">· {% include supervisors.html list=th.supervisors gender=th.supervisor_gender %}</span>{% endif %}</li>
+  {%- endfor %}
+</ul>
+{%- endfor %}

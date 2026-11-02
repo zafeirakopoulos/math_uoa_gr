@@ -1,0 +1,10 @@
+---
+search: false
+el:
+  body: |
+    {% include search-index.json lang="el" %}
+en:
+  permalink: /en/search.json
+  body: |
+    {% include search-index.json lang="en" %}
+---

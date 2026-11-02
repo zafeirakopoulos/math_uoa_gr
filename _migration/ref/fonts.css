@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "GFS Didot";
+    font-style: normal;
+    font-weight: 400;
+    /*  src: url("https://fonts.gstatic.com/l/font?kit=1I9CzWbofUXoaiyDHxoq2ioHrZAoH8LyD69umuJ5FT4xrX3QXcDXWczeT6ttUvsP55pCUtqt3u3tW01iCBfpXmLbvUbEy9m3pHqD-TolwjZWgI0Fx4O5RnDguAGlvK7A2AvN1rWgCzuSp_M21K1LSci8YRKeN5t7vn8ZOb2BjloEl_wSNSxypQDGhfR65D-0VuxvneBOLQfunY9YV98rM5ev5S0PmQveTC-Dl5u5FM-UnVyfrFG2jhyE8QA_ID7zwW4Mfa43ZlQMK6I1w2w93wImEQdYM6NWUEkshtHCEHI&skey=e557a45a8e5b3a1b&v=v7") format("woff2"); */
+    src: url("https://fonts.gstatic.com/l/font?kit=1I9CzWbofUXoaiyDHxoq2mSLw3bIKEs6fXyS5j0eWLAxrX3QXcDXWczeT6ttUvsPWVrLJRjN6-R2o48fQKqHEWLbvUbEy9m3pHqD-TolwjZWgI0Fx4O5RnDguAGlvK7A2AvN1rWgCzuSp_M21K1LSci8YRKeN5t7vn8ZOb2BjloEl_wSNSxypQDGhfR65D-0GZLxWwR1McI_Y9cT96qG0oCr4WL4JEyl7OmP58ozolYnIPDsNHmg6YGrIFrcpUTuIQIjySsDc6qtRhR7La2w5PgtgQ6G0-AUnncvcn_3PSQ&skey=e557a45a8e5b3a1b&v=v7") format("woff2");
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../Fonts/fontawesome-webfont.eot");
+    src: url("../Fonts/fontawesome-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../Fonts/fontawesome-webfont.woff") format("woff"),
+    url("../Fonts/fontawesome-webfont.svg") format("svg"),
+    url("../Fonts/fontawesome-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GFSDidotBold";
+    src: url("../Fonts/GFSDidotBold.eot");
+    src: url("../Fonts/GFSDidotBold.eot?#iefix")format("embedded-opentype"),
+    url("../Fonts/GFSDidotBold.woff") format("woff"),
+    url("../Fonts/GFSDidotBold.woff2") format("woff2"), /* chrome、firefox */
+    url("../Fonts/GFSDidotBold.svg") format("svg"),
+    url("../Fonts/GFSDidotBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

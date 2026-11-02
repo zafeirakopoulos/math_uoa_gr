@@ -1,0 +1,13 @@
+{%- assign root = navable | where: "section_root", true | where: "section", page.section | first -%}
+<nav class="crumbs" aria-label="breadcrumb">
+  <ol>
+    <li><a href="{{ L.home | relative_url }}">{{ t.home }}</a></li>
+    {%- if root and root.url != page.url %}
+    <li><a href="{{ root.url | relative_url }}">{{ root.nav_title | default: root.title }}</a></li>
+    {%- endif %}
+    {%- if include.parent_url and include.parent_url != root.url %}
+    <li><a href="{{ include.parent_url | relative_url }}">{{ include.parent_title }}</a></li>
+    {%- endif %}
+    <li aria-current="page">{{ include.title | default: page.nav_title | default: page.title | truncate: 70 }}</li>
+  </ol>
+</nav>

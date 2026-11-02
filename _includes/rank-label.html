@@ -1,0 +1,5 @@
+{%- comment -%} Sets rank_label from _data/ranks.yml for include.person in the current language. {%- endcomment -%}
+{%- assign rank_label = nil -%}
+{%- assign rank_gender = include.person.gender | default: "m" -%}
+{%- assign rank_entry = site.data.ranks[include.person.rank] -%}
+{%- if rank_entry %}{% assign rank_label = rank_entry[lang][rank_gender] | default: include.person.rank %}{% else %}{% assign rank_label = include.person.rank %}{% endif -%}

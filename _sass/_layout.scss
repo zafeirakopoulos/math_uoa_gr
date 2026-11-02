@@ -1,0 +1,146 @@
+// ---------- Top bar (uoa.gr .header_top) ----------
+.topbar {
+  background: var(--black); color: #fff; font-family: var(--font-ui); font-size: 12px; text-transform: uppercase;
+  .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 40px; }
+  a { color: #fff; &:hover { color: #fff; text-decoration: underline; } }
+}
+.topbar__links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap;
+  li + li::before { content: "|"; margin: 0 8px; opacity: 0.8; }
+  @media (max-width: 47.99rem) { display: none; }
+}
+.topbar__right { display: flex; align-items: center; gap: 14px; margin-left: auto;
+  .lang-switch { font-weight: 500; }
+}
+.topbar__search {
+  display: flex; align-items: center; border-bottom: 1px solid rgb(255 255 255 / 60%);
+  input { background: transparent; border: 0; color: #fff; font: inherit; font-size: 11px; text-transform: uppercase; width: 9rem; padding: 3px 0; letter-spacing: 0.02em;
+    &::placeholder { color: rgb(255 255 255 / 55%); } &:focus { outline: none; } }
+  button { background: none; border: 0; color: #fff; cursor: pointer; padding: 0 0 0 6px; display: flex; }
+  @media (max-width: 47.99rem) { display: none; }
+}
+.topbar__social { display: flex; gap: 10px; a { display: flex; } svg { width: 16px; height: 16px; fill: #fff; } }
+
+// ---------- Header ----------
+.header { background: #fff; position: relative; z-index: 90;
+  > .container { display: flex; align-items: center; gap: 20px; min-height: 104px; padding-block: 14px; }
+}
+.brand { display: flex; align-items: center; gap: 18px; color: var(--black);
+  &:hover { text-decoration: none; color: var(--black); }
+}
+.brand__uoa { width: 240px; display: block; flex-shrink: 0; @media (max-width: 34rem) { width: 180px; } }
+.brand__divider { width: 1px; align-self: stretch; background: var(--line-2); margin-block: 6px; @media (max-width: 47.99rem) { display: none; } }
+.brand__dept { font-family: var(--font-title); font-size: 21px; line-height: 1.15; text-transform: uppercase; color: var(--black);
+  small { display: block; font-family: var(--font-ui); font-size: 11px; color: var(--text-3); letter-spacing: 0.02em; margin-top: 4px; }
+  @media (max-width: 47.99rem) { display: none; }
+}
+
+// uoa.gr .hamburger_icon
+.menu-btn {
+  margin-left: auto; background: var(--blue); color: #fff; border: 0; cursor: pointer;
+  width: 63px; padding: 12px 14px 6px; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; transition: background .2s;
+  .bars { position: relative; width: 37px; height: 25px; display: block; }
+  .bars span { position: absolute; left: 0; right: 0; height: 3px; background: #fff; transition: all .2s; }
+  .bars span:nth-child(1) { top: 0; } .bars span:nth-child(2), .bars span:nth-child(3) { top: 10px; } .bars span:nth-child(4) { top: 20px; }
+  &[aria-expanded="true"] { background: #fff; color: var(--black); outline: 1px solid var(--line);
+    .bars span { background: var(--black); }
+    .bars span:nth-child(1), .bars span:nth-child(4) { width: 0; }
+    .bars span:nth-child(2) { transform: rotate(45deg); } .bars span:nth-child(3) { transform: rotate(-45deg); }
+  }
+  @media (max-width: 34rem) { width: 50px; padding: 8px 5px 4px; .bars { width: 30px; } }
+}
+
+// ---------- Mega menu panel ----------
+.megamenu {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 80; background: #fff;
+  border-top: 4px solid var(--blue); box-shadow: 0 12px 24px rgb(0 0 0 / 12%);
+  max-height: calc(100vh - 150px); overflow-y: auto;
+  &[hidden] { display: none; }
+  .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); align-items: start; gap: 28px 30px; padding-block: 30px 36px; }
+  h2 { margin: 0 0 10px; font-family: var(--font-ui); font-size: 14px; font-weight: 700; text-transform: uppercase;
+    a { color: var(--black); &:hover { color: var(--blue); text-decoration: none; } } }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li a { display: block; padding: 6px 0; border-bottom: 1px solid var(--line); font-family: var(--font-ui); font-size: 13px; text-transform: uppercase; }
+  li a:hover { text-decoration: none; color: var(--black); }
+}
+
+// ---------- Banner (uoa.gr .page_banner) ----------
+.page-banner {
+  height: 268px; background-size: cover; background-position: 50% 45%; border-bottom: 4px solid var(--line-3); margin: 0 0 2px;
+  @media (max-width: 75rem) { height: 230px; } @media (max-width: 62rem) { height: 200px; }
+  @media (max-width: 47.99rem) { height: 170px; } @media (max-width: 34rem) { height: 140px; }
+  &--home { height: 420px; @media (max-width: 62rem) { height: 300px; } @media (max-width: 34rem) { height: 200px; } }
+}
+
+// ---------- Breadcrumbs ----------
+.crumbs { margin: 14px 0 22px; font-family: var(--font-ui); font-size: 11px; font-weight: 300; text-transform: uppercase; letter-spacing: -0.1px;
+  ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px; }
+  li + li::before { content: "»"; color: var(--blue); margin: 0 3px 0 1px; }
+  li[aria-current] { color: var(--text-3); }
+  a:hover { color: var(--black); text-decoration: none; }
+}
+
+// ---------- Page title with emblem ----------
+.page-title { display: flex; align-items: center; gap: 12px; margin: 0 0 22px;
+  img { width: 26px; height: auto; flex-shrink: 0; }
+  h1 { margin: 0; }
+}
+.page-kicker { font-family: var(--font-ui); font-size: 12px; text-transform: uppercase; color: var(--blue); font-weight: 500; margin: -12px 0 18px 38px; }
+.lede { font-size: 16px; color: var(--text-2); max-width: 50rem; }
+
+// ---------- Two-column body with right sidebar (col-lg-9 / col-lg-3) ----------
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 262px; gap: 0 40px; align-items: start; padding-bottom: 50px;
+  @media (max-width: 62rem) { grid-template-columns: 1fr; }
+  &--full { grid-template-columns: 1fr; }
+}
+.main { min-width: 0; }
+.prose { max-width: 52rem; text-align: justify; hyphens: auto;
+  > :first-child { margin-top: 0; }
+  h2, h3, h4, table, li { text-align: left; }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin-bottom: 0.3rem; }
+  blockquote { margin: 1.5rem 0; padding: 0.25rem 0 0.25rem 1.1rem; border-left: 4px solid var(--blue); color: var(--text-2); }
+}
+
+// uoa.gr .right_sidebar
+.sidebar {
+  font-family: var(--font-ui);
+  h2 { font-family: var(--font-ui); font-size: 14px; font-weight: 700; text-transform: uppercase; color: #000; margin: 0 0 8px; }
+  ul { list-style: none; margin: 0 0 30px; padding: 0; }
+  li a { display: block; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; text-transform: uppercase; line-height: 1.35; }
+  li a:hover { color: var(--black); text-decoration: none; }
+  li a[aria-current="page"] { font-weight: 700; }
+  li.sub a { padding-left: 8px; border-bottom: 0; &::before { content: "• "; color: var(--black); } }
+  @media (max-width: 62rem) { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); }
+}
+
+// ---------- Partner strip (uoa.gr .footer__logos) ----------
+.footer-logos { border-top: 1px solid var(--line-3); padding: 20px 0 12px;
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 12px 24px; align-items: center; }
+  a { font-family: var(--font-ui); font-size: 13px; font-weight: 500; text-transform: uppercase; color: var(--text-2); &:hover { color: var(--blue); text-decoration: none; } }
+}
+
+// ---------- Footer (uoa.gr .footer__center) ----------
+.footer { background: var(--black); color: #fff; padding: 23px 0 30px; font-size: 13px;
+  a { color: #fff; &:hover { color: var(--blue); text-decoration: none; } }
+}
+.footer__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) 1.3fr; gap: 24px;
+  @media (max-width: 62rem) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 34rem) { grid-template-columns: 1fr; }
+}
+.footer__title { font-family: var(--font-ui); font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 4px 0 0; color: #fff; }
+.footer ul { list-style: none; padding: 17px 0 0; margin: 0; li { margin-bottom: 11px; } }
+.footer__search { display: flex; border-bottom: 1px solid rgb(255 255 255 / 70%); margin-bottom: 30px;
+  input { flex: 1; min-width: 0; background: transparent; border: 0; color: #fff; font-family: var(--font-ui); font-size: 14px; text-transform: uppercase; padding: 4px 0;
+    &::placeholder { color: rgb(255 255 255 / 55%); } &:focus { outline: none; } }
+  button { background: none; border: 0; color: #fff; cursor: pointer; display: flex; align-items: center; &:hover { color: var(--blue); } }
+}
+.footer .footer__contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; padding: 0;
+  li { margin: 0; }
+  a { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #fff; &:hover { background: var(--blue); border-color: var(--blue); color: #fff; } }
+  svg { width: 16px; height: 16px; fill: currentColor; }
+}
+.footer__bottom { margin-top: 30px; padding-top: 18px; border-top: 1px solid #444; display: flex; align-items: center; gap: 12px;
+  font-style: italic; color: #bbb; font-size: 12px; line-height: 1.5;
+  .seal { width: 44px; height: 44px; border-radius: 50%; background: #fff; display: grid; place-items: center; flex-shrink: 0; img { width: 26px; } }
+}

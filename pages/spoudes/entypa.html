@@ -1,0 +1,28 @@
+---
+section: spoudes
+nav_order: 9
+el:
+  title: Έντυπα και αιτήσεις
+  nav_title: Έντυπα
+  legacy_url: /chrisima_entypa
+  permalink: /spoudes/entypa/
+  body: |
+    {%- assign audiences = "proptychiakoi:Προπτυχιακοί φοιτητές & απόφοιτοι,metaptychiakoi:Μεταπτυχιακοί φοιτητές,ypopsifioi:Υποψήφιοι διδάκτορες,dep:Μέλη ΔΕΠ" | split: "," -%}
+    {%- for a in audiences %}
+    {%- assign kv = a | split: ":" -%}
+    {%- assign forms = site.forms | where: "audience", kv[0] | sort: "order" -%}
+    {%- if forms.size > 0 %}
+    <h2 id="{{ kv[0] }}">{{ kv[1] }}</h2>
+    <ul class="doc-list">
+      {%- for f in forms %}
+      <li class="form-row">
+        <span>{{ f.title }}</span>
+        <span class="form-row__files">
+          {%- for file in f.files %}<a class="ext" href="{{ file.url }}" title="{{ file.label }}">{{ file.format }}</a>{% endfor %}
+        </span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {%- endfor %}
+---

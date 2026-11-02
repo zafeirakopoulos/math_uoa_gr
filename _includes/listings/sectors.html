@@ -1,0 +1,8 @@
+{%- include lang.html -%}
+{%- assign sectors = site.sectors | where: "lang", "el" | sort: "order" -%}
+<div class="cards">
+  {%- for s in sectors %}{% include tr.html doc=s %}
+  {%- assign n = site.people | where: "lang", "el" | where: "sector", s.key | where: "group", "dep" | size -%}
+  <article class="card"><h3><a href="{{ tr.url | relative_url }}">{{ tr.title }}</a></h3>{% if tr.lede %}<p>{{ tr.lede }}</p>{% endif %}<p>{{ n }} {{ t.faculty_count }}</p></article>
+  {%- endfor %}
+</div>

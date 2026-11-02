@@ -1,0 +1,8 @@
+{%- include lang.html -%}
+{%- assign groups = site.staff_groups | sort: "nav_order" -%}
+<div class="cards">
+  {%- for g0 in groups %}{% include tr.html doc=g0 %}{% assign g = tr %}
+  {%- assign n = site.people | where: "lang", "el" | where: "group", g.key | size -%}
+  <article class="card"><h3><a href="{{ g.url | relative_url }}">{{ g.title }}</a></h3><p>{{ n }} {% if n == 1 %}{{ t.people_count_one }}{% else %}{{ t.people_count_many }}{% endif %}</p>{% if g.lede %}<p>{{ g.lede }}</p>{% endif %}</article>
+  {%- endfor %}
+</div>

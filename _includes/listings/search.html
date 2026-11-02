@@ -1,0 +1,9 @@
+{%- include lang.html -%}
+<form action="{{ L.search_url | relative_url }}" role="search" class="search-page-form">
+  <label class="visually-hidden" for="q-page">{{ t.search }}</label>
+  <input id="q-page" name="q" type="search" placeholder="{{ t.search_placeholder }}">
+  <button type="submit">{{ t.search }}</button>
+</form>
+<p class="muted" data-search-summary data-label="{{ t.search_results }}" aria-live="polite"></p>
+<ul class="search-results" data-search-results data-index="{{ L.home | append: 'search.json' | relative_url }}"></ul>
+<noscript><p>{{ t.search_needs_js }}</p></noscript>

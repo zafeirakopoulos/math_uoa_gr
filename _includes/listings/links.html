@@ -1,0 +1,5 @@
+{%- include lang.html -%}
+{%- assign links = site.links | sort: "order" -%}
+<ul class="quick-links">
+  {%- for l in links %}<li><a href="{{ l.url_external }}">{{ l.i18n[lang].title | default: l.title }}</a></li>{% endfor %}
+</ul>

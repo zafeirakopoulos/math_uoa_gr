@@ -1,0 +1,146 @@
+# ------------------------------------------------------------------
+#  Τμήμα Μαθηματικών — Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+# ------------------------------------------------------------------
+title: Τμήμα Μαθηματικών
+university: Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+description: >-
+  Το Τμήμα Μαθηματικών του ΕΚΠΑ καλλιεργεί και αναπτύσσει τη μαθηματική σκέψη
+  μέσα από τη διδασκαλία και την έρευνα.
+lang: el
+locale: el_GR
+timezone: Europe/Athens
+url: "https://www.math.uoa.gr"
+baseurl: ""
+
+contact:
+  address: Πανεπιστημιούπολη, 157 84 Αθήνα
+  caretaker_phone: "210 727 6426"   # Επιστασία
+  email: secr@math.uoa.gr
+
+social:
+  facebook: https://www.facebook.com/math.uoa/
+
+# Original TYPO3 site, used for not-yet-migrated files (/fileadmin/...)
+legacy_url: "https://www.math.uoa.gr"
+
+# Default page banner (photo: Department of Mathematics building, from the existing site)
+banner: /assets/img/banner.jpg
+
+# ------------------------------------------------------------------
+#  Collections — one file per item
+# ------------------------------------------------------------------
+bilingual:
+  default: el
+
+collections_dir: collections
+collections:
+  people:
+    output: true
+    permalink: /anthropino-dynamiko/:name/
+    permalink_en: /en/people/:name/
+    always_en: true
+  sectors:
+    output: true
+    permalink: /tomeis/:name/
+    permalink_en: /en/sectors/:name/
+  news:
+    output: true
+    permalink: /anakoinoseis/:year/:title/
+    permalink_en: /en/news/:year/:title/
+  events:
+    output: true
+    permalink: /ekdiloseis/:year/:title/
+    permalink_en: /en/events/:year/:title/
+    always_en: true
+  seminars:
+    output: true
+    permalink: /seminaria/:name/
+    permalink_en: /en/seminars/:name/
+  labs:
+    output: true
+    permalink: /ergastiria/:name/
+    permalink_en: /en/labs/:name/
+  awards:
+    output: true
+    permalink: /diakriseis/:name/
+    permalink_en: /en/distinctions/:name/
+  programs:
+    output: true
+    permalink: /spoudes/:name/
+    permalink_en: /en/studies/:name/
+  theses:
+    output: false
+  msc_theses:         # one file per master's thesis; listed on /spoudes/metaptychiakes/diplomatikes/<program>/
+    output: false
+  chairs:
+    output: false
+  forms:
+    output: false
+  links:
+    output: false
+  news_categories:
+    output: true
+    permalink: /anakoinoseis/:name/
+    permalink_en: /en/news/:name/
+  staff_groups:
+    output: true
+    permalink: /anthropino-dynamiko/:name/
+    permalink_en: /en/people/:name/
+  languages:          # one file per language: UI strings, logo, home URL
+    output: false
+
+defaults:
+  # Greek is the default language. Bilingual items carry el:/en: blocks (see _plugins/bilingual.rb)
+  - scope: { path: "" }
+    values: { layout: page, lang: el }
+  - scope: { type: people }
+    values: { layout: person, section: anthropoi }
+  - scope: { type: sectors }
+    values: { layout: sector, section: ereuna }
+  - scope: { type: news }
+    values: { layout: news, section: nea }
+  - scope: { type: events }
+    values: { layout: event, section: ereuna }
+  - scope: { type: seminars }
+    values: { layout: seminar, section: ereuna }
+  - scope: { type: labs }
+    values: { layout: page, section: to-tmima, parent_url: /ergastiria/, parent_title: Εργαστήρια }
+  - scope: { type: awards }
+    values: { layout: page, section: to-tmima, parent_url: /diakriseis/, parent_title: Διακρίσεις }
+  - scope: { type: programs }
+    values: { layout: page, section: spoudes }
+  - scope: { type: news_categories }
+    values: { layout: news-category, section: nea }
+  - scope: { type: staff_groups }
+    values: { layout: staff-group, section: anthropoi }
+
+# ------------------------------------------------------------------
+#  Build
+# ------------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+sass:
+  style: compressed
+  sass_dir: _sass
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  path: /feed-posts.xml   # unused (no posts); the news feed below is the real one
+  collections:
+    news:
+      path: /feed.xml
+paginate_news: 12
+show_legacy_note: true   # set false once migration is reviewed
+exclude:
+  - DEPinternal        # separate project living in this folder; never publish
+  - bin
+  - _migration
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache

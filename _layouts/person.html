@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign group0 = site.staff_groups | where: "key", base.group | first -%}{% include tr.html doc=group0 %}{% assign group = tr %}
+{%- assign sector_base = site.sectors | where: "key", base.sector | where: "lang", "el" | first -%}
+{%- include tr.html doc=sector_base -%}{%- assign sector = tr -%}
+{%- include rank-label.html person=page -%}{%- assign rank_label = rank_label | default: group.singular -%}
+{% include page-head.html parent_url=group.url parent_title=group.title kicker=rank_label %}
+<div class="container">
+  <div class="layout">
+    <div class="main">
+      {%- assign interests = page.interests -%}
+      {%- assign duties = page.duties -%}
+      <div class="prose">
+        {%- if duties %}<p>{{ duties }}</p>{% endif %}
+        {%- if interests %}
+        <h2>{{ t.research_interests }}</h2>
+        <p>{{ interests }}</p>
+        {%- endif %}
+        {{ content }}
+      </div>
+    </div>
+    <aside>
+      <div class="facts">
+        <dl>
+          {%- if sector %}<dt>{{ t.sector }}</dt><dd><a href="{{ sector.url | relative_url }}">{{ sector.title }}</a></dd>{% endif %}
+          {%- if base.office %}<dt>{{ t.office }}</dt><dd>{{ base.office }}</dd>{% endif %}
+          {%- if base.phone %}<dt>{{ t.phone }}</dt><dd><a href="tel:+30{{ base.phone | remove: ' ' | remove: '-' }}">{{ base.phone }}</a></dd>{% endif %}
+          {%- if base.email %}<dt>{{ t.email }}</dt><dd>{% include email.html address=base.email %}</dd>{% endif %}
+          {%- if base.website %}<dt>{{ t.website }}</dt><dd><a href="{{ base.website }}">{{ base.website | remove: 'https://' | remove: 'http://' | truncate: 40 }}</a></dd>{% endif %}
+        </dl>
+      </div>
+      {% include sidebar.html parent_url=group.url %}
+    </aside>
+  </div>
+</div>

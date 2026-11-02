@@ -1,0 +1,3 @@
+{%- comment -%} Light spam protection: assembled by main.js; readable fallback without JS. {%- endcomment -%}
+{%- assign parts = include.address | split: "@" -%}
+<a class="js-email" data-u="{{ parts[0] }}" data-d="{{ parts[1] }}" href="#">{{ parts[0] }} [at] {{ parts[1] }}</a>

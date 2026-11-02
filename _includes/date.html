@@ -1,0 +1,3 @@
+{%- comment -%} Localised long date for include.date {%- endcomment -%}
+{%- assign _mi = include.date | date: "%-m" | minus: 1 -%}
+{{- include.date | date: "%-d" }} {{ L.months[_mi] }} {{ include.date | date: "%Y" -}}
