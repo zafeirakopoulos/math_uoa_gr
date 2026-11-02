@@ -1,0 +1,253 @@
+androulidakis-iakovos:
+  ids:
+  - A5076388853
+  confidence: high
+  evidence: NKUA 2011-; noncommutative/differential geometry, homotopy
+  works: 43
+antonopoulou-dimitra:
+  ids:
+  - A5015893485
+  - A5128696336
+  confidence: high
+  evidence: NKUA 2004-, FORTH, Chester; PDEs/numerical analysis; 2nd record = "D.
+    C. Antonopoulou", 1 work, math-physics topics
+  works: 49
+athanasiadis-christos:
+  ids:
+  - A5009678404
+  confidence: high
+  evidence: Christos A. Athanasiadis; NKUA 2006-, Crete; combinatorics/commutative
+    algebra
+  works: 116
+barbatis-gerasimos:
+  ids:
+  - A5000852762
+  confidence: high
+  evidence: NKUA 2009-, Ioannina, Crete, KCL; PDE/spectral theory
+  works: 55
+bournetas-apostolos:
+  ids:
+  - A5044504936
+  confidence: high
+  evidence: Apostolos Burnetas; NKUA 2005-, Case Western; queueing/stochastic optimization
+  works: 87
+chalikias-georgios:
+  ids:
+  - A5004895976
+  - A5110144164
+  confidence: high
+  evidence: George D. Halikias; NKUA 2013-, City Univ London, Leeds; control theory;
+    2nd record City London + NKUA 2024
+  works: 130
+chatzikaleas-athanasios:
+  ids:
+  - A5050763931
+  confidence: high
+  evidence: Bonn, Muenster, LJLL Paris; math physics/PDE stability (no NKUA aff yet)
+  works: 10
+cheliotis-dimitrios:
+  ids:
+  - A5046586172
+  - A5110719441
+  confidence: high
+  evidence: Dimitris/Dimitrios Cheliotis; Toronto, Eindhoven, NKUA 2011-; probability/stochastic
+    processes
+  works: 47
+chlouveraki-maria:
+  ids:
+  - A5022311834
+  confidence: high
+  evidence: NKUA 2023-, Versailles/CNRS; algebraic structures, representation theory
+  works: 58
+christopoulou-dimitra:
+  ids: []
+  confidence: none
+  evidence: only same-name records in business/medicine; no philosophy-of-mathematics
+    record found
+  works: 0
+dodos-pantelis:
+  ids:
+  - A5026140601
+  confidence: high
+  evidence: Pandelis Dodos; NKUA 2010-, NTUA; Banach spaces, Ramsey/combinatorics
+  works: 84
+drakopoulos-michail:
+  ids:
+  - A5031746665
+  confidence: medium
+  evidence: Michael C. Dracopoulos; NTUA 1991, Imperial 1995; numerical methods/matrix
+    algorithms; no NKUA aff, 7 works
+  works: 7
+emmanouil-ioannis:
+  ids:
+  - A5026787983
+  confidence: high
+  evidence: NKUA 2001-, Michigan, IHES; rings/modules, group theory
+  works: 51
+geranios-charalabos:
+  ids:
+  - A5049958113
+  confidence: high
+  evidence: Haralampos Geranios; NKUA 2010, York 2013-; algebraic groups/representation
+    theory
+  works: 19
+gianniotis-panagiotis:
+  ids:
+  - A5000246415
+  confidence: high
+  evidence: NKUA 2019-, Toronto, Waterloo, UCL; geometric analysis/curvature flows
+  works: 13
+iliopoulou-marina:
+  ids:
+  - A5013489810
+  confidence: high
+  evidence: NKUA 2024-, Kent, Berkeley, Edinburgh; harmonic analysis
+  works: 21
+kakariadis-evgenios:
+  ids:
+  - A5013023055
+  - A5157939277
+  confidence: high
+  evidence: Evgenios T. A. Kakariadis; NKUA 2009-, Newcastle, Waterloo; operator algebras
+  works: 78
+karali-georgia:
+  ids:
+  - A5064954830
+  confidence: high
+  evidence: NKUA 2003-, Crete, FORTH, Toronto; nonlinear PDEs/phase transitions
+  works: 63
+kontogeorgis-aristeidis:
+  ids:
+  - A5061691347
+  - A5077658111
+  confidence: high
+  evidence: Aristides Kontogeorgis; NKUA 2011-, Aegean, Crete, MPI; arithmetic geometry;
+    2nd record no aff, same topics
+  works: 121
+mali-aggeliki:
+  ids:
+  - A5026772773
+  - A5042517640
+  confidence: high
+  evidence: Angeliki Mali; NKUA 2017-, Loughborough, Groningen, Crete; mathematics
+    education
+  works: 40
+maliakas-michail:
+  ids:
+  - A5050283589
+  confidence: high
+  evidence: Mihalis Maliakas; NKUA 1996-, Arkansas, Minnesota; representation theory/combinatorics
+  works: 32
+manou-athanasia:
+  ids:
+  - A5071942853
+  confidence: high
+  evidence: NKUA 2011-, Koc; queueing theory/game theory
+  works: 15
+melas-antonios:
+  ids:
+  - A5079591253
+  confidence: high
+  evidence: Antonios D. Melas; NKUA 1997-, UCLA; harmonic analysis/maximal operators
+  works: 40
+meligkotsidou-loukia:
+  ids:
+  - A5061773399
+  confidence: high
+  evidence: NKUA 2004-, Lancaster; Bayesian statistics/MCMC, financial econometrics
+  works: 42
+menegaki-aggeliki:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+mertikopoulos-panagiotis:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+mitrouli-marilena:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+notaris-sotirios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+ntokas-ioannis:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+oikonomou-antonios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+papadatos-nikolaos:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+petropoulou-georgia:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+potari-despoina:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+prasidis-evstratios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+psycharis-georgios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+siannis-fotios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+smyrnelis-panagiotis:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+thilykos-dimitrios:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+trevezas-samis:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+triantafyllou-chrysavgi:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+tyros-konstantinos:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+vaggelatou-evtychia:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0
+zafeirakopoulos-zafeirakis:
+  ids: []
+  confidence: pending
+  evidence: 'not searched: OpenAlex free daily budget exhausted (HTTP 429)'
+  works: 0

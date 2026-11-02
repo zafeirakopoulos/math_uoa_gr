@@ -1,0 +1,37 @@
+name: Refresh research data
+
+# Monthly refresh of _data/research.yml from OpenAlex (bin/update-research),
+# then a rebuild of the site if the data changed.
+on:
+  schedule:
+    - cron: "0 4 1 * *"     # 04:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: bin/update-research
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # optional
+      - name: Commit and redeploy if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- _data/research.yml; then echo "no change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/research.yml
+          git commit -m "Refresh research data from OpenAlex"
+          git push
+          # pushes made with GITHUB_TOKEN do not trigger other workflows: start the deploy explicitly
+          gh workflow run pages.yml --ref main

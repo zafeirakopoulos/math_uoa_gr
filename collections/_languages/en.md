@@ -167,6 +167,28 @@ t:
     pms: Graduate
     full: Full
   on_this_page: On this page
+  rs_works: publications
+  rs_citations: citations
+  rs_papers_in: publications in
+  rs_grants: grants acknowledged in papers
+  rs_per_year: Publications per year
+  rs_partial: current year partial
+  rs_topics: Main research topics
+  rs_collaborations: Collaborating institutions
+  rs_recent: Recent publications
+  rs_publications: Publications
+  rs_source: Data from
+  rs_title: Research activity
+  pr_funder: Funder
+  pr_award: Grant number
+  pr_period: Period
+  pr_pi: Principal investigator
+  pr_people: Department members
+  pr_running: Ongoing
+  pr_completed: Completed
+  pr_none: No projects have been added yet.
+  pr_from_papers: Grants acknowledged in publications
+  pr_from_papers_note: Grants acknowledged in publications of members of the Department over the last ten years (OpenAlex).
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

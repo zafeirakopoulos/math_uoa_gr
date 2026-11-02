@@ -1,0 +1,224 @@
+#!/usr/bin/env python3
+"""Refresh _data/research.yml from OpenAlex (https://openalex.org, open scholarly data).
+
+Input:  _data/openalex_authors.yml  — person slug -> {ids: [OpenAlex author IDs], confidence: ...}
+        collections/_people/*.md    — group and sector of each person
+Output: _data/research.yml          — department / sector / person publication data, grants
+
+Department and sector figures count each paper once (co-authored papers are not double counted).
+Run:  bin/update-research            (also run monthly by .github/workflows/research.yml)
+"""
+import datetime
+import json
+import pathlib
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+import os
+
+import yaml
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+API = "https://api.openalex.org"
+YEARS = 10                       # papers-per-year window
+RECENT = 5                       # recent papers per person / sector
+USE = {"high", "medium", "low"}   # "pending" / "none" entries are skipped  # confidence levels to include (review low ones in todo.md)
+
+
+def get(path, **params):
+    # Optional free OpenAlex API key (raises the daily limit): environment variable OPENALEX_API_KEY,
+    # set as a repository secret for the monthly GitHub Action.
+    if os.environ.get("OPENALEX_API_KEY"):
+        params["api_key"] = os.environ["OPENALEX_API_KEY"]
+    url = f"{API}/{path}?" + urllib.parse.urlencode(params, safe=":|,")
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(url, timeout=60) as r:
+                time.sleep(0.15)
+                return json.load(r)
+        except Exception as e:  # rate limit / transient errors
+            if attempt == 4:
+                raise
+            time.sleep(2 ** attempt)
+            print(f"retry {url}: {e}", file=sys.stderr)
+
+
+def front_matter(path):
+    m = re.match(r"---\n(.*?)\n---", path.read_text(encoding="utf-8"), re.S)
+    return yaml.safe_load(m.group(1)) if m else {}
+
+
+def chunks(seq, n):
+    for i in range(0, len(seq), n):
+        yield seq[i:i + n]
+
+
+def works_filter(ids, extra=""):
+    return "author.id:" + "|".join(ids) + (("," + extra) if extra else "")
+
+
+def count(ids, extra=""):
+    """Distinct works of a set of authors (OpenAlex allows up to 100 values per OR filter)."""
+    if not ids:
+        return 0
+    if len(ids) <= 100:
+        return get("works", filter=works_filter(ids, extra), per_page=1)["meta"]["count"]
+    seen = set()
+    for part in chunks(ids, 100):
+        cursor = "*"
+        while cursor:
+            d = get("works", filter=works_filter(part, extra), per_page=200, cursor=cursor, select="id")
+            seen.update(w["id"] for w in d["results"])
+            cursor = d["meta"].get("next_cursor")
+    return len(seen)
+
+
+def group(ids, by, extra="", limit=10):
+    if not ids:
+        return []
+    d = get("works", filter=works_filter(ids[:100], extra), group_by=by)
+    return [{"key": g["key"], "name": g["key_display_name"], "count": g["count"]} for g in d["group_by"][:limit]]
+
+
+def short(oa_id):
+    return oa_id.rsplit("/", 1)[-1] if oa_id else None
+
+
+def work_summary(w, slug_by_author):
+    loc = (w.get("primary_location") or {}).get("source") or {}
+    authors = [a["author"]["display_name"] for a in w.get("authorships", [])]
+    ours = sorted({slug_by_author[short(a["author"]["id"])] for a in w.get("authorships", [])
+                   if short(a["author"]["id"]) in slug_by_author})
+    return {
+        "title": re.sub(r"<[^>]+>", "", w.get("title") or w.get("display_name") or ""),
+        "year": w.get("publication_year"),
+        "venue": loc.get("display_name"),
+        "doi": w.get("doi"),
+        "url": w.get("doi") or (w.get("primary_location") or {}).get("landing_page_url") or w["id"],
+        "authors": authors[:8] + (["…"] if len(authors) > 8 else []),
+        "people": ours,
+    }
+
+
+def recent(ids, slug_by_author, n=RECENT):
+    if not ids:
+        return []
+    d = get("works", filter=works_filter(ids[:100], "type:article|preprint|book|book-chapter"),
+            sort="publication_date:desc", per_page=n,
+            select="id,title,display_name,publication_year,doi,primary_location,authorships")
+    return [work_summary(w, slug_by_author) for w in d["results"]]
+
+
+def by_year(ids):
+    this = datetime.date.today().year
+    g = {x["key"]: x["count"] for x in group(ids, "publication_year", f"publication_year:{this - YEARS + 1}-{this}", 50)}
+    return [{"year": y, "works": g.get(str(y), 0)} for y in range(this - YEARS + 1, this + 1)]
+
+
+def main():
+    authors = yaml.safe_load((ROOT / "_data/openalex_authors.yml").read_text(encoding="utf-8")) or {}
+    people = {}
+    for f in sorted((ROOT / "collections/_people").glob("*.md")):
+        fm = front_matter(f)
+        a = authors.get(f.stem) or {}
+        if fm.get("group") == "dep" and a.get("ids") and a.get("confidence") in USE:
+            people[f.stem] = {"sector": fm.get("sector"), "ids": a["ids"]}
+    pending = [f.stem for f in (ROOT / "collections/_people").glob("*.md")
+               if front_matter(f).get("group") == "dep" and (authors.get(f.stem) or {}).get("confidence", "pending") == "pending"]
+    if pending and "--allow-pending" not in sys.argv:
+        sys.exit(f"Not all faculty are matched to OpenAlex yet ({len(pending)} pending: {', '.join(sorted(pending))}).\n"
+                 "Department and sector totals would be incomplete. Finish _data/openalex_authors.yml "
+                 "or run with --allow-pending.")
+    slug_by_author = {i: s for s, p in people.items() for i in p["ids"]}
+    inst = get("institutions", search="National and Kapodistrian University of Athens", per_page=1)["results"][0]
+    nkua = short(inst["id"])
+
+    out = {"updated": datetime.date.today().isoformat(), "source": "OpenAlex", "people": {}, "sectors": {}}
+
+    for slug, p in people.items():
+        recs = [get(f"authors/{i}") for i in p["ids"]]
+        topics = {}
+        for r in recs:
+            for t in r.get("topics", [])[:10]:
+                topics[t["display_name"]] = topics.get(t["display_name"], 0) + t["count"]
+        out["people"][slug] = {
+            "works": count(p["ids"]),
+            "citations": sum(r["cited_by_count"] for r in recs),
+            "h_index": max(r["summary_stats"]["h_index"] for r in recs),
+            "topics": [k for k, _ in sorted(topics.items(), key=lambda kv: -kv[1])[:6]],
+            "recent": recent(p["ids"], slug_by_author),
+            "openalex": p["ids"],
+        }
+        print(f"{slug}: {out['people'][slug]['works']} works", file=sys.stderr)
+
+    def aggregate(ids):
+        return {
+            "works": count(ids),
+            "by_year": by_year(ids),
+            "topics": [t["name"] for t in group(ids, "primary_topic.id", limit=12)],
+            "fields": [t["name"] for t in group(ids, "primary_topic.subfield.id", limit=6)],
+            "institutions": [g for g in group(ids, "authorships.institutions.id", limit=16)
+                             if short(g["key"]) != nkua][:12],
+            "recent": recent(ids, slug_by_author, 8),
+        }
+
+    for sector in sorted({p["sector"] for p in people.values() if p["sector"]}):
+        ids = [i for p in people.values() if p["sector"] == sector for i in p["ids"]]
+        out["sectors"][sector] = aggregate(ids)
+        out["sectors"][sector]["people"] = sum(1 for p in people.values() if p["sector"] == sector)
+
+    all_ids = [i for p in people.values() for i in p["ids"]]
+    out["department"] = aggregate(all_ids)
+    # citations of distinct papers (co-authored papers once)
+    cites, seen = 0, set()
+    for part in chunks(all_ids, 100):
+        cursor = "*"
+        while cursor:
+            d = get("works", filter=works_filter(part), per_page=200, cursor=cursor, select="id,cited_by_count")
+            for w in d["results"]:
+                if w["id"] not in seen:
+                    seen.add(w["id"])
+                    cites += w.get("cited_by_count") or 0
+            cursor = d["meta"].get("next_cursor")
+    out["department"]["citations"] = cites
+    out["department"]["people"] = len(people)
+
+    # Grants acknowledged in papers of the last 10 years (seed for the projects collection)
+    this = datetime.date.today().year
+    grants = {}
+    for part in chunks(all_ids, 100):
+        cursor = "*"
+        while cursor:
+            d = get("works", filter=works_filter(part, f"publication_year:{this - 9}-{this}"),
+                    per_page=200, cursor=cursor, select="id,grants,authorships,publication_year")
+            for w in d["results"]:
+                ours = {slug_by_author[short(a["author"]["id"])] for a in w.get("authorships", [])
+                        if short(a["author"]["id"]) in slug_by_author}
+                for g in w.get("grants") or []:
+                    key = (g.get("funder_display_name"), g.get("award_id"))
+                    e = grants.setdefault(key, {"funder": key[0], "award": key[1], "works": 0, "people": set(), "years": set()})
+                    e["works"] += 1
+                    e["people"] |= ours
+                    if w.get("publication_year"):
+                        e["years"].add(w["publication_year"])
+            cursor = d["meta"].get("next_cursor")
+    out["grants"] = [
+        {"funder": e["funder"], "award": e["award"], "works": e["works"], "people": sorted(e["people"]),
+         "years": [min(e["years"]), max(e["years"])] if e["years"] else []}
+        for e in sorted(grants.values(), key=lambda e: (-e["works"], str(e["funder"])))
+        if e["funder"]
+    ]
+
+    header = ("# Generated by bin/update-research from OpenAlex — do not edit by hand.\n"
+              "# Author IDs: _data/openalex_authors.yml\n")
+    (ROOT / "_data/research.yml").write_text(
+        header + yaml.safe_dump(out, allow_unicode=True, sort_keys=False, width=1000), encoding="utf-8")
+    d = out["department"]
+    print(f"department: {d['works']} works, {d['citations']} citations, {len(out['grants'])} grants", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()

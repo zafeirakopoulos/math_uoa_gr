@@ -46,6 +46,13 @@ layout: default
         </div>
       </section>
 
+      {%- if site.data.research %}
+      <section class="home-block">
+        <div class="section-title"><h2>{{ t.rs_title }}</h2></div>
+        {% include research/summary.html scope="department" %}
+      </section>
+      {%- endif %}
+
       <section class="home-block home-cols">
         <div>
           <div class="section-title"><h2>{{ t.seminars }}</h2>{% assign sp = navable | where: "nav_key", "seminars" | first %}<a class="more-link" href="{{ sp.url | relative_url }}">{{ t.all_seminars }}</a></div>

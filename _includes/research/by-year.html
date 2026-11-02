@@ -1,0 +1,18 @@
+{%- comment -%} Papers per year as an SVG bar chart. include.data: [{year, works}] {%- endcomment -%}
+{%- assign bars = include.data -%}
+{%- assign maxv = 1 %}{% for b in bars %}{% if b.works > maxv %}{% assign maxv = b.works %}{% endif %}{% endfor -%}
+{%- assign n = bars.size -%}
+<figure class="chart">
+  <svg viewBox="0 0 {{ n | times: 40 }} 150" role="img" aria-label="{{ t.rs_per_year }}">
+    {%- for b in bars %}
+    {%- assign h = b.works | times: 110.0 | divided_by: maxv | round -%}
+    {%- assign x = forloop.index0 | times: 40 | plus: 6 -%}
+    <g><title>{{ b.year }}: {{ b.works }}</title>
+      <rect x="{{ x }}" y="{{ 120 | minus: h }}" width="28" height="{{ h }}" class="{% if forloop.last %}chart__bar chart__bar--partial{% else %}chart__bar{% endif %}"/>
+      <text x="{{ x | plus: 14 }}" y="{{ 116 | minus: h }}" text-anchor="middle" class="chart__val">{{ b.works }}</text>
+      <text x="{{ x | plus: 14 }}" y="138" text-anchor="middle" class="chart__lab">{{ b.year | slice: 2, 2 | prepend: "’" }}</text>
+    </g>
+    {%- endfor %}
+  </svg>
+  <figcaption>{{ t.rs_per_year }}{% if include.partial != false %} <span class="muted">({{ t.rs_partial }})</span>{% endif %}</figcaption>
+</figure>

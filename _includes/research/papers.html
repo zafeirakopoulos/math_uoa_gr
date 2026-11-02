@@ -1,0 +1,12 @@
+{%- comment -%} List of papers. include.items: research.yml work summaries {%- endcomment -%}
+<ol class="papers">
+  {%- for w in include.items %}
+  <li>
+    <a href="{{ w.url }}">{{ w.title }}</a>
+    <span class="papers__meta">{{ w.authors | join: ", " }}{% if w.venue %} · <em>{{ w.venue }}</em>{% endif %}{% if w.year %} · {{ w.year }}{% endif %}</span>
+    {%- if include.people != false and w.people.size > 0 %}
+    <span class="papers__ours">{% for s in w.people %}{% assign pp = site.people | where: "slug", s | first %}{% if pp %}{% assign pt = pp.i18n[lang] | default: pp %}<a href="{{ pt.url | relative_url }}">{{ pt.title }}</a>{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}</span>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- include lang.html -%}
+{%- include base.html -%}
+{%- assign plist = navable | where: "nav_key", "projects" | first -%}
+{% include page-head.html parent_url=plist.url parent_title=plist.title kicker=base.acronym %}
+<div class="container">
+  <div class="layout">
+    {%- include news-box.html %}
+    <div class="main">
+      <dl class="course-facts">
+        {%- if base.funder %}<dt>{{ t.pr_funder }}</dt><dd>{{ base.funder }}{% if base.programme %} — {{ base.programme }}{% endif %}{% if base.award %} ({{ base.award }}){% endif %}</dd>{% endif %}
+        {%- if base.start %}<dt>{{ t.pr_period }}</dt><dd>{{ base.start }}{% if base.end %} – {{ base.end }}{% endif %}</dd>{% endif %}
+        {%- if base.pi %}<dt>{{ t.pr_pi }}</dt><dd>{% include supervisors.html list=base.pi %}</dd>{% endif %}
+        {%- if base.people %}<dt>{{ t.pr_people }}</dt><dd>{% for s in base.people %}{% assign pp = site.people | where: "slug", s | first %}{% if pp %}{% assign pt = pp.i18n[lang] | default: pp %}<a href="{{ pt.url | relative_url }}">{{ pt.title }}</a>{% else %}{{ s }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>{% endif %}
+        {%- if base.website %}<dt>{{ t.website }}</dt><dd><a href="{{ base.website }}">{{ base.website | remove: 'https://' | remove: 'http://' }}</a></dd>{% endif %}
+      </dl>
+      <div class="prose">{{ content }}</div>
+    </div>
+    {% include sidebar.html parent_url=plist.url %}
+  </div>
+</div>

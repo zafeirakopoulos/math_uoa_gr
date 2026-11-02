@@ -14,6 +14,10 @@ layout: default
       {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
       {%- assign c = content | strip -%}
       {%- if c != '' %}<div class="prose">{{ content }}</div>{% endif %}
+      {%- if site.data.research.sectors[base.key] %}
+      <h2>{{ t.rs_title }}</h2>
+      {% include research/summary.html scope=base.key %}
+      {%- endif %}
       {%- for rank in dep.ranks %}
       {%- assign in_rank = members | where: "rank", rank | sort: "sort_name" -%}
       {%- if in_rank.size > 0 %}

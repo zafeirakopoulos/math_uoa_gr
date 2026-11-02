@@ -40,6 +40,18 @@ Paths are relative to the repository root. Building and deploying are explained 
 - [ ] **Staff changes:** when someone is promoted, update `rank:` in `collections/_people/<name>.md`. The title comes from `_data/ranks.yml`, and `gender: f` gives the feminine form. When someone retires, set `group: retired` and `rank: Ομότιμος Καθηγητής` if applicable.
 - [ ] **Seminars and conferences:** add them to `collections/_seminars/` and `collections/_events/`.
 
+## Research data (OpenAlex)
+- [ ] Finish matching the faculty to OpenAlex. 19 people have not been searched yet; the daily limit of the free API ran out. Their entries in `_data/openalex_authors.yml` have `confidence: pending`.
+- [ ] Check the uncertain matches in `_data/openalex_authors.yml`:
+  - [ ] drakopoulos-michail (medium): the only record is "Michael C. Dracopoulos" (7 papers, NTUA/Imperial, 1991–95), with no NKUA affiliation.
+  - [ ] christopoulou-dimitra: no record found.
+  - [ ] chalikias: the record "D Halikias George" was left out because it looks merged with someone in another field.
+  - [ ] cheliotis: one record has 29 papers but only 23 citations, so it may include other people's papers.
+- [ ] Once all are matched, run `bin/update-research` (or the "Refresh research data" Action on GitHub). It writes `_data/research.yml`; the research blocks on the home, sector and person pages appear only when that file exists.
+- [ ] Optional: set a free OpenAlex API key as the repository secret `OPENALEX_API_KEY` (raises the daily limit).
+- [ ] Projects: after the first run, create files in `collections/_projects/` from the grants in `research.yml`, and put the projects page back in the menu (`nav_order: 5` in `pages/ereuna/erga.html`).
+- [ ] When someone joins the faculty, add their OpenAlex ID to `_data/openalex_authors.yml`.
+
 ## Open questions
 
 ### Content

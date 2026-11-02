@@ -22,6 +22,8 @@ layout: default
         {%- endif %}
         {{ content }}
       </div>
+      {%- assign person_slug = page.slug %}
+      {% include research/person.html slug=person_slug %}
     </div>
     <aside>
       <div class="facts">

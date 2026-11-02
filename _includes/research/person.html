@@ -1,0 +1,18 @@
+{%- comment -%} Publications of one person (include.slug) from _data/research.yml {%- endcomment -%}
+{%- assign rp = site.data.research.people[include.slug] -%}
+{%- if rp %}
+<section class="research research--person">
+  <h2>{{ t.rs_publications }}</h2>
+  <ul class="facts-row">
+    <li><strong>{{ rp.works }}</strong> {{ t.rs_works }}</li>
+    <li><strong>{{ rp.citations }}</strong> {{ t.rs_citations }}</li>
+    <li><strong>{{ rp.h_index }}</strong> h-index</li>
+  </ul>
+  {%- if rp.topics.size > 0 %}<ul class="topics">{% for tp in rp.topics %}<li lang="en">{{ tp }}</li>{% endfor %}</ul>{% endif %}
+  {%- if rp.recent.size > 0 %}
+  <h3>{{ t.rs_recent }}</h3>
+  {% include research/papers.html items=rp.recent people=false %}
+  {%- endif %}
+  <p class="source-note">{{ t.rs_source }} <a href="https://openalex.org/authors/{{ rp.openalex | first }}">OpenAlex</a> · {{ t.last_update }} {{ site.data.research.updated | date: "%d/%m/%Y" }}</p>
+</section>
+{%- endif %}
