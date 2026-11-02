@@ -1,0 +1,1729 @@
+source: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/OROLOGIO-All-Fall-2026-27_v5.pdf
+semester: Χειμερινό εξάμηνο 2026-27
+updated:
+- 29/9/2026
+- 5/10/2026
+teaching_start: '2026-09-28'
+teaching_end: '2027-01-15'
+note: Το ωρολόγιο πρόγραμμα ενδέχεται να αναθεωρηθεί τις επόμενες ημέρες/εβδομάδες. Παρακαλούμε να το ελέγχετε τακτικά για τυχόν αλλαγές.
+rooms:
+- ΑΜΦ21
+- ΑΜΦ22
+- ΑΜΦ23
+- ΑΜΦ24
+- Γ21
+- Γ22
+- Γ23
+- Γ31
+- Γ32
+- Γ33
+- Εργαστήριο
+- Γ41
+- Γ42
+- Γ43
+- Α11
+- Α12
+- Α21
+- Α22
+- Α31
+- Α32
+legend:
+  pdf_colour: 'Χρώμα κειμένου του κελιού στο PDF (χωρίς υπόμνημα στο PDF). Παρατηρούμενη αντιστοιχία: blue=1ο έτος, green=2ο, brown=3ο, red=4ο, black=μαθήματα εκτός κανονικού εξαμήνου και μεταπτυχιακά. Το πεδίο year προκύπτει από αυτό.'
+  group: Ομάδα φοιτητών βάσει τελευταίου ψηφίου Α.Μ. (π.χ. 0-4, 5-9)· (*) = βλ. ανακοίνωση στο eclass του μαθήματος Πληροφορική Ι.
+  msc_code: 'Κωδικός μεταπτυχιακού μαθήματος όπως τυπώνεται (π.χ. Θ13=Ε20: κοινό μάθημα Θ13 και Ε20).'
+slots:
+- day: Δευτέρα
+  start: "09:00"
+  end: "13:00"
+  msc_code: ΣΕΠ19
+  course: Θεωρία Παιγνίων
+  room: Α12
+  instructors:
+  - Μερτικόπουλος
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ21
+  course: Αλγεβρική Γεωμετρία
+  room: Α21
+  instructors:
+  - Τερεζάκης
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ13=Ε20
+  course: Θεωρία Τελεστών
+  room: Α31
+  instructors:
+  - Κακαριάδης
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 634
+  course: Γεωμετρία ΙΙ
+  room: ΑΜΦ21
+  instructors:
+  - Γιαννιώτης
+  level: undergraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 122
+  course: Γεωμετρία Ι
+  room: ΑΜΦ22
+  instructors:
+  - Ανδρουλιδάκης
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 301
+  course: Απειροστικός Λογισμός ΙΙΙ
+  room: ΑΜΦ23
+  instructors:
+  - Σμυρνέλης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 421
+  course: Βασική Άλγεβρα
+  room: ΑΜΦ24
+  instructors:
+  - Κοντογεώργης
+  level: undergraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 559
+  course: Θεωρία Παιγνίων
+  room: Γ22
+  instructors:
+  - Μπουρνέτας
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 615
+  course: Γεωμετρική Ανάλυση
+  room: Γ23
+  instructors:
+  - Χατζηκαλέας
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "09:00"
+  end: "11:00"
+  course_code: 555
+  course: Μπεϋζιανή Στατιστική
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Μελιγκοτσίδου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "10:00"
+  end: "13:00"
+  course_code: 713
+  course: Μερικές Διαφορικές Εξισώσεις ΙΙ
+  room: Γ21
+  instructors:
+  - Πασχάλης
+  notes: 'Έναρξη: 5/10'
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ8=Ε8
+  course: Μερικές Διαφορικές Εξισώσεις Ι
+  room: Α21
+  instructors:
+  - Αλικάκος
+  - Χατζηκαλέας
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ31
+  course: Αλγεβρική Θεωρία Αριθμών
+  room: Α31
+  instructors:
+  - Κοντογεώργης
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 101
+  course: Απειροστικός Λογισμός Ι
+  room: ΑΜΦ22
+  instructors:
+  - Δοδός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 541
+  course: Μαθηματική Στατιστική
+  room: ΑΜΦ23
+  instructors:
+  - Τρέβεζας
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 221
+  course: Γραμμική Άλγεβρα ΙΙ
+  room: ΑΜΦ24
+  instructors:
+  - Μαλιάκας
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 798
+  course: Διδακτική της Άλγεβρας
+  room: Γ23
+  instructors:
+  - Μάλη
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 602
+  course: Εισαγωγή στην Συναρτησιακή Ανάλυση
+  room: Γ31
+  instructors:
+  - Κατάβολος
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 616
+  course: Θεωρία Προσέγγισης
+  room: Γ32
+  instructors:
+  - Νοτάρης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "11:00"
+  end: "13:00"
+  course_code: 721
+  course: Εισαγωγή στη Διαφορική Γεωμετρία των Πολλαπλοτήτων
+  room: Γ33
+  instructors:
+  - Μελάς
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "13:00"
+  end: "15:00"
+  msc_code: Θ5=Ε23
+  course: Διαφορική Γεωμετρία Ι
+  room: Α31
+  instructors:
+  - Ανδρουλιδάκης
+  - Μελάς
+  level: postgraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "13:00"
+  end: "15:00"
+  course_code: 109
+  course: Θεμέλια Μαθηματικής Ανάλυσης
+  room: ΑΜΦ22
+  instructors:
+  - Δεληγιάννη
+  - Ηλιοπούλου
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Δευτέρα
+  start: "13:00"
+  end: "15:00"
+  course_code: 241
+  course: Πιθανότητες Ι
+  room: ΑΜΦ23
+  instructors:
+  - Χελιώτης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Δευτέρα
+  start: "13:00"
+  end: "15:00"
+  course_code: 712
+  course: Γραμμικοί Τελεστές
+  room: Γ21
+  instructors:
+  - Κακαριάδης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "13:00"
+  end: "16:00"
+  course_code: 732
+  course: Θέματα Άλγεβρας και Γεωμετρίας Ι
+  room: Γ32
+  instructors:
+  - Παπατριανταφύλλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "15:00"
+  end: "18:00"
+  course_code: 302
+  course: Συνήθεις Διαφορικές Εξισώσεις
+  room: ΑΜΦ21
+  instructors:
+  - Καραλή
+  level: undergraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "15:00"
+  end: "17:00"
+  course_code: 151
+  course: Συνδυαστική
+  room: ΑΜΦ23
+  instructors:
+  - Παπαδάτος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Δευτέρα
+  start: "15:00"
+  end: "17:00"
+  course_code: 121
+  course: Γραμμική Άλγεβρα Ι
+  room: ΑΜΦ24
+  instructors:
+  - Γκότσης
+  - Φακιολάς (Ασκ.)
+  level: undergraduate
+  pdf_colour: black
+- day: Δευτέρα
+  start: "15:00"
+  end: "17:00"
+  course_code: 761
+  course: Κβαντική Φυσική
+  room: Γ21
+  instructors:
+  - Παπαθανασίου
+  - Σπανός
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "15:00"
+  end: "17:00"
+  course_code: 442
+  course: Πιθανότητες ΙΙ
+  room: Γ23
+  instructors:
+  - Χελιώτης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Δευτέρα
+  start: "15:00"
+  end: "17:00"
+  course_code: 533
+  course: Εισαγωγή στη Θεμελίωση της Γεωμετρίας
+  room: Γ33
+  instructors:
+  - Πρασίδης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Δευτέρα
+  start: "16:00"
+  end: "19:00"
+  course_code: 735
+  course: Εισαγωγή στην Αλγεβρική Θεωρία Αριθμών
+  room: Γ22
+  instructors:
+  - Καραγιάννης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Δευτέρα
+  start: "16:00"
+  end: "19:00"
+  course_code: 872
+  course: Θεωρίες Μάθησης και Διδασκαλίας
+  room: Γ31
+  instructors:
+  - Παπαϊωάννου
+  - Σμυρναίου
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: ΕΜ3α
+  course: ΕΜ3α
+  room: Α21
+  instructors:
+  - Μητρούλη
+  - Μπάρδης
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ9=Ε19
+  course: Μιγαδική Ανάλυση Μιας Μεταβλητής
+  room: Α31
+  instructors:
+  - Χατζηαφράτης
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 252
+  course: Διακριτά Μαθηματικά
+  room: ΑΜΦ24
+  instructors:
+  - Αθανασιάδης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 714
+  course: Τοπολογία
+  room: Γ21
+  instructors:
+  - Δεληγιάννη
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 651
+  course: Στοχαστικές Ανελίξεις
+  room: Γ22
+  instructors:
+  - Μάνου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 859
+  course: Ουρές Αναμονής
+  room: Γ32
+  instructors:
+  - Οικονόμου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: (*)
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Αντωνόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: (*)
+  room: Εργαστήριο (Αίθ. Γ)
+  instructors:
+  - Ζαφειρακόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Ε3
+  course: Υπολογιστικά Μαθηματικά Ι
+  room: Α21
+  instructors:
+  - Νοτάρης
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ1=Ε17
+  course: Ανάλυση Ι
+  room: Α31
+  instructors:
+  - Τύρος
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 261
+  course: Κλασική Μηχανική
+  room: ΑΜΦ22
+  instructors:
+  - Καζαντζίδης
+  - Χατζηδημητρίου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 693
+  course: Διδακτική της Γεωμετρίας
+  room: Γ21
+  instructors:
+  - Μεταξάς
+  - Πόταρη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 653
+  course: Αριθμητική Ανάλυση Διαφορικών Εξισώσεων
+  room: Γ23
+  instructors:
+  - Αντωνοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 423
+  course: Δακτύλιοι και Πρότυπα
+  room: Γ31
+  instructors:
+  - Χλουβεράκη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 755
+  course: Υπολογιστική Στατιστική
+  room: Γ33
+  instructors:
+  - Σιάννης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 5-9
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Αντωνόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 5-9
+  room: Εργαστήριο (Αίθ. Γ)
+  instructors:
+  - Θηλυκός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: Θ26.β
+  course: Θ26.β
+  room: Α11
+  instructors:
+  - Μενεγάκη
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: ΣΕΠ1=Ε26
+  course: Μαθηματική Στατιστική
+  room: Α12
+  instructors:
+  - Βαγγελάτου
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: Ε9
+  course: Υπολογιστικά Μαθηματικά ΙΙ
+  room: Α21
+  instructors:
+  - Αντωνοπούλου
+  level: postgraduate
+  pdf_colour: black
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 834
+  msc_code: Θ3
+  course: Θεωρία Ομάδων
+  room: Α31
+  instructors:
+  - Γερανιός
+  level: undergraduate+postgraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "13:00"
+  end: "16:00"
+  course_code: 541
+  course: Μαθηματική Στατιστική
+  room: ΑΜΦ21
+  instructors:
+  - Καραλιοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 0-4
+  room: ΑΜΦ23
+  instructors:
+  - Ζαφειρακόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 591
+  course: Διδακτική Απειροστικού Λογισμού
+  room: Γ21
+  instructors:
+  - Μάλη
+  - Μεταξάς
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 361
+  course: Φυσική Μετεωρολογία
+  room: Γ22
+  instructors:
+  - Καρατάσου
+  - Τυρλής
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 511
+  course: Θεωρία Μέτρου
+  room: Γ31
+  instructors:
+  - Ηλιοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 752
+  course: Αριθμητική Γραμμική Άλγεβρα
+  room: Γ32
+  instructors:
+  - Μητρούλη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 5-9
+  room: ΑΜΦ23
+  instructors:
+  - Θηλυκός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 411
+  course: Μερικές Διαφορικές Εξισώσεις Ι
+  room: ΑΜΦ24
+  instructors:
+  - Μπαρμπάτης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 756
+  course: Χρηματοοικονομικά Μαθηματικά
+  course_as_printed: Χρηματοοικ. Μαθημ.
+  room: Γ21
+  instructors:
+  - Βαγγελάτου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 814
+  course: Θεωρία Ελέγχου
+  room: Γ22
+  instructors:
+  - Χαλικιάς
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 897
+  course: Επιστημολογία και Διδακτική των Μαθηματικών
+  room: Γ23
+  instructors:
+  - Χριστοπούλου
+  - Τριανταφύλλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τρίτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 832
+  course: Αλγεβρική Τοπολογία
+  room: Γ32
+  instructors:
+  - Πρασίδης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τρίτη
+  start: "16:00"
+  end: "19:00"
+  course_code: 352
+  course: Δομές Δεδομένων
+  room: Γ31
+  instructors:
+  - Ψαρρός
+  notes: 'Έναρξη: 6/10'
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ21
+  course: Αλγεβρική Γεωμετρία
+  room: Α21
+  instructors:
+  - Τερεζάκης
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ13=Ε20
+  course: Θεωρία Τελεστών
+  room: Α31
+  instructors:
+  - Κακαριάδης
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 634
+  course: Γεωμετρία ΙΙ
+  room: ΑΜΦ21
+  instructors:
+  - Γιαννιώτης
+  level: undergraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 122
+  course: Γεωμετρία Ι
+  room: ΑΜΦ22
+  instructors:
+  - Ανδρουλιδάκης
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 301
+  course: Απειροστικός Λογισμός ΙΙΙ
+  room: ΑΜΦ23
+  instructors:
+  - Σμυρνέλης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 421
+  course: Βασική Άλγεβρα
+  room: ΑΜΦ24
+  instructors:
+  - Κοντογεώργης
+  level: undergraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 559
+  course: Θεωρία Παιγνίων
+  room: Γ22
+  instructors:
+  - Μπουρνέτας
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 615
+  course: Γεωμετρική Ανάλυση
+  room: Γ23
+  instructors:
+  - Χατζηκαλέας
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "09:00"
+  end: "13:00"
+  msc_code: ΣΕΠ6
+  course: Στοχαστικά Μοντέλα στην Επιχειρησιακή Έρευνα
+  room: Γ31
+  instructors:
+  - Οικονόμου
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 555
+  course: Μπεϋζιανή Στατιστική
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Μελιγκοτσίδου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "10:00"
+  end: "13:00"
+  course_code: 711
+  course: Θέματα Μαθηματικής Ανάλυσης Ι
+  room: Γ21
+  instructors:
+  - Πασχάλης
+  notes: 'Έναρξη: 7/10'
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Δ27
+  course: Δ27
+  room: Α11
+  instructors:
+  - Βασιλείου
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ18=Ε21
+  course: Θεωρία Γραφημάτων
+  room: Α12
+  instructors:
+  - Γιαννοπούλου
+  - Θηλυκός
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ8=Ε8
+  course: Μερικές Διαφορικές Εξισώσεις Ι
+  room: Α21
+  instructors:
+  - Αλικάκος
+  - Χατζηκαλέας
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ31
+  course: Αλγεβρική Θεωρία Αριθμών
+  room: Α31
+  instructors:
+  - Κοντογεώργης
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 101
+  course: Απειροστικός Λογισμός Ι
+  room: ΑΜΦ22
+  instructors:
+  - Δοδός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 541
+  course: Μαθηματική Στατιστική
+  room: ΑΜΦ23
+  instructors:
+  - Τρέβεζας
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 221
+  course: Γραμμική Άλγεβρα ΙΙ
+  room: ΑΜΦ24
+  instructors:
+  - Μαλιάκας
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 798
+  course: Διδακτική της Άλγεβρας
+  room: Γ23
+  instructors:
+  - Μάλη
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 616
+  course: Θεωρία Προσέγγισης
+  room: Γ32
+  instructors:
+  - Νοτάρης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τετάρτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 721
+  course: Εισαγωγή στη Διαφορική Γεωμετρία των Πολλαπλοτήτων
+  room: Γ33
+  instructors:
+  - Μελάς
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: Θ5=Ε23
+  course: Διαφορική Γεωμετρία Ι
+  room: Α31
+  instructors:
+  - Ανδρουλιδάκης
+  - Μελάς
+  level: postgraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 109
+  course: Θεμέλια Μαθηματικής Ανάλυσης
+  room: ΑΜΦ22
+  instructors:
+  - Δεληγιάννη
+  - Ηλιοπούλου
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 241
+  course: Πιθανότητες Ι
+  room: ΑΜΦ23
+  instructors:
+  - Χελιώτης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 712
+  course: Γραμμικοί Τελεστές
+  room: Γ21
+  instructors:
+  - Κακαριάδης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 898
+  course: Η διδασκαλία μέσω επίλυσης προβλημάτων - μαθηματικοποίηση
+  room: Γ22
+  instructors:
+  - Τριανταφύλλου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Τετάρτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 691
+  course: Διδακτική των Μαθηματικών Ι
+  room: Γ31
+  instructors:
+  - Πετροπούλου
+  - Ψυχάρης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τετάρτη
+  start: "15:00"
+  end: "18:00"
+  course_code: 302
+  course: Συνήθεις Διαφορικές Εξισώσεις
+  room: ΑΜΦ21
+  instructors:
+  - Καραλή
+  level: undergraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 151
+  course: Συνδυαστική
+  room: ΑΜΦ23
+  instructors:
+  - Παπαδάτος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Τετάρτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 121
+  course: Γραμμική Άλγεβρα Ι
+  room: ΑΜΦ24
+  instructors:
+  - Γκότσης
+  - Φακιολάς (Ασκ.)
+  level: undergraduate
+  pdf_colour: black
+- day: Τετάρτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 442
+  course: Πιθανότητες ΙΙ
+  room: Γ23
+  instructors:
+  - Χελιώτης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Τετάρτη
+  start: "15:00"
+  end: "17:00"
+  course: Σεμινάριο Συναρτησιακής Ανάλυσης και Θεωρίας Τελεστών
+  type: seminar
+  room: Γ31
+  pdf_colour: black
+- day: Τετάρτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 533
+  course: Εισαγωγή στη Θεμελίωση της Γεωμετρίας
+  room: Γ33
+  instructors:
+  - Πρασίδης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Τετάρτη
+  start: "16:00"
+  end: "19:00"
+  course_code: 736
+  course: Ομολογική Άλγεβρα και Κατηγορίες
+  room: Γ22
+  instructors:
+  - Καραγιάννης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: Ε3
+  course: Υπολογιστικά Μαθηματικά Ι
+  room: Α21
+  instructors:
+  - Νοτάρης
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  msc_code: Θ9=Ε19
+  course: Μιγαδική Ανάλυση Μιας Μεταβλητής
+  room: Α31
+  instructors:
+  - Χατζηαφράτης
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 252
+  course: Διακριτά Μαθηματικά
+  room: ΑΜΦ24
+  instructors:
+  - Αθανασιάδης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 714
+  course: Τοπολογία
+  room: Γ21
+  instructors:
+  - Δεληγιάννη
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 651
+  course: Στοχαστικές Ανελίξεις
+  room: Γ22
+  instructors:
+  - Μάνου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "09:00"
+  end: "11:00"
+  course_code: 859
+  course: Ουρές Αναμονής
+  room: Γ32
+  instructors:
+  - Οικονόμου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "09:00"
+  end: "13:00"
+  msc_code: ΣΕΠ16
+  course: Μπεϋζιανή Στατιστική
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Μελιγκοτσίδου
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ26.β
+  course: Θ26.β
+  room: Α11
+  instructors:
+  - Μενεγάκη
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ18=Ε21
+  course: Θεωρία Γραφημάτων
+  room: Α12
+  instructors:
+  - Γιαννοπούλου
+  - Θηλυκός
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  msc_code: ΕΜ3α
+  course: ΕΜ3α
+  room: Α21
+  instructors:
+  - Μητρούλη
+  - Μπάρδης
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 261
+  course: Κλασική Μηχανική
+  room: ΑΜΦ22
+  instructors:
+  - Καζαντζίδης
+  - Χατζηδημητρίου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 653
+  course: Αριθμητική Ανάλυση Διαφορικών Εξισώσεων
+  room: Γ23
+  instructors:
+  - Αντωνοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 602
+  course: Εισαγωγή στην Συναρτησιακή Ανάλυση
+  room: Γ31
+  instructors:
+  - Κατάβολος
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "11:00"
+  end: "13:00"
+  course_code: 755
+  course: Υπολογιστική Στατιστική
+  room: Γ33
+  instructors:
+  - Σιάννης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "12:00"
+  end: "13:00"
+  course_code: 101
+  course: Απειροστικός Λογισμός Ι
+  room: ΑΜΦ23
+  instructors:
+  - Μπαρμπάτης
+  notes: Ασκήσεις
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: ΣΕΠ1=Ε26
+  course: Μαθηματική Στατιστική
+  room: Α12
+  instructors:
+  - Βαγγελάτου
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  msc_code: Ε9
+  course: Υπολογιστικά Μαθηματικά ΙΙ
+  room: Α21
+  instructors:
+  - Αντωνοπούλου
+  level: postgraduate
+  pdf_colour: black
+- day: Πέμπτη
+  start: "13:00"
+  end: "16:00"
+  course_code: 541
+  course: Μαθηματική Στατιστική
+  room: ΑΜΦ21
+  instructors:
+  - Καραλιοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 5-9
+  room: ΑΜΦ23
+  instructors:
+  - Θηλυκός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 591
+  course: Διδακτική Απειροστικού Λογισμού
+  room: Γ21
+  instructors:
+  - Μάλη
+  - Μεταξάς
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 898
+  course: Η διδασκαλία μέσω επίλυσης προβλημάτων - μαθηματικοποίηση
+  room: Γ22
+  instructors:
+  - Τριανταφύλλου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "13:00"
+  end: "14:00"
+  course: Γενικό Σεμινάριο
+  type: seminar
+  room: Γ23
+  pdf_colour: black
+- day: Πέμπτη
+  start: "13:00"
+  end: "14:00"
+  course: Γενικό Σεμινάριο
+  type: seminar
+  room: Γ31
+  pdf_colour: black
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 752
+  course: Αριθμητική Γραμμική Άλγεβρα
+  room: Γ32
+  instructors:
+  - Μητρούλη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "13:00"
+  end: "15:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 3-6
+  room: Εργαστήριο (Αίθ. Α)
+  instructors:
+  - Αντωνόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 141
+  course: Πληροφορική Ι
+  group: 0-4
+  room: ΑΜΦ23
+  instructors:
+  - Ζαφειρακόπουλος
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 411
+  course: Μερικές Διαφορικές Εξισώσεις Ι
+  room: ΑΜΦ24
+  instructors:
+  - Μπαρμπάτης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 756
+  course: Χρηματοοικονομικά Μαθηματικά
+  course_as_printed: Χρηματοοικ. Μαθημ.
+  room: Γ21
+  instructors:
+  - Βαγγελάτου
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 814
+  course: Θεωρία Ελέγχου
+  room: Γ22
+  instructors:
+  - Χαλικιάς
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 897
+  course: Επιστημολογία και Διδακτική των Μαθηματικών
+  room: Γ23
+  instructors:
+  - Χριστοπούλου
+  - Τριανταφύλλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 423
+  course: Δακτύλιοι και Πρότυπα
+  room: Γ31
+  instructors:
+  - Χλουβεράκη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Πέμπτη
+  start: "15:00"
+  end: "17:00"
+  course_code: 832
+  course: Αλγεβρική Τοπολογία
+  room: Γ32
+  instructors:
+  - Πρασίδης
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Πέμπτη
+  start: "15:00"
+  end: "18:00"
+  course_code: 573
+  course: Ιστορία των Μαθηματικών από την Αρχαιότητα έως την Αναγέννηση
+  room: Γ33
+  instructors:
+  - Χριστιανίδης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Παρασκευή
+  start: "09:00"
+  end: "11:00"
+  course_code: 634
+  course: Γεωμετρία ΙΙ
+  room: ΑΜΦ21
+  instructors:
+  - Γιαννιώτης
+  level: undergraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "09:00"
+  end: "11:00"
+  course_code: 122
+  course: Γεωμετρία Ι
+  room: ΑΜΦ22
+  instructors:
+  - Ανδρουλιδάκης
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Παρασκευή
+  start: "09:00"
+  end: "11:00"
+  course_code: 301
+  course: Απειροστικός Λογισμός ΙΙΙ
+  room: ΑΜΦ23
+  instructors:
+  - Σμυρνέλης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Παρασκευή
+  start: "09:00"
+  end: "11:00"
+  course_code: 421
+  course: Βασική Άλγεβρα
+  room: ΑΜΦ24
+  instructors:
+  - Κοντογεώργης
+  level: undergraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "11:00"
+  end: "14:00"
+  msc_code: Δ29
+  course: Δ29
+  room: Α11
+  instructors:
+  - Χριστοπούλου
+  level: postgraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  msc_code: Θ1=Ε17
+  course: Ανάλυση Ι
+  room: Α31
+  instructors:
+  - Τύρος
+  level: postgraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  course_code: 101
+  course: Απειροστικός Λογισμός Ι
+  room: ΑΜΦ22
+  instructors:
+  - Δοδός
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  course_code: 541
+  course: Μαθηματική Στατιστική
+  room: ΑΜΦ23
+  instructors:
+  - Τρέβεζας
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  course_code: 221
+  course: Γραμμική Άλγεβρα ΙΙ
+  room: ΑΜΦ24
+  instructors:
+  - Μαλιάκας
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  course_code: 693
+  course: Διδακτική της Γεωμετρίας
+  room: Γ21
+  instructors:
+  - Μεταξάς
+  - Πόταρη
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Παρασκευή
+  start: "11:00"
+  end: "14:00"
+  course_code: 718
+  course: Θεωρία Κατανομών
+  room: Γ23
+  instructors:
+  - Μενεγάκη
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Παρασκευή
+  start: "11:00"
+  end: "13:00"
+  course_code: 511
+  course: Θεωρία Μέτρου
+  room: Γ31
+  instructors:
+  - Ηλιοπούλου
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Παρασκευή
+  start: "13:00"
+  end: "15:00"
+  course_code: 834
+  msc_code: Θ3
+  course: Θεωρία Ομάδων
+  room: Α31
+  instructors:
+  - Γερανιός
+  level: undergraduate+postgraduate
+  pdf_colour: red
+  year: 4
+- day: Παρασκευή
+  start: "13:00"
+  end: "16:00"
+  course_code: 120
+  course: Θεμέλια Άλγεβρας και Γεωμετρίας
+  room: ΑΜΦ22
+  instructors:
+  - Χλουβεράκη
+  level: undergraduate
+  pdf_colour: blue
+  year: 1
+- day: Παρασκευή
+  start: "13:00"
+  end: "15:00"
+  course_code: 761
+  course: Κβαντική Φυσική
+  room: Γ21
+  instructors:
+  - Παπαθανασίου
+  - Σπανός
+  level: undergraduate
+  pdf_colour: red
+  year: 4
+- day: Παρασκευή
+  start: "13:00"
+  end: "15:00"
+  course_code: 361
+  course: Φυσική Μετεωρολογία
+  room: Γ22
+  instructors:
+  - Καρατάσου
+  - Τυρλής
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Παρασκευή
+  start: "13:00"
+  end: "15:00"
+  course_code: 691
+  course: Διδακτική των Μαθηματικών Ι
+  room: Γ31
+  instructors:
+  - Πετροπούλου
+  - Ψυχάρης
+  level: undergraduate
+  pdf_colour: brown
+  year: 3
+- day: Παρασκευή
+  start: "14:00"
+  end: "16:00"
+  msc_code: Δ27
+  course: Δ27
+  room: Α11
+  instructors:
+  - Βασιλείου
+  level: postgraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "15:00"
+  end: "17:00"
+  course_code: 241
+  course: Πιθανότητες Ι
+  room: ΑΜΦ23
+  instructors:
+  - Χελιώτης
+  level: undergraduate
+  pdf_colour: green
+  year: 2
+- day: Παρασκευή
+  start: "15:00"
+  end: "17:00"
+  course_code: 121
+  course: Γραμμική Άλγεβρα Ι
+  room: ΑΜΦ24
+  instructors:
+  - Γκότσης
+  - Φακιολάς (Ασκ.)
+  level: undergraduate
+  pdf_colour: black
+- day: Παρασκευή
+  start: "15:00"
+  end: "18:00"
+  course_code: 812
+  course: Θέματα Μαθηματικής Ανάλυσης ΙΙ
+  room: Γ23
+  instructors:
+  - Νεστορίδης
+  level: undergraduate
+  pdf_colour: red
+  year: 4

@@ -1,0 +1,30 @@
+{%- include lang.html -%}
+{%- assign sems = "winter,spring" | split: "," -%}
+{%- for sem in sems %}
+{%- if sem == "winter" %}{% assign a = site.data.ug.assignments_winter_2026_27 %}{% assign anchor = "cheimerino" %}{% else %}{% assign a = site.data.ug.assignments_spring_2026_27 %}{% assign anchor = "earino" %}{% endif -%}
+<section id="{{ anchor }}">
+  <h2>{{ a.title }}</h2>
+  <p class="muted">{{ t.as_teaching }}: {{ a.teaching_start | date: "%d/%m/%Y" }} – {{ a.teaching_end | date: "%d/%m/%Y" }} · {{ t.as_exams }}: {{ a.exams_start | date: "%d/%m/%Y" }} – {{ a.exams_end | date: "%d/%m/%Y" }}</p>
+  {%- assign groups = a.items | group_by: "section" -%}
+  {%- for g in groups %}
+  <h3>{{ g.name }}</h3>
+  {%- for n in a.section_notes %}{% if n.section == g.name %}<p class="muted">{{ n.text }}</p>{% endif %}{% endfor %}
+  <table class="data-table">
+    <thead><tr><th>{{ t.courses }}</th><th>{{ t.tt_instructors }}</th></tr></thead>
+    <tbody>
+    {%- for it in g.items %}
+      <tr>
+        <td>{% include ug/course-link.html code=it.course_code title=it.course %}{% if it.sections %} <small>({{ it.sections }} {{ t.as_sections }})</small>{% endif %}{% if it.subsection %}<small>{{ it.subsection }}</small>{% endif %}{% if it.department %}<small>{{ it.department }}</small>{% endif %}</td>
+        <td>{{ it.instructors | join: ", " }}
+          {%- if it.exercises %}<small>{{ t.as_exercises }}: {{ it.exercises | join: ", " }}</small>{% endif %}
+          {%- if it.lab %}<small>{{ t.as_lab }}: {{ it.lab | join: ", " }}</small>{% endif %}
+          {%- if it.notes %}<small>{{ it.notes }}</small>{% endif %}</td>
+      </tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+  {%- endfor %}
+  {%- assign upd = a.updated | split: "," -%}
+  {% include ug/source-note.html src=a.source updated=upd %}
+</section>
+{%- endfor %}

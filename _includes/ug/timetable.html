@@ -1,0 +1,54 @@
+{%- include lang.html -%}
+{%- assign days = "Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή" | split: "," -%}
+{%- assign fy = site.data.ug.timetable_first_year_2026_27 -%}
+{%- assign w = site.data.ug.timetable_winter_2026_27 -%}
+
+<section id="proto-etos">
+  <h2>{{ t.tt_first_year }}</h2>
+  <ul class="legend">{% for g in fy.groups %}<li><strong>{{ g[0] }}</strong>: {{ g[1] }}</li>{% endfor %}</ul>
+  <div class="week">
+    {%- for day in days %}
+    {%- assign ds = fy.slots | where: "day", day | sort: "start" -%}
+    <section class="week__day">
+      <h3>{{ day }}</h3>
+      <ul>
+        {%- for s in ds %}
+        <li><time>{{ s.start }}–{{ s.end }}</time>
+          <span>{% include ug/course-link.html code=s.course_code title=s.course %}
+          {%- if s.type %} <span class="muted">({{ s.type }})</span>{% endif %}</span>
+          <small>{% if s.group %}{{ s.group }} · {% endif %}{{ s.room }}{% if s.instructor %} · {{ s.instructor }}{% endif %}{% if s.note %} · {{ s.note }}{% endif %}</small></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endfor %}
+  </div>
+  {% include ug/source-note.html src=fy.source updated=fy.updated %}
+</section>
+
+<section id="cheimerino">
+  <h2>{{ t.tt_all }} — {{ w.semester }}</h2>
+  {%- if w.note %}<p class="muted">{{ w.note }}</p>{% endif %}
+  <div class="programme__filter" data-tt-filter role="group" aria-label="{{ t.tt_year }}">
+    <button type="button" aria-pressed="true" data-year="">{{ t.tt_all_years }}</button>
+    {%- for y in (1..4) %}<button type="button" aria-pressed="false" data-year="{{ y }}">{{ y }}{% if lang == "el" %}ο έτος{% else %}{% case y %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %} year{% endif %}</button>{% endfor %}
+    <button type="button" aria-pressed="false" data-year="msc">{{ t.tt_msc }}</button>
+  </div>
+  {%- for day in days %}
+  {%- assign ds = w.slots | where: "day", day | sort: "start" -%}
+  <h3 class="tt-day">{{ day }}</h3>
+  <table class="data-table tt">
+    <thead><tr><th>{{ t.tt_time }}</th><th>{{ t.courses }}</th><th>{{ t.tt_room }}</th><th>{{ t.tt_instructors }}</th></tr></thead>
+    <tbody>
+    {%- for s in ds %}
+      <tr data-year="{% if s.level == 'postgraduate' %}msc{% else %}{{ s.year }}{% endif %}">
+        <td class="nowrap">{{ s.start }}–{{ s.end }}</td>
+        <td>{% include ug/course-link.html code=s.course_code title=s.course %}{% if s.msc_code %} <span class="badge badge--muted">{{ s.msc_code }}</span>{% endif %}{% if s.group %} <small>{{ s.group }}</small>{% endif %}{% if s.notes %} <small>{{ s.notes }}</small>{% endif %}</td>
+        <td>{{ s.room }}</td>
+        <td>{{ s.instructors | join: ", " }}</td>
+      </tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+  {%- endfor %}
+  {% include ug/source-note.html src=w.source updated=w.updated %}
+</section>

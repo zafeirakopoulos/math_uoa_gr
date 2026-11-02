@@ -128,6 +128,21 @@ t:
   offered_now_note: The courses taught this semester, by semester of the suggested programme. Compulsory courses are in bold; choose a concentration to highlight its courses. Course titles and descriptions are in Greek.
   all_concentrations: All concentrations
   other_courses: Other courses
+  source_pdf: Source
+  last_update: last updated
+  tt_first_year: First-year timetable
+  tt_all: All courses by day
+  tt_year: Year
+  tt_all_years: All years
+  tt_msc: Graduate
+  tt_time: Time
+  tt_room: Room
+  tt_instructors: Instructors
+  as_teaching: Teaching
+  as_exams: Exams
+  as_sections: sections
+  as_exercises: Exercises
+  as_lab: Lab
   phd_count: doctoral theses
   phd_note: Links lead to the National Archive of PhD Theses.
   term: Term

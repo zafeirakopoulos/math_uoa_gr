@@ -54,20 +54,15 @@ el:
   - title: Ακαδημαϊκό έτος 2026-27
     links:
     - title: Βασικές ημερομηνίες έτους
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Basikes_Imerominies_2026-2027.pdf
-      pdf: true
+      url: /spoudes/proptychiakes/imerominies/
     - title: Ωρολόγιο πρόγραμμα 1ου έτους
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/proto_etos_2026_27.pdf
-      pdf: true
+      url: /spoudes/proptychiakes/orologio/#proto-etos
     - title: Ωρολόγιο πρόγραμμα χειμερινού εξαμήνου
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/OROLOGIO-All-Fall-2026-27_v5.pdf
-      pdf: true
-    - title: Αναθέσεις διδασκαλίας χειμερινού (29/9/2026)
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PPS_CHeimerino_26-27_v6.pdf
-      pdf: true
+      url: /spoudes/proptychiakes/orologio/#cheimerino
+    - title: Αναθέσεις διδασκαλίας χειμερινού
+      url: /spoudes/proptychiakes/anatheseis/#cheimerino
     - title: Αναθέσεις διδασκαλίας εαρινού
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/PPS_Earino_26-27_v4.pdf
-      pdf: true
+      url: /spoudes/proptychiakes/anatheseis/#earino
     - title: Πρόγραμμα εξετάσεων Σεπτεμβρίου 2026
       url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Programma_ekserastikhs_09_2026-final_.pdf
       pdf: true
@@ -142,12 +137,10 @@ en:
       pdf: true
   - title: Academic year 2026-27
     links:
-    - title: Key dates (Greek)
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/Basikes_Imerominies_2026-2027.pdf
-      pdf: true
-    - title: Winter semester timetable (Greek)
-      url: https://www.math.uoa.gr/fileadmin/depts/math.uoa.gr/uploads/anakoinwseis/26-27/OROLOGIO-All-Fall-2026-27_v5.pdf
-      pdf: true
+    - title: Key dates
+      url: /en/studies/undergraduate/imerominies/
+    - title: Winter semester timetable
+      url: /en/studies/undergraduate/orologio/#cheimerino
     - title: Course registration (My-Studies)
       url: https://my-studies.uoa.gr/
   - title: Opportunities

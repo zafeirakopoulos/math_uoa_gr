@@ -29,6 +29,19 @@
     });
   }
 
+  // Timetable: show one year (or graduate courses) only
+  const tf = document.querySelector("[data-tt-filter]");
+  if (tf) {
+    const buttons = [...tf.querySelectorAll("button")];
+    const rows = [...document.querySelectorAll("table.tt tbody tr")];
+    tf.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      buttons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      const y = b.dataset.year;
+      rows.forEach((r) => { r.hidden = !!y && r.dataset.year !== y; });
+    });
+  }
+
   // Obfuscated e-mail addresses
   document.querySelectorAll(".js-email").forEach((a) => {
     const addr = `${a.dataset.u}@${a.dataset.d}`;

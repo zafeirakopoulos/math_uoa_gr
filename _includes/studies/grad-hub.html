@@ -27,7 +27,6 @@
   <div class="specialisations">
     {%- for sp in prog.specialisations %}
     {%- assign key = sp.key -%}
-    {%- assign cs = site.msc_courses | where_exp: "c", "c.programs contains key" -%}
     <section class="specialisation" id="{{ key }}">
       <h3>{{ sp[lang] | default: sp.el }}</h3>
       <p class="specialisation__req"{% if lang != "el" %} lang="el"{% endif %}><strong>{{ t.msc_required_core }}:</strong> {{ sp.required_core }}</p>
@@ -43,17 +42,11 @@
       {%- for grp in grps %}
       <h4>{{ t.msc_group[grp] }}</h4>
       <ul class="msc-courses">
-        {%- assign listed = 0 -%}
-        {%- for n in (1..60) %}
-        {%- for c in cs %}
-          {%- assign o = c.order %}{% if c.orders %}{% assign o = c.orders[key] %}{% endif -%}
-          {%- assign g = c.group %}{% if c.groups %}{% assign g = c.groups[key] %}{% endif -%}
-          {%- if o == n and g == grp %}{% include tr.html doc=c %}
+        {%- assign list = site.data.msc_lists[key][grp] -%}
+        {%- for c in list %}{% include tr.html doc=c %}
           <li><span class="course__code">{% if c.codes %}{{ c.codes[key] }}{% else %}{{ c.code }}{% endif %}</span>
             <a href="{{ tr.url | relative_url }}"{% unless c.langs contains lang %} lang="el"{% endunless %}>{{ tr.title }}</a>
             {%- if c.semester %} <span class="badge" title="{{ t.offered }}">{{ t[c.semester] }}</span>{% endif %}</li>
-          {%- endif -%}
-        {%- endfor %}
         {%- endfor %}
       </ul>
       {%- endfor %}
